@@ -56,4 +56,4 @@ Approximately **35–50 hours** of hands-on learning.
 
 ## Next Lesson
 
-➡️ [Learning-Roadmap](.docs/00-Welcome/Learning-Roadmap.md)
+➡️ [Learning-Roadmap](Learning-Roadmap.md)
