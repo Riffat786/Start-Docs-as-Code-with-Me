@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Learning Roadmap
 
 This roadmap outlines the complete learning journey.

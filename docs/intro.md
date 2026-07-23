@@ -4,7 +4,7 @@ sidebar_label: Welcome
 sidebar_position: 1
 ---
 
-# 🚀 Start Docs-as-Code with Me
+# ![alt text](banner.png)
 
 Welcome to **Start Docs-as-Code with Me**—a hands-on learning platform designed for Technical Writers, Documentation Engineers, Software Engineers, and anyone who wants to master modern Docs-as-Code practices.
 

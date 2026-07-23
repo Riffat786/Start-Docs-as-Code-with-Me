@@ -28,3 +28,20 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.footer {
+    background: #135d8f;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer__title {
+    color: #111827;
+    font-weight: 700;
+}
+
+.footer__link-item {
+    color: #f6f6f7;
+}
+
+.footer__copyright {
+    color: #eceded;
+}

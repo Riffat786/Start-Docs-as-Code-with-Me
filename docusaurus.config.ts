@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://riffat786.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Start-Docs-as-Code-with-Me/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Riffat786', // Usually your GitHub org/user name.
+  projectName: 'Start-Docs-as-Code-with-Me', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Riffat786/Start-Docs-as-Code-with-Me/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -75,49 +75,82 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Start-Docs-as-Code-with-Me',
-      logo: {
-        alt: 'Start-Docs-as-Code-with-Me Logo',
-        src: 'img/favicon.png',
-      },
+  title: '',
+
+  logo: {
+    alt: 'Start Docs-as-Code with Me',
+    src: 'img/favicon.png',
+  },
+
+  items: [
+    {
+      to: '/',
+      label: '🏠 Home',
+      position: 'left',
+    },
+    {
+      type: 'docSidebar',
+      sidebarId: 'learningPath',
+      label: '📚 Learning Path',
+      position: 'left',
+    },
+    {
+      to: '/blog',
+      label: '📰 Blog',
+      position: 'left',
+    },
+    {
+      href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me',
+      label: 'GitHub',
+      position: 'right',
+    },
+  ],
+},
+  footer: {
+  style: 'dark',
+
+  links: [
+    {
+      title: 'Learning',
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'learningPath',
-          position: 'left',
-          label: 'Learn',
+          label: 'Learning Path',
+          to: '/docs/intro',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me',
-          label: 'GitHub',
-          position: 'right',
+          label: 'Blog',
+          to: '/blog',
         },
       ],
     },
-    footer: {
-  style: 'dark',
-  links: [
+
     {
-      title: 'Learn',
+      title: 'Project',
       items: [
         {
-          label: 'Documentation',
+          label: 'GitHub',
+          href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me',
+        },
+        {
+          label: 'Issues',
+          href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me/issues',
+        },
+      ],
+    },
+
+    {
+      title: 'About',
+      items: [
+        {
+          label: 'About the Course',
           to: '/docs/intro',
         },
       ],
     },
-    {
-      title: 'Community',
-      items: [
-        {
-          label: 'GitHub',
-          href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me',
-        },
-      ],
-    },
   ],
-  copyright: `Copyright © ${new Date().getFullYear()} Start Docs-as-Code with Me. Built with Docusaurus.`,
+
+  copyright: `© ${new Date().getFullYear()} Start Docs-as-Code with Me · Designed and maintained by Riffat Wyne. <br>
+  An open-source project platform for Technical Writers and Documentation Teams. Built with Docusaurus.`,
 },
     prism: {
       theme: prismThemes.github,

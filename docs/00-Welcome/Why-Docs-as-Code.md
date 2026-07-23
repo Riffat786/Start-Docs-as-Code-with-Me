@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Why Docs-as-Code?
 
 ## Learning Objectives
