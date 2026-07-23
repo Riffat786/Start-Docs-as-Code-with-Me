@@ -1,56 +1,71 @@
-# Welcome
+---
+title: Welcome
+sidebar_label: Overview
+sidebar_position: 1
+description: Welcome to the Start Docs-as-Code with Me learning journey.
+---
+
+# 👋 Module 1 · Welcome
 
 Welcome to **Start Docs-as-Code with Me**.
 
-This documentation is a structured learning path that teaches modern documentation practices used by software development teams.
+This course is designed to take you from **beginner to advanced** in modern Docs-as-Code practices. Instead of learning isolated concepts, you'll build a complete documentation project while mastering the tools and workflows used by professional technical writers and documentation engineers.
 
-Unlike traditional documentation guides, this project focuses on learning by doing. Every topic includes practical exercises, real-world examples, and hands-on activities.
+By the end of this course, you will have your own documentation website, understand modern documentation workflows, and build a portfolio that demonstrates real-world Docs-as-Code skills.
 
 ---
 
-## What You Will Learn
+## 🎯 Learning Objectives
+
+After completing this module, you will be able to:
+
+- Understand what Docs-as-Code is.
+- Learn why organizations adopt Docs-as-Code.
+- Understand the overall learning roadmap.
+- Prepare for the rest of the course.
+
+---
+
+## 📚 Lessons
+
+| Lesson | Description |
+|---------|-------------|
+| Learning Roadmap | Overview of the complete learning journey. |
+| What is Docs-as-Code? | Introduction to the Docs-as-Code methodology. |
+| Why Docs-as-Code? | Benefits, challenges, and industry adoption. |
+
+---
+
+## ⏱ Estimated Time
+
+15–20 minutes
+
+---
+
+## ✅ Prerequisites
+
+No prior knowledge is required.
+
+---
+
+## 🛠 Tools Used
+
+- Web browser
+- GitHub (optional)
+
+---
+
+## 🎓 Skills You'll Gain
 
 - Docs-as-Code fundamentals
-- Markdown
-- Git
-- GitHub
-- Documentation workflows
-- Static site generators
-- API documentation
-- Automation
-- Artificial Intelligence
-- Modern documentation architecture
+- Documentation workflow overview
+- Course navigation
 
 ---
 
-## Learning Journey
+## 🚀 Next Module
 
-Each lesson builds on the previous one.
-
-Start here:
-
-1. Learning Roadmap
-2. What is Docs-as-Code?
-3. Why Docs-as-Code?
-4. Environment Setup
-
----
-
-## Estimated Time
-
-Approximately **35–50 hours** of hands-on learning.
-
----
-
-## Who Is This For?
-
-- Technical Writers
-- Software Engineers
-- Product Owners
-- Documentation Specialists
-- DevOps Engineers
-- Students
-- AI Enthusiasts
+Continue to **💻 Module 2 · Environment Setup**.
 
 ---
 
