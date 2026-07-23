@@ -73,11 +73,22 @@ function Feature({title, image, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function WhyCourse(): ReactNode {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+  <div className="container">
+
+    <div className={styles.sectionHeader}>
+      <Heading as="h2">Why This Course?</Heading>
+
+      <p>
+        Learn by building—not just reading. Gain practical experience by
+        creating a real Docs-as-Code portfolio while mastering modern
+        documentation tools and AI-powered workflows.
+      </p>
+    </div>
+
+    <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
