@@ -1,4 +1,9 @@
-# Module 11 – Automation
+---
+title: Automation
+sidebar_label: Overview
+sidebar_position: 1
+---
+# ⚙️ Module 11 – Automation
 
 Learn how automation reduces repetitive tasks and improves documentation workflows. This module introduces Python automation, GitHub Actions, CI/CD, Model Context Protocol (MCP), and AI-powered documentation pipelines.
 

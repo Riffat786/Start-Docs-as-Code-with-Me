@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import WhyCourse from '@site/src/components/homepage/WhyCourse';
+import LearningJourney from '@site/src/components/homepage/LearningJourney';
 import Heading from '@theme/Heading';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -40,6 +41,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <WhyCourse />
+        <LearningJourney />
       </main>
     </Layout>
   );
