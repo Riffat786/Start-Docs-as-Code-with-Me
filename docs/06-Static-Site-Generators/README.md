@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Explore popular static site generators used for modern documentation.
 ---
-
+> 🚧 This module is currently under development.
 # 🌐 Module 7 · Static Site Generators
 
 Static Site Generators (SSGs) transform Markdown files into fast, secure, and searchable documentation websites. They are the backbone of many Docs-as-Code solutions and enable documentation teams to publish professional websites directly from source files.

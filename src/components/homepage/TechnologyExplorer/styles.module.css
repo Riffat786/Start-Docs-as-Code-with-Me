@@ -1,0 +1,79 @@
+.techStack {
+  padding: 6rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.sectionHeader p {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .techStack {
+    padding: 4rem 0;
+  }
+}

@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Learn the complete Docs-as-Code workflow from planning to publishing.
 ---
-
+> 🚧 This module is currently under development.
 # 📚 Module 6 · Docs-as-Code Workflow
 
 Docs-as-Code is more than writing documentation in Markdown—it's a collaborative workflow that applies modern software development practices to documentation. By combining version control, code reviews, automation, and continuous publishing, documentation becomes easier to maintain, review, and deliver.

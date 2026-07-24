@@ -106,52 +106,6 @@ const config: Config = {
     },
   ],
 },
-  footer: {
-  style: 'dark',
-
-  links: [
-    {
-      title: 'Learning',
-      items: [
-        {
-          label: 'Learning Path',
-          to: '/docs/intro',
-        },
-        {
-          label: 'Blog',
-          to: '/blog',
-        },
-      ],
-    },
-
-    {
-      title: 'Project',
-      items: [
-        {
-          label: 'GitHub',
-          href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me',
-        },
-        {
-          label: 'Issues',
-          href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me/issues',
-        },
-      ],
-    },
-
-    {
-      title: 'About',
-      items: [
-        {
-          label: 'About the Course',
-          to: '/docs/intro',
-        },
-      ],
-    },
-  ],
-
-  copyright: `© ${new Date().getFullYear()} Start Docs-as-Code with Me · Designed and maintained by Riffat Wyne. <br>
-  An open-source project platform for Technical Writers and Documentation Teams. Built with Docusaurus.`,
-},
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

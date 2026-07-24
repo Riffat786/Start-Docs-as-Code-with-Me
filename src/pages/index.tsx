@@ -5,6 +5,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import WhyCourse from '@site/src/components/homepage/WhyCourse';
 import LearningJourney from '@site/src/components/homepage/LearningJourney';
+import FeaturedProjects from '@site/src/components/homepage/FeaturedProjects';
+import TechnologyExplorer from '@site/src/components/homepage/TechnologyExplorer';
+import CallToAction from "@site/src/components/homepage/CallToAction";
+import Footer from "@site/src/components/homepage/Footer";
 import Heading from '@theme/Heading';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -42,7 +46,12 @@ export default function Home(): ReactNode {
       <main>
         <WhyCourse />
         <LearningJourney />
+        <FeaturedProjects />
+        <TechnologyExplorer />
+        <CallToAction />
       </main>
+      <Footer />
     </Layout>
   );
 }
+

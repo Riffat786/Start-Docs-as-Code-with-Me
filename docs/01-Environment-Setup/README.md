@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Prepare your development environment for Docs-as-Code.
 ---
-
+> 🚧 This module is currently under development.
 # 💻 Module 2 · Environment Setup
 
 A well-configured environment is the foundation of an efficient Docs-as-Code workflow.

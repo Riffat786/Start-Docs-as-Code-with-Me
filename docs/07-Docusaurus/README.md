@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Build, customize, and publish professional documentation websites with Docusaurus.
 ---
-
+> 🚧 This module is currently under development.
 # 🦖 Module 8 · Docusaurus
 
 Docusaurus is the documentation platform used throughout this course. It combines Markdown, React, and modern web technologies to create fast, scalable, and maintainable documentation websites.
