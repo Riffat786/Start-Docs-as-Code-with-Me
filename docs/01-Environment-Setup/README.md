@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Prepare your development environment for Docs-as-Code.
 ---
 > 🚧 This module is currently under development.
-# 💻 Module 2 · Environment Setup
+# Module 2 · Environment Setup
 
 A well-configured environment is the foundation of an efficient Docs-as-Code workflow.
 
@@ -13,7 +13,7 @@ In this module, you'll install and verify all the tools used throughout the cour
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -28,7 +28,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Lessons
+## Lessons
 
 | Lesson | Description |
 |---------|-------------|
@@ -55,7 +55,7 @@ Complete **Module 1 · Welcome**.
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - Git
 - GitHub
@@ -67,7 +67,7 @@ Complete **Module 1 · Welcome**.
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Development environment setup
 - Tool installation
@@ -75,6 +75,6 @@ Complete **Module 1 · Welcome**.
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **📝 Module 3 · Markdown**.
+Continue to **Module 3 · Markdown**.

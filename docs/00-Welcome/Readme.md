@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Welcome to the Start Docs-as-Code with Me learning journey.
 ---
 
-# 👋 Module 1 · Welcome
+# Module 1 · Welcome
 
 Welcome to **Start Docs-as-Code with Me**.
 
@@ -15,7 +15,7 @@ By the end of this course, you will have your own documentation website, underst
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -26,7 +26,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Lessons
+## Lessons
 
 | Lesson | Description |
 |---------|-------------|
@@ -48,14 +48,14 @@ No prior knowledge is required.
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - Web browser
 - GitHub (optional)
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Docs-as-Code fundamentals
 - Documentation workflow overview
@@ -63,9 +63,9 @@ No prior knowledge is required.
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **💻 Module 2 · Environment Setup**.
+Continue to **Module 2 · Environment Setup**.
 
 ---
 
