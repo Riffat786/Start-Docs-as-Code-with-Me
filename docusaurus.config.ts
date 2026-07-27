@@ -48,6 +48,8 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          postsPerPage: 2,
+          blogSidebarCount: 'ALL',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -88,15 +90,15 @@ const config: Config = {
       label: '🏠 Home',
       position: 'left',
     },
+  
     {
-      type: 'docSidebar',
-      sidebarId: 'learningPath',
-      label: '📚 Learning Path',
+      to: '/insights',
+      label: '📰 Insights & Articles',
       position: 'left',
     },
     {
-      to: '/blog',
-      label: '📰 Blog',
+      href: 'https://riffat786.github.io/portfolio/',
+      label: 'About Me',
       position: 'left',
     },
     {

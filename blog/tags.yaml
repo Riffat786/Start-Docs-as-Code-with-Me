@@ -1,0 +1,84 @@
+linkedin:
+  label: LinkedIn
+  permalink: /linkedin
+  description: LinkedIn tag description
+
+  career:
+  label: Career
+  permalink: /career
+  description: Career development, leadership, and professional growth for technical writers.
+
+technical-writing:
+  label: Technical Writing
+  permalink: /technical-writing
+  description: Technical writing best practices, workflows, and documentation techniques.
+
+docs-as-code:
+  label: Docs-as-Code
+  permalink: /docs-as-code
+  description: Modern documentation workflows using Git, Markdown, and developer tools.
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Artificial Intelligence and its impact on documentation.
+
+ai-documentation:
+  label: AI Documentation
+  permalink: /ai-documentation
+  description: AI-assisted documentation, knowledge systems, and AI-powered content.
+
+ai-automation:
+  label: AI Automation
+  permalink: /ai-automation
+  description: AI agents, automation workflows, and intelligent documentation.
+
+api-documentation:
+  label: API Documentation
+  permalink: /api-documentation
+  description: REST APIs, OpenAPI, Swagger, and developer documentation.
+
+developer-documentation:
+  label: Developer Documentation
+  permalink: /developer-documentation
+  description: Documentation for developers, SDKs, APIs, and technical products.
+
+github:
+  label: GitHub
+  permalink: /github
+  description: GitHub workflows, repositories, pull requests, and collaboration.
+
+git:
+  label: Git
+  permalink: /git
+  description: Version control fundamentals and Git workflows.
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Building documentation websites with Docusaurus.
+
+knowledge-management:
+  label: Knowledge Management
+  permalink: /knowledge-management
+  description: Organizing, structuring, and governing knowledge.
+
+information-architecture:
+  label: Information Architecture
+  permalink: /information-architecture
+  description: Designing information structures that improve discoverability.
+
+content-design:
+  label: Content Design
+  permalink: /content-design
+  description: Structuring content for usability and better user experiences.
+
+learning:
+  label: Learning Journey
+  permalink: /learning
+  description: Personal learning experiences and lessons learned.
+
+case-study:
+  label: Case Study
+  permalink: /case-study
+  description: Real-world documentation and AI implementation projects.
