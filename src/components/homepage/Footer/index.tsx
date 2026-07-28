@@ -45,14 +45,8 @@ export default function Footer(): JSX.Element {
             <h3>Projects</h3>
 
             <ul>
-              <li>
-                <Link  to="https://github.com/Riffat786/AI-Release-Note-Generator"
-                        target="_blank"
-                       rel="noopener noreferrer">
-                  AI Release Note Generator
-                </Link>
-              </li>
-
+             
+              <li>AI Release Note Generator (Coming Soon)</li>
               <li>API Documentation Portal (Coming Soon)</li>
 
               <li>Documentation Portfolio (Coming Soon)</li>
