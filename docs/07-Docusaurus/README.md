@@ -2,10 +2,9 @@
 title: Docusaurus
 sidebar_label: Overview
 sidebar_position: 1
-description: Build, customize, and publish professional documentation websites with Docusaurus.
 ---
 > 🚧 This module is currently under development.
-# 🦖 Module 8 · Docusaurus
+# Module 8 · Docusaurus
 
 Docusaurus is the documentation platform used throughout this course. It combines Markdown, React, and modern web technologies to create fast, scalable, and maintainable documentation websites.
 
@@ -13,7 +12,7 @@ In this module, you'll learn how a Docusaurus project is structured, how to cust
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -26,7 +25,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 | Topic | Description |
 |--------|-------------|
@@ -47,7 +46,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 🏗️ By the End of This Module
+## By the End of This Module
 
 You will have:
 
@@ -59,7 +58,7 @@ You will have:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 90–120 minutes
 
@@ -71,7 +70,7 @@ You will have:
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - Docusaurus
 - Node.js
@@ -81,7 +80,7 @@ You will have:
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Docusaurus configuration
 - Site customization
@@ -91,6 +90,6 @@ You will have:
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **🔌 Module 9 · API Documentation**.
+Continue to **Module 9 · API Documentation**.

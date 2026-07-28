@@ -213,4 +213,4 @@ The website edition includes additional technical context, architecture details,
 
 **Original LinkedIn post**
 
-🔗 [From Learning AI to building rea-world automation for Technical Documentation](https://www.linkedin.com/pulse/from-learning-ai-building-real-world-automation-technical-riffat-wyne-h2c1e/?trackingId=tJwigM3OQj%2BGREx1ooeilA%3D%3D)
+🔗 [From Learning AI to building real-world automation for Technical Documentation](https://www.linkedin.com/pulse/from-learning-ai-building-real-world-automation-technical-riffat-wyne-h2c1e/?trackingId=tJwigM3OQj%2BGREx1ooeilA%3D%3D)

@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Learn how GitHub powers collaboration in Docs-as-Code projects.
 ---
 > 🚧 This module is currently under development.
-# 🐙 Module 5 · GitHub
+# Module 5 · GitHub
 
 GitHub is much more than a place to store code—it's the collaboration platform that enables modern documentation teams to work together. It provides repository hosting, code reviews, issue tracking, project management, automation, and continuous integration.
 
@@ -13,7 +13,7 @@ In this module, you'll learn how GitHub supports the complete Docs-as-Code lifec
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -25,7 +25,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 | Topic | Description |
 |--------|-------------|
@@ -55,7 +55,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - GitHub
 - GitHub Desktop (optional)
@@ -64,7 +64,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Repository management
 - Collaboration workflows
@@ -74,6 +74,6 @@ After completing this module, you will be able to:
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **📚 Module 6 · Docs-as-Code Workflow**.
+Continue to **Module 6 · Docs-as-Code Workflow**.

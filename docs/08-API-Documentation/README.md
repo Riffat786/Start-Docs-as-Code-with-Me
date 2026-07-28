@@ -3,7 +3,7 @@ title: API-Documentation
 sidebar_label: Overview
 sidebar_position: 1
 ---
-# 🔌 Module 9 – API Documentation
+# Module 9 – API Documentation
 
 Learn how APIs work and how Technical Writers create clear, accurate, and developer-friendly API documentation. This module introduces REST APIs, HTTP methods, JSON, OpenAPI, Swagger, Postman, and authentication concepts.
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Learn the complete Docs-as-Code workflow from planning to publishing.
 ---
 > 🚧 This module is currently under development.
-# 📚 Module 6 · Docs-as-Code Workflow
+# Module 6 · Docs-as-Code Workflow
 
 Docs-as-Code is more than writing documentation in Markdown—it's a collaborative workflow that applies modern software development practices to documentation. By combining version control, code reviews, automation, and continuous publishing, documentation becomes easier to maintain, review, and deliver.
 
@@ -13,7 +13,7 @@ In this module, you'll learn how documentation moves through its lifecycle and h
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -26,7 +26,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 | Topic | Description |
 |--------|-------------|
@@ -39,7 +39,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 🏗️ By the End of This Module
+## By the End of This Module
 
 You will have:
 
@@ -58,15 +58,15 @@ You will have:
 
 ## ✅ Prerequisites
 
-- 👋 Module 1 · Welcome
-- 💻 Module 2 · Environment Setup
-- 📝 Module 3 · Markdown
-- 🌿 Module 4 · Git
-- 🐙 Module 5 · GitHub
+- Module 1 · Welcome
+- Module 2 · Environment Setup
+- Module 3 · Markdown
+- Module 4 · Git
+- Module 5 · GitHub
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - Git
 - GitHub
@@ -75,7 +75,7 @@ You will have:
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Documentation workflows
 - Collaboration
@@ -85,6 +85,6 @@ You will have:
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **🌐 Module 7 · Static Site Generators**.
+Continue to **Module 7 · Static Site Generators**.

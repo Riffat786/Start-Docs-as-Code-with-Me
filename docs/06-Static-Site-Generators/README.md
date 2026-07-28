@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Explore popular static site generators used for modern documentation.
 ---
 > 🚧 This module is currently under development.
-# 🌐 Module 7 · Static Site Generators
+# Module 7 · Static Site Generators
 
 Static Site Generators (SSGs) transform Markdown files into fast, secure, and searchable documentation websites. They are the backbone of many Docs-as-Code solutions and enable documentation teams to publish professional websites directly from source files.
 
@@ -13,7 +13,7 @@ In this module, you'll compare popular documentation platforms and understand wh
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -24,7 +24,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 | Topic | Description |
 |--------|-------------|
@@ -37,7 +37,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 🏗️ By the End of This Module
+## By the End of This Module
 
 You will have:
 
@@ -56,11 +56,11 @@ You will have:
 
 ## ✅ Prerequisites
 
-- 📚 Module 6 · Docs-as-Code Workflow
+- Module 6 · Docs-as-Code Workflow
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - MkDocs
 - Docusaurus
@@ -70,7 +70,7 @@ You will have:
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Platform evaluation
 - Documentation architecture
@@ -79,6 +79,6 @@ You will have:
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **🦖 Module 8 · Docusaurus**.
+Continue to **Module 8 · Docusaurus**.

@@ -202,6 +202,13 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    {
+  type: 'category',
+  label: 'Showcase',
+  items: [
+    'showcase/ai-release-note-generator/index',
+      ],
+    },
   ],
 };
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Learn Git version control for Docs-as-Code projects.
 ---
 > 🚧 This module is currently under development.
-# 🌿 Module 4 · Git
+# Module 4 · Git
 
 Git is the world's most widely used version control system and is at the heart of every Docs-as-Code workflow. It allows documentation teams to track changes, collaborate efficiently, and maintain a complete history of every document.
 
@@ -13,7 +13,7 @@ In this module, you'll learn the essential Git concepts and commands used in rea
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -26,7 +26,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 | Topic | Description |
 |--------|-------------|
@@ -51,13 +51,13 @@ After completing this module, you will be able to:
 
 ## ✅ Prerequisites
 
-- 👋 Module 1 · Welcome
-- 💻 Module 2 · Environment Setup
-- 📝 Module 3 · Markdown
+- Module 1 · Welcome
+- Module 2 · Environment Setup
+- Module 3 · Markdown
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - Git
 - Git Bash

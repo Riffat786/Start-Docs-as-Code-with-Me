@@ -24,17 +24,19 @@ const projects = [
     icon: '🤖',
     title: 'AI Release Note Generator',
     description:
-      'Create an AI-powered documentation workflow that transforms Azure DevOps work items into customer-friendly release notes using AI agents and automation.',
-    status: '🚧 In Progress',
+      'Build an AI-powered release note generation workflow that transforms Azure DevOps work items & ServiceNow cases into customer-ready release notes using AI agents, GitHub Actions, and automated documentation workflows.',
+    status: '✅ Completed',
     technologies: [
-      'Claude',
+      'Claude Code',
       'Python',
       'Azure DevOps',
+      'ServiceNow',
       'GitHub Actions',
       'MCP',
+      'Cursor IDE',
     ],
     link: '/docs/AI-For-Technical-Writers',
-    button: 'Coming Soon',
+    button: 'View Case Study',
   },
   {
     icon: '📘',
