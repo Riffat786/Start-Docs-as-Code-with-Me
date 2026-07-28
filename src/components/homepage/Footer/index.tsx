@@ -35,7 +35,7 @@ export default function Footer(): JSX.Element {
               </li>
 
               <li>
-                <Link to="/blog">Articles</Link>
+                <Link to="/insights">Articles</Link>
               </li>
 
             </ul>
