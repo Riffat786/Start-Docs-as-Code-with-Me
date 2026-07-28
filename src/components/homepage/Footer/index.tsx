@@ -38,9 +38,6 @@ export default function Footer(): JSX.Element {
                 <Link to="/blog">Articles</Link>
               </li>
 
-              <li>
-                <Link to="/docs">Documentation</Link>
-              </li>
             </ul>
           </div>
 
@@ -49,7 +46,9 @@ export default function Footer(): JSX.Element {
 
             <ul>
               <li>
-                <Link to="/ai-release-note-generator">
+                <Link  to="https://github.com/Riffat786/AI-Release-Note-Generator"
+                        target="_blank"
+                       rel="noopener noreferrer">
                   AI Release Note Generator
                 </Link>
               </li>
