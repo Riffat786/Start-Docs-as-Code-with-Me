@@ -35,7 +35,7 @@ const projects = [
       'MCP',
       'Cursor IDE',
     ],
-    link: '/docs/AI-For-Technical-Writers',
+    link: '/docs/showcase/ai-release-note-generator',
     button: 'View Case Study',
   },
   {

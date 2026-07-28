@@ -108,5 +108,23 @@ The following diagram shows the overall architecture of the AI Release note gene
 
 ## Demo videos
 
+### Collector Agent 
+
 <video width="100%" controls> <source src={require('./images/demo-video-1.mp4').default} type="video/mp4" /> Your browser does not support the video tag. </video>
 
+### Draft creator Agent 
+
+<video width="100%" controls> <source src={require('./images/demo-video-3.mp4').default} type="video/mp4" /> Your browser does not support the video tag. </video>
+
+> For more demos - view GitHub repo.
+
+---
+## Project Gallery
+
+![Review report](./images/review-report.png)
+
+---
+
+## GitHub Repo - Demo video
+
+<video width="100%" controls> <source src={require('./images/repository.mp4').default} type="video/mp4" /> Your browser does not support the video tag. </video>
