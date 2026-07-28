@@ -11,10 +11,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 1 · Welcome',
-      link: {
-        type: 'doc',
-        id: 'Welcome/README',
-      },
+    
       collapsed: false,
       items: [
         {
@@ -27,10 +24,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 2 · Environment Setup',
-      link: {
-        type: 'doc',
-        id: 'Environment-Setup/README',
-      },
+    
       collapsed: true,
       items: [
         {
@@ -43,10 +37,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 3 · Markdown',
-      link: {
-        type: 'doc',
-        id: 'Markdown/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -59,10 +50,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 4 · Git',
-      link: {
-        type: 'doc',
-        id: 'Git/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -75,10 +63,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 5 · GitHub',
-      link: {
-        type: 'doc',
-        id: 'GitHub/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -91,10 +76,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 6 · Docs-as-Code Workflow',
-      link: {
-        type: 'doc',
-        id: 'Docs-as-Code-Workflow/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -107,10 +89,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 7 · Static Site Generators',
-      link: {
-        type: 'doc',
-        id: 'Static-Site-Generators/README',
-      },
+     
       collapsed: true,
       items: [
         {
@@ -123,10 +102,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 8 · Docusaurus',
-      link: {
-        type: 'doc',
-        id: 'Docusaurus/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -139,10 +115,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 9 · API Documentation',
-      link: {
-        type: 'doc',
-        id: 'API-Documentation/README',
-      },
+     
       collapsed: true,
       items: [
         {
@@ -155,10 +128,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 10 · AI',
-      link: {
-        type: 'doc',
-        id: 'AI/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -171,10 +141,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 11 · Automation',
-      link: {
-        type: 'doc',
-        id: 'Automation/README',
-      },
+     
       collapsed: true,
       items: [
         {
@@ -187,10 +154,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 12 · AI for Technical Writers',
-      link: {
-        type: 'doc',
-        id: 'AI-For-Technical-Writers/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -203,10 +167,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Module 13 · Real-World Projects',
-      link: {
-        type: 'doc',
-        id: 'Real-World-Projects/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -219,10 +180,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '📚 Appendix',
-      link: {
-        type: 'doc',
-        id: 'appendix/README',
-      },
+      
       collapsed: true,
       items: [
         {
@@ -235,10 +193,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '📖 Glossary',
-      link: {
-        type: 'doc',
-        id: 'glossary/README',
-      },
+      
       collapsed: true,
       items: [
         {
