@@ -36,13 +36,13 @@ After completing this module, you will be able to:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 15–20 minutes
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 No prior knowledge is required.
 

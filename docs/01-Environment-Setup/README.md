@@ -43,13 +43,13 @@ After completing this module, you will be able to:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 45–60 minutes
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Complete **Module 1 · Welcome**.
 
