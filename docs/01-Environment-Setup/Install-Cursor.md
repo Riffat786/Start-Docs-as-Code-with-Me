@@ -541,13 +541,13 @@ You now have Cursor installed and ready to use as part of your Docs-as-Code work
 
 ### What is Cursor?
 <details>
-<summary>Show answer</summary>
+<summary></summary>
 Cursor is an AI-powered code editor that can be used to work with project files and assist with development and documentation tasks.
 </details>
 
 ### Where should you download Cursor?
 <details>
-<summary>Show answer</summary>
+<summary></summary>
 Download Cursor from the official Cursor website:
 
 https://cursor.com/download
@@ -555,7 +555,7 @@ https://cursor.com/download
 
 ### Do you need Node.js to install the Cursor desktop application?
 <details>
-<summary>Show answer</summary>
+<summary></summary>
 No.
 
 Node.js is not required just to install the Cursor desktop application.
