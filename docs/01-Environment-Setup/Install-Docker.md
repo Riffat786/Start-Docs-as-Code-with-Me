@@ -613,7 +613,7 @@ You should see the `hello-world` container in the list.
 
 ---
 
-# Step 15 — Check your Docker images
+## Step 15 — Check your Docker images
 
 Run:
 
@@ -638,7 +638,7 @@ The `hello-world` image appears in the list.
 
 ---
 
-# Docker and documentation projects
+## Docker and documentation projects
 
 You have now confirmed that Docker works.
 
@@ -666,7 +666,7 @@ You can then use Docker to build and run that environment.
 
 ---
 
-# Dockerfile
+## Dockerfile
 
 A `Dockerfile` is a text file containing instructions for building a Docker image.
 
@@ -708,16 +708,16 @@ You will work with Dockerfiles in more detail when you need them.
 
 ---
 
-# Common installation problems
+## Common installation problems
 
 <details>
 <summary><strong>1. Docker Desktop does not start</strong></summary>
 
-### Cause
+**Cause**
 
 Docker Desktop may not have started correctly, or your computer may not meet the required virtualization or WSL requirements.
 
-### Solution
+**Solution**
 
 Try the following:
 
@@ -745,11 +745,11 @@ If Docker still does not start, check the current Docker Desktop system requirem
 <details>
 <summary><strong>2. The `docker` command is not recognized</strong></summary>
 
-### Cause
+**Cause**
 
 Docker Desktop may not be installed correctly, or the terminal was opened before Docker was installed.
 
-### Solution
+**Solution**
 
 Try the following:
 
@@ -772,11 +772,11 @@ If the command is still not available, restart Windows and try again.
 <details>
 <summary><strong>3. Docker cannot connect to the Docker daemon</strong></summary>
 
-### Cause
+**Cause**
 
 Docker Desktop is not running.
 
-### Solution
+**Solution**
 
 Start Docker Desktop.
 
@@ -797,11 +797,11 @@ If the command returns Docker environment information, try your original Docker 
 <details>
 <summary><strong>4. WSL is not installed or the WSL version is too old</strong></summary>
 
-### Cause
+**Cause**
 
 Docker Desktop is using the WSL 2 backend, but WSL is missing or does not meet the required version.
 
-### Solution
+**Solution**
 
 Open PowerShell as Administrator.
 
@@ -834,11 +834,11 @@ Docker currently requires WSL 2 version 2.1.5 or later for the WSL 2 backend.
 <details>
 <summary><strong>5. Docker says virtualization is disabled</strong></summary>
 
-### Cause
+**Cause**
 
 Hardware virtualization is disabled in your computer's BIOS or UEFI settings.
 
-### Solution
+**Solution**
 
 First check:
 
@@ -866,7 +866,7 @@ If this is a company-managed computer, contact your IT team before changing BIOS
 
 ---
 
-# Best practices
+## Best practices
 
 When using Docker as part of a documentation workflow:
 
@@ -891,7 +891,7 @@ When using Docker as part of a documentation workflow:
 
 ---
 
-# Key terms
+## Key terms
 
 | Term | Definition |
 | --- | --- |
@@ -908,7 +908,7 @@ When using Docker as part of a documentation workflow:
 
 ---
 
-# Summary
+## Summary
 
 In this lesson, you learned how to:
 
@@ -932,7 +932,7 @@ You now have Docker installed and have successfully run your first container.
 
 ---
 
-# Knowledge check
+## Knowledge check
 
 <details>
 <summary><strong>1. What is Docker?</strong></summary>
@@ -1009,7 +1009,7 @@ Docker is useful when a project needs a consistent or isolated environment. You 
 
 ---
 
-# Practice exercise
+## Practice exercise
 
 Complete the following tasks:
 
@@ -1055,7 +1055,7 @@ docker images
 
 ---
 
-# Optional exercise
+## Optional exercise
 
 If you want to explore Docker a little further, run:
 
@@ -1091,7 +1091,7 @@ The purpose is simply to see that a container can provide a separate environment
 
 ---
 
-# Next lesson
+## Next lesson
 
 **Install Claude Code**
 
