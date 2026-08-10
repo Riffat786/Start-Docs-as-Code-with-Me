@@ -1,153 +1,74 @@
 # Start Docs-as-Code with Me
 
-> A complete step-by-step learning journey to master Docs-as-Code, Git, GitHub, Markdown, API Documentation, Automation, AI, and Modern Technical Writing.
+> A practical, step-by-step learning journey for mastering modern Docs-as-Code, Git, GitHub, Markdown, Docusaurus, API documentation, automation, and AI.
+
+🌐 **[Visit the Learning Website](https://riffat786.github.io/Start-Docs-as-Code-with-Me/)**
 
 ---
 
-## About this Repository
+## About This Repository
 
 Welcome to **Start Docs-as-Code with Me**!
 
-This repository is a practical learning guide designed for technical writers, software engineers, documentation specialists, and anyone interested in modern documentation workflows.
+This repository is a hands-on learning project for technical writers, documentation specialists, developers, and anyone who wants to learn how modern software teams create, manage, review, publish, and automate documentation.
 
-Instead of reading theory alone, you'll build a complete Docs-as-Code environment from scratch while learning the tools and practices used by software teams worldwide.
+Instead of learning Docs-as-Code through theory alone, you will build a documentation project while learning the tools and workflows used in modern software development.
 
-By the end of this project, you will know how to:
+You will work with Markdown, Git, GitHub, Docusaurus, APIs, automation, and AI while gradually building your own documentation portfolio.
 
-- Write documentation in Markdown
-- Use Git and GitHub confidently
-- Collaborate using Pull Requests
-- Build documentation websites using MkDocs Material
-- Automate documentation with GitHub Actions
-- Create API documentation using OpenAPI and Swagger
-- Use AI to improve documentation workflows
-- Build documentation like modern software teams
+---
+
+## What You Will Learn
+
+By completing the learning journey, you will learn how to:
+
+- Write structured documentation using Markdown
+- Use Git for documentation version control
+- Work with GitHub repositories and branches
+- Create and review Pull Requests
+- Follow a Docs-as-Code documentation workflow
+- Build documentation websites with Docusaurus
+- Understand static site generators
+- Document REST APIs and API resources
+- Work with JSON, OpenAPI, Swagger, and Postman
+- Automate documentation workflows with GitHub Actions
+- Use AI tools to support technical writing
+- Explore prompt engineering, AI agents, skills, and MCP
+- Build real-world documentation projects
+- Publish documentation websites using GitHub Pages
 
 ---
 
 ## Learning Path
 
+The course is organised into progressive modules.
+
 ```text
 Welcome
-    ↓
+   ↓
 Environment Setup
-    ↓
+   ↓
 Markdown
-    ↓
+   ↓
 Git
-    ↓
+   ↓
 GitHub
-    ↓
+   ↓
 Docs-as-Code Workflow
-    ↓
+   ↓
 Static Site Generators
-    ↓
+   ↓
+Docusaurus
+   ↓
 API Documentation
-    ↓
+   ↓
+AI
+   ↓
 Automation
-    ↓
-Artificial Intelligence
-    ↓
+   ↓
+AI for Technical Writers
+   ↓
 Real-World Projects
+   ↓
+Appendix & Glossary
 ```
-
----
-
-## Repository Structure
-
-```text
-docs/
-tools/
-templates/
-assets/
-glossary/
-exercises/
-```
-
----
-
-## Prerequisites
-
-No prior Docs-as-Code experience is required.
-
-Basic computer knowledge is recommended.
-
----
-
-## Technologies Covered
-
-- Markdown
-- Git
-- GitHub
-- Visual Studio Code
-- Cursor
-- Claude Code
-- Python
-- Docker
-- Node.js
-- MkDocs Material
-- GitHub Actions
-- OpenAPI
-- Swagger
-- Postman
-- MCP
-- AI Agents
-
----
-
-## Learning Style
-
-Every lesson includes:
-
-- Learning objectives
-- Step-by-step instructions
-- Examples
-- Code snippets
-- Exercises
-- Best practices
-- Troubleshooting
-- Quiz
-- References
-
----
-
-## Build the Documentation Website
-
-This repository uses **MkDocs Material** to generate a professional documentation website.
-
-(Setup instructions will be added in the Environment Setup section.)
-
----
-
-## Contributing
-
-Contributions are welcome. Please read **CONTRIBUTING.md** before submitting changes.
-
----
-
-## License
-
-See **LICENSE.md**.
-
----
-# About me
-### Riffat Wyne — Documentation Mnager - Senior Technical Writer  
-
-I help software teams write documentation their users actually read.
-**What I write:** API references, developer guides, SDK docs, release notes, onboarding tutorials  
-
-**Tools:** VS Code, GitHub, Markdown, OpenAPI/Swagger, Confluence, Notion
-
-**Samples:**
-Documents
-- [API Reference](./api-docs/sample-api.md) 
-- [Getting Started Guide](./product-docs/getting-started.md) 
-
-Innvoations
-- Style Guide
-- Terminiology
-
-**Contact:** [LinkedIn](https://www.linkedin.com/in/riffatwyne/)
-**Visit my website:** [Start Docs-as-code with me]()
-
-![my](/assets/images/workflow.png)
