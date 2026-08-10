@@ -543,6 +543,7 @@ You now have Cursor installed and ready to use as part of your Docs-as-Code work
 ## Knowledge check
 
 ### What is Cursor?
+
 <details>
 <summary><strong>What is Cursor?</strong></summary>
 Cursor is an AI-powered code editor that can be used to work with project files and assist with development and documentation tasks.
