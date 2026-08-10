@@ -4,9 +4,8 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Welcome to the Start Docs-as-Code with Me learning journey.
 ---
-
 # Module 1 · Welcome
-
+![Alt text](/static/img/logo-horizontal.png)
 Welcome to **Start Docs-as-Code with Me**.
 
 This course is designed to take you from **beginner to advanced** in modern Docs-as-Code practices. Instead of learning isolated concepts, you'll build a complete documentation project while mastering the tools and workflows used by professional technical writers and documentation engineers.
