@@ -544,9 +544,8 @@ You now have Cursor installed and ready to use as part of your Docs-as-Code work
 
 ### What is Cursor?
 <details>
-<summary>
+<summary><strong>What is Cursor?</strong></summary>
 Cursor is an AI-powered code editor that can be used to work with project files and assist with development and documentation tasks.
-</summary>
 </details>
 
 ---
@@ -554,11 +553,10 @@ Cursor is an AI-powered code editor that can be used to work with project files 
 ### Where should you download Cursor?
 
 <details>
-<summary>
+<summary><strong>Where should you download Cursor?</strong></summary>
 Download Cursor from the official Cursor website:
 
 https://cursor.com/download
-</summary>
 </details>
 
 ---
@@ -566,40 +564,39 @@ https://cursor.com/download
 ### Do you need Node.js to install the Cursor desktop application?
 
 <details>
-<summary>
+<summary><strong>Do you need Node.js to install the Cursor desktop application?</strong></summary>
 No.
 
 Node.js is not required just to install the Cursor desktop application.
 
 You may need Node.js later when working with specific development tools or documentation projects.
-</summary>
 </details>
 
 ---
 ### Why can Cursor be useful for Technical Writers?
 
 <details>
-<summary>
+<summary><strong>Why can Cursor be useful for Technical Writers?</strong></summary>
 Cursor can help Technical Writers work directly with Markdown files, Git repositories, code examples, configuration files, and other files that make up a Docs-as-Code project.
-</summary>
 </details>
 
 ---
 ### What is the difference between Cursor and Git?
 
 <details>
-<summary>
+<summary><strong>What is the difference between Cursor and Git?</strong></summary>
+
 Cursor is an editor and AI-assisted development tool.
 
 Git is a version control system that tracks changes to files.
-</summary>
+
 </details>
 
 ---
 ### Should you publish AI-generated documentation without reviewing it?
 
 <details>
-<summary>
+<summary><strong>Should you publish AI-generated documentation without reviewing it?</strong></summary>
 No.
 
 Always review AI-generated content for:
@@ -611,7 +608,6 @@ Always review AI-generated content for:
 - Audience
 - Technical correctness
   
-</summary>
 </details>
 
 ---
