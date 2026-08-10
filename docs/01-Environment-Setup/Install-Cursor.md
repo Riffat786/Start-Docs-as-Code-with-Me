@@ -362,8 +362,7 @@ M means the file has been modified.
 **Git** keeps track of the changes.
 
 ---
-
-# Cursor and Git
+## Cursor and Git
 
 Cursor and Git serve different purposes.
 
@@ -399,16 +398,18 @@ Understanding this distinction will become important as you continue through the
 
 --- 
 
-# Common installation problems
+## Common installation problems
+
+### Cursor does not start after installation
 
 <details>
-<summary><strong>1. Cursor does not start after installation</strong></summary>
+<summary><strong>Show answer</strong></summary>
 
-### Cause
+**Cause**
 
 The installation may not have completed correctly.
 
-### Solution
+**Solution**
 
 Try the following:
 
@@ -422,15 +423,15 @@ If Cursor is not listed, download the installer again from the official Cursor w
 </details>
 
 ---
-
+### Windows displays a security warning
 <details>
-<summary><strong>2. Windows displays a security warning</strong></summary>
+<summary><strong>Show answer</strong></summary>
 
-### Cause
+**Cause**
 
 Windows may display a security prompt when you install software downloaded from the internet.
 
-### Solution
+**Solution**
 
 Make sure you downloaded Cursor from the official website.
 
