@@ -7,9 +7,7 @@
 > **Prerequisites:** A Windows 10 or Windows 11 computer with administrator access available if required
 
 ---
-
-
-# Learning objectives
+## Learning objectives
 
 After you complete this lesson, you will be able to:
 
@@ -25,8 +23,7 @@ After you complete this lesson, you will be able to:
 - Fix common installation problems.
 
 ---
-
-# What is Docker?
+## What is Docker?
 
 Docker is a platform that allows applications and their dependencies to run in isolated environments called **containers**.
 
@@ -49,7 +46,7 @@ Instead of installing every dependency directly on your computer, a project can 
 
 ---
 
-# Why use Docker for documentation?
+## Why use Docker for documentation?
 
 Modern documentation projects often behave more like software projects than traditional document repositories.
 
@@ -93,3 +90,54 @@ The same container configuration can then be used by different people or automat
 
 ---
 
+## What is a container?
+
+A container is an isolated environment in which an application can run.
+
+You can think of a container as a small, self-contained workspace for an application.
+
+For example:
+
+```text
+Your Computer
+      │
+      ▼
+Docker Desktop
+      │
+      ▼
+┌─────────────────────┐
+│ Documentation       │
+│ Build Container     │
+│                     │
+│ Node.js             │
+│ Build tools         │
+│ Documentation files │
+└─────────────────────┘
+```
+
+The container uses resources from your computer but keeps the application's environment separate from the rest of your system.
+
+---
+
+## Image and container
+
+You will hear two terms frequently when working with Docker:
+
+| Term | Meaning |
+| --- | --- |
+| Image | A package containing the files and configuration needed to create a container. |
+| Container | A running instance of an image. |
+
+A simple way to remember the difference is:
+
+```text
+Image
+  │
+  │ creates
+  ▼
+Container
+```
+
+You can create multiple containers from the same image.
+
+---
