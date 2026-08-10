@@ -554,9 +554,9 @@ Cursor is an AI-powered code editor that can be used to work with project files 
 
 <details>
 <summary><strong>Where should you download Cursor?</strong></summary>
-Download Cursor from the official Cursor website:
 
-https://cursor.com/download
+Download Cursor from the official Cursor website.
+
 </details>
 
 ---
@@ -564,12 +564,10 @@ https://cursor.com/download
 ### Do you need Node.js to install the Cursor desktop application?
 
 <details>
-<summary><strong>Do you need Node.js to install the Cursor desktop application?</strong></summary>
-No.
+<summary><strong>Do you need Node.js to install Cursor?</strong></summary>
 
-Node.js is not required just to install the Cursor desktop application.
+No. Node.js is not required to install the Cursor desktop application.
 
-You may need Node.js later when working with specific development tools or documentation projects.
 </details>
 
 ---
@@ -577,7 +575,9 @@ You may need Node.js later when working with specific development tools or docum
 
 <details>
 <summary><strong>Why can Cursor be useful for Technical Writers?</strong></summary>
+
 Cursor can help Technical Writers work directly with Markdown files, Git repositories, code examples, configuration files, and other files that make up a Docs-as-Code project.
+
 </details>
 
 ---
@@ -597,9 +597,8 @@ Git is a version control system that tracks changes to files.
 
 <details>
 <summary><strong>Should you publish AI-generated documentation without reviewing it?</strong></summary>
-No.
 
-Always review AI-generated content for:
+No, always review AI-generated content for:
 
 - Accuracy
 - Completeness
@@ -607,9 +606,8 @@ Always review AI-generated content for:
 - Style
 - Audience
 - Technical correctness
-  
-</details>
 
+</details>
 ---
 
 # Practice exercise
