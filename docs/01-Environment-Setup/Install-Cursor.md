@@ -440,15 +440,16 @@ If your organization manages your computer, contact your IT team before continui
 </details>
 
 ---
+### Cursor cannot open my project
 
 <details>
-<summary><strong>3. Cursor cannot open my project</strong></summary>
+<summary><strong>Show answer</strong></summary>
 
-### Cause
+**Cause**
 
 You may have selected the wrong folder.
 
-### Solution
+**Solution**
 
 Open the folder that contains your project files.
 
@@ -460,14 +461,15 @@ C:\Projects\my-documentation-project
 </details>
 
 ---
+### The AI features are not available.
 <details>
-<summary><strong>4. The AI features are not available.</strong></summary>
+<summary><strong>Show answer</strong></summary>
 
-### Cause
+**Cause**
 
 Your account may not be signed in, or the feature may require additional configuration.
 
-### Solution
+**Solution**
 
 Check that:
 
@@ -538,22 +540,31 @@ You now have Cursor installed and ready to use as part of your Docs-as-Code work
 
 ---
 
-# Knowledge check
+## Knowledge check
 
+### What is Cursor?
 <details>
-<summary>What is Cursor?</summary>
+<summary>Show answer</summary>
 Cursor is an AI-powered code editor that can be used to work with project files and assist with development and documentation tasks.
 </details>
 
+---
+
+### Where should you download Cursor?
+
 <details>
-<summary>Where should you download Cursor?</summary>
+<summary>Show answer</summary>
 Download Cursor from the official Cursor website:
 
 https://cursor.com/download
 </details>
 
+---
+
+### Do you need Node.js to install the Cursor desktop application?
+
 <details>
-<summary>Do you need Node.js to install the Cursor desktop application?</summary>
+<summary>Show answer</summary>
 No.
 
 Node.js is not required just to install the Cursor desktop application.
@@ -561,20 +572,29 @@ Node.js is not required just to install the Cursor desktop application.
 You may need Node.js later when working with specific development tools or documentation projects.
 </details>
 
+---
+### Why can Cursor be useful for Technical Writers?
+
 <details>
-<summary>Why can Cursor be useful for Technical Writers?</summary>
+<summary>Show answer</summary>
 Cursor can help Technical Writers work directly with Markdown files, Git repositories, code examples, configuration files, and other files that make up a Docs-as-Code project.
 </details>
 
+---
+### What is the difference between Cursor and Git?
+
 <details>
-<summary>What is the difference between Cursor and Git?</summary>
+<summary>Show answer</summary>
 Cursor is an editor and AI-assisted development tool.
 
 Git is a version control system that tracks changes to files.
 </details>
 
+---
+### Should you publish AI-generated documentation without reviewing it?
+
 <details>
-<summary>Should you publish AI-generated documentation without reviewing it?</summary>
+<summary>Show answer</summary>
 No.
 
 Always review AI-generated content for:
