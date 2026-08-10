@@ -270,7 +270,9 @@ If you find an issue, have a suggestion, or would like to contribute an improvem
 
 ## License
 
-See LICENSE.md for licensing information.
+This project is licensed under the MIT License.
+
+See [LICENSE.md](LICENSE.md) for the full license text.
 
 ---
 
