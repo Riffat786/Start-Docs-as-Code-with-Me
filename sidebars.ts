@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'intro',
-      label: '🏠 Start Here',
+      label: 'Start Here',
     },
 
     {
@@ -179,7 +179,7 @@ const sidebars: SidebarsConfig = {
 
     {
       type: 'category',
-      label: '📚 Appendix',
+      label: 'Appendix',
       
       collapsed: true,
       items: [
@@ -192,7 +192,7 @@ const sidebars: SidebarsConfig = {
 
     {
       type: 'category',
-      label: '📖 Glossary',
+      label: 'Glossary',
       
       collapsed: true,
       items: [
