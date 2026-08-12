@@ -644,7 +644,7 @@ Decide which suggestions are useful and which ones should be ignored.
 
 Verify Your Development Environment
 
-In the next lesson, you will check that the tools installed during the Environment Setup module are working correctly.
+In the other lessons, you will check that the tools installed during the Environment Setup module are working correctly.
 
 You will verify:
 

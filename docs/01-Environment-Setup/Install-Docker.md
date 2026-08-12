@@ -1104,33 +1104,4 @@ The purpose is simply to see that a container can provide a separate environment
 
 ## Next lesson
 
-**Install Claude Code**
-
-In the next lesson, you will install Claude Code and learn how an AI coding assistant can be used from your documentation project.
-
-You will also begin to see how the tools introduced in the Environment Setup module work together:
-
-```text
-Git
-  +
-GitHub
-  +
-VS Code
-  +
-Cursor
-  +
-Node.js
-  +
-Python
-  +
-Docker
-  +
-Claude Code
-       │
-       ▼
-Docs-as-Code Workflow
-```
-
-The goal is not to learn every tool at once.
-
-The goal is to build a working environment that you can use as you progress through the rest of the learning journey.
+In the other lessons, you will install Claude Code and learn how an AI coding assistant can be used from your documentation project.

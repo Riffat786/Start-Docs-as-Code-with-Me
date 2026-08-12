@@ -36,4 +36,17 @@
 | Git configuration | Settings that control how Git behaves.                                        |
 | GitHub            | A platform for hosting Git repositories and collaborating on projects.        |
 | PATH              | An operating system setting that helps the terminal find executable programs. |
+| Visual Studio Code | A source-code editor that can also be used to create and maintain documentation. |
+| VS Code | The common short name for Visual Studio Code. |
+| Editor | The main area where you view and modify files. |
+| Explorer | The VS Code view that displays files and folders in a project. |
+| Integrated Terminal | A terminal built into VS Code. |
+| Extension | An add-on that provides additional functionality in VS Code. |
+| Source Control | The VS Code interface for working with version control systems such as Git. |
+| Command Palette | A VS Code interface that provides access to commands and features. |
+| PATH | An operating system setting that allows command-line applications to be found from a terminal. |
+| Markdown | A lightweight markup language commonly used for documentation. |
+| MDX | Markdown with support for JSX and React components. |
+| Git | A version control system used to track changes to files. |
+| GitHub | A platform for hosting Git repositories and collaborating on projects. |
 

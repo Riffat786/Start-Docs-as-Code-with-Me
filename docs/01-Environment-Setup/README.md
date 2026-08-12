@@ -78,3 +78,29 @@ Complete **Module 1 · Welcome**.
 ## Next Module
 
 Continue to **Module 3 · Markdown**.
+
+You will also begin to see how the tools introduced in the Environment Setup module work together:
+
+```text
+Git
+  +
+GitHub
+  +
+VS Code
+  +
+Cursor
+  +
+Node.js
+  +
+Python
+  +
+Docker
+  +
+Claude Code
+       │
+       ▼
+Docs-as-Code Workflow
+```
+The goal is not to learn every tool at once.
+
+The goal is to build a working environment that you can use as you progress through the rest of the learning journey.

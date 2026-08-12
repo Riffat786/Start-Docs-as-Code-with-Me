@@ -580,8 +580,4 @@ Complete the following tasks:
 
 ---
 
-# Next lesson
-
-**Install Visual Studio Code and Cursor IDE**
-
-In the next lesson, you will learn how to install Visual Studio Code, install Cursor IDE, understand the differences between them, and configure your development environment for working with Claude Code.
+In other lessons, you will learn how to install Visual Studio Code, install Cursor IDE, understand the differences between them, and configure your development environment for working with Claude Code.
