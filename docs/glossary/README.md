@@ -49,4 +49,20 @@
 | MDX | Markdown with support for JSX and React components. |
 | Git | A version control system used to track changes to files. |
 | GitHub | A platform for hosting Git repositories and collaborating on projects. |
-
+| GitHub | A platform for hosting Git repositories and collaborating on projects. |
+| Repository | A project managed by Git. |
+| Remote repository | A repository hosted somewhere other than your local computer, such as GitHub. |
+| Local repository | A Git repository stored on your computer. |
+| Remote | A reference to another Git repository, commonly a GitHub repository. |
+| `origin` | The conventional name for the main remote repository. |
+| Push | Sends local commits to a remote repository. |
+| Pull | Gets changes from a remote repository and updates the local repository. |
+| Clone | Creates a local copy of a remote repository. |
+| Branch | A separate line of development within a repository. |
+| Pull Request | A proposal to merge changes from one branch into another. |
+| Commit | A recorded set of changes in Git. |
+| GitHub Actions | GitHub's automation platform for running workflows in response to repository events. |
+| 2FA | Two-factor authentication, an additional security factor used when signing in. |
+| SSH | A secure protocol that can be used to authenticate Git operations. |
+| HTTPS | A secure web protocol that can be used for Git repository connections. |
+| GitHub Desktop | A graphical application for working with GitHub repositories. |

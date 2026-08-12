@@ -17,3 +17,13 @@
 - [Visual Studio Code command-line interface](https://code.visualstudio.com/docs/configure/command-line)
 - [Source Control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
 - [Getting started with the VS Code terminal](https://code.visualstudio.com/docs/terminal/getting-started)
+
+## GitHub
+
+- [GitHub](https://github.com/)
+- [Create a GitHub account](https://github.com/signup)
+- [GitHub documentation](https://docs.github.com/)
+- [Getting started with your GitHub account](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
+- [Create a new repository](https://github.com/new)
+- [GitHub Desktop](https://desktop.github.com/)
+- [GitHub Desktop documentation](https://docs.github.com/en/desktop)
