@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 const modules = [
   {
     number: 1,
-    icon: '🚀',
+    
     title: 'Welcome',
     description: 'Learn what Docs-as-Code is and how this learning platform is organized.',
     duration: '20 min',
