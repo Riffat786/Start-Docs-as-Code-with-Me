@@ -588,8 +588,9 @@ I want this project to demonstrate a documentation process where:
 
 That is what I mean by **Docs-as-Code** in this learning platform.
 
-:::tip It is not simply:
+:::tip
 
+It is not simply:
 "Write documentation in Markdown."
 
 :::
