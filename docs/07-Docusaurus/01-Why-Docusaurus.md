@@ -1,4 +1,4 @@
-## Why We Chose Docusaurus and Docs-as-Code
+## Why I Chose Docusaurus and Docs-as-Code
 
 When I started building this learning platform, I did not want to create another documentation website just for the sake of demonstrating a static site generator.
 
@@ -588,9 +588,8 @@ I want this project to demonstrate a documentation process where:
 
 That is what I mean by **Docs-as-Code** in this learning platform.
 
-It is not simply:
-
-> [!Tip]
-> "Write documentation in Markdown."
+:::tip It is not simply:
+"Write documentation in Markdown."
+:::
 
 It is a way of bringing documentation into a more structured, collaborative, version-controlled, and repeatable software workflow.
