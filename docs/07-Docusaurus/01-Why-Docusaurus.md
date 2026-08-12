@@ -589,7 +589,9 @@ I want this project to demonstrate a documentation process where:
 That is what I mean by **Docs-as-Code** in this learning platform.
 
 :::tip It is not simply:
+
 "Write documentation in Markdown."
+
 :::
 
 It is a way of bringing documentation into a more structured, collaborative, version-controlled, and repeatable software workflow.
