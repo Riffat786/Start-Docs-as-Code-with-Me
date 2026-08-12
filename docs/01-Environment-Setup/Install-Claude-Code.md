@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ---
 
-# Learning objectives
+## Learning objectives
 
 After you complete this lesson, you will be able to:
 
@@ -26,7 +26,7 @@ After you complete this lesson, you will be able to:
 
 ---
 
-# What is Claude Code?
+## What is Claude Code?
 
 Claude Code is an AI coding assistant that runs inside your terminal.
 
@@ -44,7 +44,7 @@ Claude Code understands the files inside your project. This makes it useful for 
 
 ---
 
-# Why use Claude Code?
+## Why use Claude Code?
 
 Many developers use Claude Code because it can:
 
@@ -64,7 +64,7 @@ Claude Code does **not** replace a developer. You remain responsible for reviewi
 
 ---
 
-# How Claude Code works
+## How Claude Code works
 
 ```text
 Your Computer
@@ -83,7 +83,7 @@ Claude Code works from your local computer. You start it from a terminal window.
 
 ---
 
-# Before you begin
+## Before you begin
 
 You need:
 
@@ -97,7 +97,7 @@ You need:
 
 ---
 
-# Step 1 — Check your operating system
+## Step 1 — Check your operating system
 
 Claude Code supports:
 
@@ -105,7 +105,7 @@ Claude Code supports:
 - macOS
 - Linux
 
-### Windows
+**Windows**
 
 Press:
 
@@ -121,17 +121,17 @@ Select **OK**.
 
 You should see your Windows version.
 
-### Expected result
+**Expected result**
 
 A window displays your Windows version.
 
 ---
 
-# Step 2 — Install Node.js
+## Step 2 — Install Node.js
 
 Claude Code requires Node.js.
 
-## What is Node.js?
+### What is Node.js?
 
 `Node.js` allows JavaScript applications to run on your computer.
 
@@ -151,7 +151,7 @@ https://nodejs.org
 
 ---
 
-## Verify the installation
+### Verify the installation
 
 Open Command Prompt.
 
@@ -179,19 +179,19 @@ Example:
 10.9.3
 ```
 
-### Expected result
+**Expected result**
 
 Both commands return version numbers.
 
 ---
 
-# Step 3 — Install Git
+## Step 3 — Install Git
 
 Git is not required for Claude Code to start, but almost every software project uses Git.
 
 Installing Git now will prevent problems later.
 
-## Download Git
+### Download Git
 
 Go to:
 
@@ -205,7 +205,7 @@ https://git-scm.com
 
 ---
 
-## Verify Git
+### Verify Git
 
 Open Command Prompt.
 
@@ -223,7 +223,7 @@ git version 2.50.1.windows.1
 
 ---
 
-# Step 4 — Create an Anthropic account
+## Step 4 — Create an Anthropic account
 
 Claude Code requires an Anthropic account.
 
@@ -238,11 +238,11 @@ https://console.anthropic.com
 
 ---
 
-# Step 5 — Create an API key
+## Step 5 — Create an API key
 
 Claude Code authenticates by using an API key.
 
-## Create the key
+### Create the key
 
 1. Sign in to the Anthropic Console.
 2. Open **API Keys**.
@@ -265,7 +265,7 @@ sk-ant-api03-xxxxxxxxxxxxxxxx
 
 ---
 
-# Step 6 — Install Claude Code
+## Step 6 — Install Claude Code
 
 Open Command Prompt.
 
@@ -277,13 +277,13 @@ npm install -g @anthropic-ai/claude-code
 
 The installation may take several minutes.
 
-### Expected result
+**Expected result**
 
 The installation completes without errors.
 
 ---
 
-# Step 7 — Verify the installation
+## Step 7 — Verify the installation
 
 Run:
 
@@ -297,13 +297,13 @@ Example
 1.0.x
 ```
 
-### Expected result
+**Expected result**
 
 Claude Code displays its version.
 
 ---
 
-# Step 8 — Start Claude Code
+## Step 8 — Start Claude Code
 
 Open the folder that contains your project.
 
@@ -327,7 +327,7 @@ Follow the on-screen instructions.
 
 ---
 
-# Step 9 — Verify Claude Code
+## Step 9 — Verify Claude Code
 
 Ask a simple question.
 
@@ -341,7 +341,7 @@ Claude Code should begin responding.
 
 ---
 
-# Installation workflow
+### Installation workflow
 
 ```mermaid
 flowchart TD
@@ -365,17 +365,17 @@ F --> G
 
 ---
 
-# Common installation problems
+## Common installation problems
 
-## 1. Problem
+### 1. Problem
 
 `node is not recognized`
 
-### Cause
+**Cause**
 
 Node.js is not installed or PATH is incorrect.
 
-### Solution
+**Solution**
 
 Restart the computer.
 
@@ -386,29 +386,29 @@ If the problem continues:
 
 ---
 
-## 2. Problem
+### 2. Problem
 
 `npm is not recognized`
 
-### Cause
+**Cause**
 
 Node.js installation failed.
 
-### Solution
+**Solution**
 
 Reinstall Node.js.
 
 ---
 
-## 3. Problem
+### 3. Problem
 
 `claude is not recognized`
 
-### Cause
+**Cause**
 
 Claude Code did not install correctly.
 
-### Solution
+**Solution**
 
 Run:
 
@@ -420,15 +420,15 @@ Then restart Command Prompt.
 
 ---
 
-## 3. Problem
+### 3. Problem
 
 Authentication failed
 
-### Cause
+**Cause**
 
 The API key is invalid.
 
-### Solution
+**Solution**
 
 Create a new API key.
 
@@ -436,15 +436,15 @@ Try again.
 
 ---
 
-## 4. Problem
+### 4. Problem
 
 Permission denied
 
-### Cause
+**Cause**
 
 Administrator permissions are required.
 
-### Solution
+**Solution**
 
 Open Command Prompt as Administrator.
 
@@ -452,7 +452,7 @@ Run the installation again.
 
 ---
 
-# Best practices
+## Best practices
 
 - Install the latest LTS version of Node.js.
 - Keep Git updated.
@@ -463,7 +463,7 @@ Run the installation again.
 
 ---
 
-# Key terms
+## Key terms
 
 | Term | Definition |
 |------|------------|
@@ -477,7 +477,7 @@ Run the installation again.
 
 ---
 
-# Summary
+## Summary
 
 In this lesson, you learned how to:
 
