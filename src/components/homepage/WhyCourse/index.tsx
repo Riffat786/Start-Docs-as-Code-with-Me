@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 import LearnIcon from '@site/static/img/homepage/learn-by-building.png';
 import ModernIcon from '@site/static/img/homepage/modern-documentation.png';
 import PortfolioIcon from '@site/static/img/homepage/build-portfolio.png';
+import Link from '@docusaurus/Link';
 
 type FeatureItem = {
   title: string;
