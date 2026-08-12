@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Learn the fundamentals of Markdown for modern Docs-as-Code workflows.
 ---
-> 🚧 This module is currently under development.
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
 # Module 3 · Markdown
 
 Markdown is the foundation of modern Docs-as-Code. It is a lightweight markup language that allows you to create clean, structured documentation using simple, readable syntax. Whether you're writing software documentation, API references, knowledge base articles, or project documentation, Markdown has become the industry standard.

@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Learn how GitHub powers collaboration in Docs-as-Code projects.
 ---
-> 🚧 This module is currently under development.
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
 # Module 5 · GitHub
 
 GitHub is much more than a place to store code—it's the collaboration platform that enables modern documentation teams to work together. It provides repository hosting, code reviews, issue tracking, project management, automation, and continuous integration.

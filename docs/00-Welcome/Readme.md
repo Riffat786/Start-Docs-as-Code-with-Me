@@ -5,7 +5,6 @@ sidebar_position: 1
 description: Welcome to the Start Docs-as-Code with Me learning journey.
 ---
 ![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
-
 # Module 1 · Welcome
 Welcome to **Start Docs-as-Code with Me**.
 

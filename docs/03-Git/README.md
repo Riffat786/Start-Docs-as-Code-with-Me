@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Learn Git version control for Docs-as-Code projects.
 ---
-> 🚧 This module is currently under development.
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
 # Module 4 · Git
 
 Git is the world's most widely used version control system and is at the heart of every Docs-as-Code workflow. It allows documentation teams to track changes, collaborate efficiently, and maintain a complete history of every document.
