@@ -8,14 +8,14 @@ const modules = [
     number: 1,
     
     title: 'Welcome',
-    description: 'Learn what Docs-as-Code is and how this learning platform is organized.',
+    description: 'Learn what Docs-as-Code is and how this learning platform is organized. AI is deliberately part of this learning journey.',
     duration: '20 min',
     level: 'Beginner',
     link: '/docs/Welcome',
   },
   {
     number: 2,
-    icon: '💻',
+    
     title: 'Environment Setup',
     description: 'Install Git, VS Code and configure your development environment.',
     duration: '45 min',
@@ -24,7 +24,7 @@ const modules = [
   },
   {
     number: 3,
-    icon: '📝',
+    
     title: 'Markdown',
     description: 'Master Markdown syntax for writing professional technical documentation.',
     duration: '1 hour',
@@ -33,7 +33,7 @@ const modules = [
   },
   {
     number: 4,
-    icon: '🌿',
+    
     title: 'Git',
     description: 'Learn version control fundamentals including commits, branches and merges.',
     duration: '2 hours',
@@ -42,7 +42,7 @@ const modules = [
   },
   {
     number: 5,
-    icon: '🐙',
+    
     title: 'GitHub',
     description: 'Collaborate using repositories, pull requests and GitHub workflows.',
     duration: '2 hours',
@@ -51,7 +51,7 @@ const modules = [
   },
   {
     number: 6,
-    icon: '📚',
+    
     title: 'Docs-as-Code Workflow',
     description: 'Understand modern documentation workflows used by engineering teams.',
     duration: '2 hours',
@@ -60,7 +60,7 @@ const modules = [
   },
   {
     number: 7,
-    icon: '🌐',
+    
     title: 'Static Site Generators',
     description: 'Compare modern documentation platforms and static site generators.',
     duration: '1.5 hours',
@@ -69,7 +69,7 @@ const modules = [
   },
   {
     number: 8,
-    icon: '🦖',
+    
     title: 'Docusaurus',
     description: 'Build a professional documentation website using Docusaurus.',
     duration: '3 hours',
@@ -78,7 +78,7 @@ const modules = [
   },
   {
     number: 9,
-    icon: '🔌',
+    
     title: 'API Documentation',
     description: 'Learn REST APIs, OpenAPI, Swagger and Postman fundamentals.',
     duration: '5 hours',
@@ -87,7 +87,7 @@ const modules = [
   },
   {
     number: 10,
-    icon: '🤖',
+    
     title: 'Artificial Intelligence',
     description: 'Explore AI, prompt engineering and modern AI assistants.',
     duration: '4 hours',
@@ -96,7 +96,7 @@ const modules = [
   },
   {
     number: 11,
-    icon: '⚙️',
+    
     title: 'Automation',
     description: 'Automate documentation workflows using Python, GitHub Actions and MCP.',
     duration: '5 hours',
@@ -105,7 +105,7 @@ const modules = [
   },
   {
     number: 12,
-    icon: '✍️',
+    
     title: 'AI for Technical Writers',
     description: 'Apply AI throughout the documentation lifecycle and publishing workflow.',
     duration: '5 hours',
@@ -114,7 +114,7 @@ const modules = [
   },
   {
     number: 13,
-    icon: '🚀',
+    
     title: 'Real-World Projects',
     description: 'Build portfolio-ready documentation projects using everything you learned.',
     duration: '6 hours',
@@ -129,7 +129,7 @@ export default function LearningJourney(): JSX.Element {
       <div className="container">
 
         <div className={styles.sectionHeader}>
-          <Heading as="h2">📚 Learning Journey</Heading>
+          <Heading as="h2">Learning Journey</Heading>
 
           <p>
             Master Docs-as-Code through thirteen carefully structured modules.
