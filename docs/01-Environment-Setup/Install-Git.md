@@ -559,18 +559,20 @@ G --> H
 
 ---
 
-### Common installation problems
-<details> <summary><strong>1. Git is not recognized</strong></summary>
-Cause
+# Common installation problems
+
+<details>
+<summary><strong>1. Git is not recognized</strong></summary>
+
+**Cause**
 
 Git may not be installed correctly, or the terminal may not have picked up the updated PATH.
 
-Solution
+**Solution**
 
-- Close PowerShell or Command Prompt.
-- Open a new terminal window.
-  
-Run:
+1. Close PowerShell or Command Prompt.
+2. Open a new terminal window.
+3. Run:
 
 ```bash
 git --version
@@ -578,35 +580,42 @@ git --version
 
 If Git is still not recognized:
 
-- Restart your computer.
-- Try the command again.
-- If the problem continues, reinstall Git.
-  
-</details> <details> <summary><strong>2. Git was installed but the version command does not work</strong></summary>
-Cause
+1. Restart your computer.
+2. Try the command again.
+3. If the problem continues, reinstall Git.
+
+</details>
+
+<details>
+<summary><strong>2. Git was installed but the version command does not work</strong></summary>
+
+**Cause**
 
 The terminal may have been open while Git was being installed.
 
-Solution
+**Solution**
 
-Close the terminal.
-
-Open a new PowerShell or Command Prompt window.
-
-Run:
+1. Close the terminal.
+2. Open a new PowerShell or Command Prompt window.
+3. Run:
 
 ```bash
 git --version
 ```
 
-</details> <details> <summary><strong>3. Git asks for my name and email</strong></summary>
-Cause
+</details>
+
+<details>
+<summary><strong>3. Git asks for my name and email</strong></summary>
+
+**Cause**
 
 Git has not been configured with your identity.
 
-Solution
+**Solution**
 
 Run:
+
 ```bash
 git config --global user.name "Your Name"
 ```
@@ -624,12 +633,16 @@ git config --global user.name
 git config --global user.email
 ```
 
-</details> <details> <summary><strong>4. I entered the wrong name or email address</strong></summary>
-Cause
+</details>
+
+<details>
+<summary><strong>4. I entered the wrong name or email address</strong></summary>
+
+**Cause**
 
 The Git identity was configured incorrectly.
 
-Solution
+**Solution**
 
 Run the configuration command again.
 
@@ -638,11 +651,13 @@ For example:
 ```bash
 git config --global user.name "Correct Name"
 ```
+
 Then:
 
 ```bash
 git config --global user.email "correct@example.com"
 ```
+
 Check the result:
 
 ```bash
@@ -650,12 +665,16 @@ git config --global user.name
 git config --global user.email
 ```
 
-</details> <details> <summary><strong>5. Git installation is blocked by my organisation</strong></summary>
-Cause
+</details>
+
+<details>
+<summary><strong>5. Git installation is blocked by my organisation</strong></summary>
+
+**Cause**
 
 Your computer may be managed by your organisation and may restrict software installation.
 
-Solution
+**Solution**
 
 Contact your IT team.
 
@@ -719,46 +738,71 @@ In this lesson, you learned how to:
 
 You now have a working Git installation and the basic configuration needed for the next lessons.
 
-## Knowledge check
-<details> <summary><strong>1. What is Git?</strong></summary>
+---
+
+# Knowledge check
+
+<details>
+<summary><strong>1. What is Git?</strong></summary>
 
 Git is a version control system that tracks changes to files over time.
 
-</details> <details> <summary><strong>2. What is the difference between Git and GitHub?</strong></summary>
+</details>
+
+<details>
+<summary><strong>2. What is the difference between Git and GitHub?</strong></summary>
 
 Git is the version control system.
 
 GitHub is a platform that hosts Git repositories and provides collaboration features.
 
-</details> <details> <summary><strong>3. Which command checks whether Git is installed?</strong></summary>
+</details>
+
+<details>
+<summary><strong>3. Which command checks whether Git is installed?</strong></summary>
 
 ```bash
 git --version
 ```
 
-</details> <details> <summary><strong>4. Which command sets your Git name?</strong></summary>
+</details>
+
+<details>
+<summary><strong>4. Which command sets your Git name?</strong></summary>
 
 ```bash
 git config --global user.name "Your Name"
 ```
 
-</details> <details> <summary><strong>5. Which command sets your Git email address?</strong></summary>
+</details>
+
+<details>
+<summary><strong>5. Which command sets your Git email address?</strong></summary>
 
 ```bash
 git config --global user.email "you@example.com"
 ```
 
-</details> <details> <summary><strong>6. What does `git init` do?</strong></summary>
+</details>
 
-git init creates a new Git repository in the current folder.
+<details>
+<summary><strong>6. What does <code>git init</code> do?</strong></summary>
 
-</details> <details> <summary><strong>7. What does `git status` show?</strong></summary>
+`git init` creates a new Git repository in the current folder.
 
-git status shows information about the current Git repository, including the current branch and changes in the working tree.
+</details>
 
-</details> <details> <summary><strong>8. Why should you not delete the `.git` folder?</strong></summary>
+<details>
+<summary><strong>7. What does <code>git status</code> show?</strong></summary>
 
-The .git folder contains the information Git uses to manage the repository. Deleting it can remove the repository's Git history and configuration.
+`git status` shows information about the current Git repository, including the current branch and changes in the working tree.
+
+</details>
+
+<details>
+<summary><strong>8. Why should you not delete the <code>.git</code> folder?</strong></summary>
+
+The `.git` folder contains the information Git uses to manage the repository. Deleting it can remove the repository's Git history and configuration.
 
 </details>
 
