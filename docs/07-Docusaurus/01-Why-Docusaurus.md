@@ -414,8 +414,11 @@ This creates a useful chain of evidence.
 
 However, there is an important distinction:
 
->[!CAUTION]
-> **Git and Docusaurus do not automatically make documentation compliant with a particular regulation.**
+:::warning
+
+**Git and Docusaurus do not automatically make documentation compliant with a particular regulation.**
+
+:::
 
 If documentation is used in a regulated environment, the organization must define the required controls.
 
@@ -563,8 +566,12 @@ For example, MkDocs may be a better fit for a Python-focused team. GitBook may b
 The important skill is not memorizing the name of one tool.
 
 The important skill is being able to ask:
->[!IMPORTANT]
-> **What does our documentation workflow need, and which tools support that workflow?**
+
+:::important
+
+**What does our documentation workflow need, and which tools support that workflow?**
+
+:::
 
 ---
 
