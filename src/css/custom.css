@@ -46,7 +46,7 @@
     color: #eceded;
 }
 
-.welcomeLogo {
+.theme-doc-markdown img[alt="Start Docs-as-Code with Me logo"] {
   display: block;
   width: 450px;
   max-width: 100%;
