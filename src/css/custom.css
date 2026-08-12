@@ -45,3 +45,11 @@
 .footer__copyright {
     color: #eceded;
 }
+
+.welcomeLogo {
+  display: block;
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 2rem;
+}
