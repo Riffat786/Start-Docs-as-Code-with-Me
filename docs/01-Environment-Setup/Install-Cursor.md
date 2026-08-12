@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ---
 
-# Learning objectives
+## Learning objectives
 
 After you complete this lesson, you will be able to:
 
@@ -26,7 +26,7 @@ After you complete this lesson, you will be able to:
 
 ---
 
-# What is Cursor?
+## What is Cursor?
 
 Cursor is an AI-powered code editor based on Visual Studio Code.
 
@@ -57,7 +57,7 @@ Cursor is particularly useful for Docs-as-Code because your documentation, sourc
 
 ---
 
-# Why use Cursor for documentation?
+## Why use Cursor for documentation?
 
 If you work with traditional documentation tools, you may be used to editing content in a dedicated authoring application.
 
@@ -91,7 +91,7 @@ Always review AI-generated content before you commit or publish it.
 
 ---
 
-# How Cursor fits into your documentation workflow
+## How Cursor fits into your documentation workflow
 
 A typical Docs-as-Code workflow might look like this:
 
@@ -125,7 +125,7 @@ Git remains responsible for version control, and your team's review and publishi
 
 ---
 
-# Before you begin
+## Before you begin
 
 You need:
 | Requirement          | Required            |
@@ -605,7 +605,7 @@ No, always review AI-generated content for:
 </details>
 ---
 
-# Practice exercise
+## Practice exercise
 
 Complete the following tasks:
 
@@ -640,7 +640,7 @@ Decide which suggestions are useful and which ones should be ignored.
 
 ---
 
-# Next lesson
+## Next lesson
 
 Verify Your Development Environment
 

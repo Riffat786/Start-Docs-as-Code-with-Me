@@ -27,3 +27,13 @@
 | WSL 2 | Windows Subsystem for Linux 2, which provides a Linux environment used by Docker Desktop on Windows. |
 | Registry | A service used to store and distribute container images. |
 | Docker Hub | Docker's public registry for container images. |
+| Git               | A distributed version control system used to track changes to files.          |
+| Repository        | A project managed by Git.                                                     |
+| Commit            | A saved set of changes in a Git repository.                                   |
+| Branch            | A separate line of development within a repository.                           |
+| Working tree      | The files you currently have checked out and are working on.                  |
+| `.git`            | The directory where Git stores repository information.                        |
+| Git configuration | Settings that control how Git behaves.                                        |
+| GitHub            | A platform for hosting Git repositories and collaborating on projects.        |
+| PATH              | An operating system setting that helps the terminal find executable programs. |
+
