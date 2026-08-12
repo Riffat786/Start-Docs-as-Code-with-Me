@@ -84,7 +84,7 @@ export default function WhyCourse(): ReactNode {
       <p>
         Learn by building—not just reading. Gain practical experience by
         creating a real Docs-as-Code portfolio while mastering modern
-        documentation tools and AI-powered workflows.
+        documentation tools and AI-powered workflows. [Why Docs-as-Code and Docusaurus?](/docs/why-docs-as-code) 
       </p>
     </div>
 

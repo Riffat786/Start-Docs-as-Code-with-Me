@@ -1,4 +1,4 @@
-# Why We Chose Docusaurus and Docs-as-Code
+## Why We Chose Docusaurus and Docs-as-Code
 
 When I started building this learning platform, I did not want to create another documentation website just for the sake of demonstrating a static site generator.
 
@@ -10,7 +10,7 @@ This is why the project uses **Docs-as-Code with GitHub as the source of truth a
 
 ---
 
-# Why Docusaurus?
+## Why Docusaurus?
 
 There are many good tools for building documentation websites.
 
@@ -18,7 +18,7 @@ MkDocs, GitBook, Mintlify, Fern, and other platforms all have strengths. The rig
 
 For this project, I chose **Docusaurus** for a few practical reasons.
 
-## 1. It works well with Markdown and Git
+### 1. It works well with Markdown and Git
 
 The source content is Markdown.
 
@@ -39,7 +39,7 @@ The documentation becomes part of the same development workflow used by the engi
 
 ---
 
-## 2. It gives us control over the publishing layer
+### 2. It gives us control over the publishing layer
 
 One of the reasons I did not want to make the documentation platform itself the single source of truth is that publishing needs can change.
 
@@ -90,7 +90,7 @@ If we change the publishing technology later, the underlying content does not ha
 
 ---
 
-# 3. It gives Technical Writers more control
+### 3. It gives Technical Writers more control
 
 Docs-as-Code can initially feel like a developer workflow.
 
@@ -134,7 +134,7 @@ The second workflow gives the team a much clearer record of what happened.
 
 ---
 
-# How Docs-as-Code Fits into the Documentation Lifecycle
+## How Docs-as-Code Fits into the Documentation Lifecycle
 
 Docs-as-Code is not just about writing Markdown.
 
@@ -166,7 +166,7 @@ Let's look at each part.
 
 ---
 
-# 1. Content creation
+### 1. Content creation
 
 The Technical Writer creates or updates content in Markdown.
 
@@ -192,7 +192,7 @@ The important point is that the **source content remains in the repository**.
 
 ---
 
-# 2. Versioning
+### 2. Versioning
 
 Git provides version control.
 
@@ -227,7 +227,7 @@ Git gives us a structured history instead of relying on file names to communicat
 
 ---
 
-# 3. Review
+### 3. Review
 
 Documentation changes can be submitted through a Pull Request.
 
@@ -254,7 +254,7 @@ The review happens against the actual proposed change rather than against a sepa
 
 ---
 
-# 4. Approval
+### 4. Approval
 
 Approval can be built into the GitHub workflow.
 
@@ -276,7 +276,7 @@ Update      Approval
      └──────→ Merge
 ```
 
-The exact approval process depends on the organisation.
+The exact approval process depends on the organization.
 
 For a regulated environment, you would normally need to define who can approve content, what evidence is required, and what controls apply before publication.
 
@@ -284,7 +284,7 @@ The important point is that the **workflow can be defined rather than relying on
 
 ---
 
-# 5. Translation
+### 5. Translation
 
 Localization can also be connected to the source repository.
 
@@ -318,7 +318,7 @@ This reduces the risk of maintaining unrelated copies of the same content.
 
 ---
 
-# 6. Building the documentation
+### 6. Building the documentation
 
 Once approved changes are merged, the documentation can be built automatically.
 
@@ -340,7 +340,7 @@ This means the Writer does not need to manually copy files to a publishing syste
 
 ---
 
-# 7. Publishing
+### 7. Publishing
 
 Docusaurus is the publishing layer for this project.
 
@@ -374,7 +374,7 @@ This gives us a clear separation between **authoring** and **publishing**.
 
 ---
 
-# 8. Traceability and audit history
+### 8. Traceability and audit history
 
 This is one of the areas where Docs-as-Code becomes particularly interesting for documentation teams.
 
@@ -414,9 +414,10 @@ This creates a useful chain of evidence.
 
 However, there is an important distinction:
 
+>[!CAUTION]
 > **Git and Docusaurus do not automatically make documentation compliant with a particular regulation.**
 
-If documentation is used in a regulated environment, the organisation must define the required controls.
+If documentation is used in a regulated environment, the organization must define the required controls.
 
 Depending on the environment, those controls may include:
 
@@ -435,7 +436,7 @@ The tools support the process. **The process and governance determine whether th
 
 ---
 
-# Why this matters for Technical Writers
+## Why this matters for Technical Writers
 
 For many years, documentation has sometimes been treated as the final step in a software release.
 
@@ -486,7 +487,7 @@ The second model gives Technical Writers more visibility into the change and mak
 
 ---
 
-# What We Are Demonstrating in This Project
+## What We Are Demonstrating in This Project
 
 This learning platform is itself an example of the workflow it teaches.
 
@@ -540,7 +541,7 @@ That is the approach I want this learning platform to demonstrate.
 
 ---
 
-# A Note About Choosing Tools
+## A Note About Choosing Tools
 
 There is no single "best" Docs-as-Code tool.
 
@@ -555,19 +556,19 @@ Docusaurus is a good fit for this project because it gives us:
 * Integration with modern development workflows.
 * The ability to extend the site when we need something beyond standard documentation pages.
 
-Another organisation may make a different choice.
+Another organization may make a different choice.
 
-For example, MkDocs may be a better fit for a Python-focused team. GitBook may be preferable for a team that wants a managed documentation platform. Another organisation may choose a commercial knowledge base or a different static site generator.
+For example, MkDocs may be a better fit for a Python-focused team. GitBook may be preferable for a team that wants a managed documentation platform. Another organization may choose a commercial knowledge base or a different static site generator.
 
-The important skill is not memorising the name of one tool.
+The important skill is not memorizing the name of one tool.
 
 The important skill is being able to ask:
-
-**What does our documentation workflow need, and which tools support that workflow?**
+>[!IMPORTANT]
+> **What does our documentation workflow need, and which tools support that workflow?**
 
 ---
 
-# The Principle Behind This Project
+## The Principle Behind This Project
 
 The technology will change.
 
@@ -589,6 +590,7 @@ That is what I mean by **Docs-as-Code** in this learning platform.
 
 It is not simply:
 
+> [!Tip]
 > "Write documentation in Markdown."
 
 It is a way of bringing documentation into a more structured, collaborative, version-controlled, and repeatable software workflow.
