@@ -82,11 +82,15 @@ Documentation Build
 
 The same container configuration can then be used by different people or automated systems.
 
-> **Documentation Manager Tip**
->
-> You do not need to become a Docker expert to work effectively with Docs-as-Code.
->
-> Start by understanding what Docker does and how to use an existing container. You can learn the more advanced concepts when your documentation projects require them.
+:::tip
+
+**Documentation Manager Tip**
+
+You do not need to become a Docker expert to work effectively with Docs-as-Code.
+
+Start by understanding what Docker does and how to use an existing container. You can learn the more advanced concepts when your documentation projects require them.
+
+:::
 
 ---
 
@@ -198,16 +202,19 @@ You need:
 
 Docker Desktop currently supports Windows 10 64-bit version 22H2 (build 19045) for supported Enterprise, Pro, or Education editions, and Windows 11 64-bit version 23H2 (build 22631) or later for those editions. Docker also requires WSL 2 version 2.1.5 or later when using the WSL 2 backend, along with a 64-bit processor supporting SLAT, at least 8 GB RAM, and hardware virtualization enabled.
 
+:::info
 
 Docker recommends the **per-user installation** for most Windows users. This installation mode does not normally require administrator privileges to install or update Docker Desktop. Some system-level operations can still require administrator access.
 
-> **Important**
->
-> Docker Desktop licensing depends on how it is used.
->
-> Docker states that Docker Desktop is free for personal use, education, non-commercial open source projects, and small businesses that meet its stated requirements. Larger organizations and some commercial or government use cases require a paid subscription.
->
-> If you are installing Docker on a company computer, check your organization's software licensing and security policies before you continue.
+:::important
+
+Docker Desktop licensing depends on how it is used.
+
+Docker states that Docker Desktop is free for personal use, education, non-commercial open source projects, and small businesses that meet its stated requirements. Larger organizations and some commercial or government use cases require a paid subscription.
+
+If you are installing Docker on a company computer, check your organization's software licensing and security policies before you continue.
+
+:::
 
 ---
 
@@ -230,7 +237,7 @@ Select **OK**.
 
 Windows displays your version and build number.
 
-### Expected result
+**Expected result**
 
 You can see your Windows edition, version, and build number.
 
@@ -252,7 +259,7 @@ Look for:
 
 You should see information indicating that your system is 64-bit.
 
-### Expected result
+**Expected result**
 
 Your computer is using a supported 64-bit architecture.
 
@@ -271,15 +278,17 @@ To check your memory:
 
 Check the amount of installed memory.
 
-### Expected result
+**Expected result**
 
 Your computer has at least 8 GB of RAM.
 
-> **Note**
->
-> Docker can use significant system resources when building images or running containers.
->
-> If your computer has limited memory, you may notice that other applications become slower while Docker is running.
+:::note
+
+Docker can use significant system resources when building images or running containers.
+
+If your computer has limited memory, you may notice that other applications become slower while Docker is running.
+
+:::
 
 ---
 
@@ -301,17 +310,19 @@ You should see:
 Virtualization: Enabled
 ```
 
-### Expected result
+**Expected result**
 
 Hardware virtualization is enabled.
 
 If it says **Disabled**, you may need to enable virtualization in your computer's BIOS or UEFI settings.
 
-> **Warning**
->
-> BIOS and UEFI settings vary between computer manufacturers.
->
-> If this is a company-managed computer, contact your IT team before changing virtualization settings.
+:::warning
+
+BIOS and UEFI settings vary between computer manufacturers.
+
+If this is a company-managed computer, contact your IT team before changing virtualization settings.
+
+:::
 
 ---
 
@@ -329,7 +340,7 @@ Run:
 wsl --version
 ```
 
-### Expected result
+**Expected result**
 
 You should see WSL version information.
 
@@ -408,7 +419,7 @@ After the download finishes:
 5. Continue with the installation.
 6. Restart your computer if Windows asks you to.
 
-Docker's current Windows installer supports a per-user installation mode, which is recommended for most users. The installer can also be configured for an all-users installation when required. 
+Docker's current Windows installer supports a per-user installation mode, which is recommended for most users. The installer can also be configured for an all-users installation when required.
 
 ### Expected result
 
@@ -436,7 +447,7 @@ Read the information and select **Accept** if you agree to the terms.
 
 Docker Desktop will not run until the agreement is accepted. 
 
-### Expected result
+**Expected result**
 
 The Docker Desktop application opens.
 
@@ -452,15 +463,17 @@ Docker should indicate that it is running.
 
 You may also see the Docker whale icon in the Windows notification area.
 
-### Expected result
+**Expected result**
 
 Docker Desktop is running without an error message.
 
-> **Note**
->
-> The Docker Desktop interface can change between releases.
->
-> Do not worry if your screen looks slightly different from the examples in this lesson. Look for the same basic information: Docker Desktop is running and ready to use.
+:::note
+
+The Docker Desktop interface can change between releases.
+
+Do not worry if your screen looks slightly different from the examples in this lesson. Look for the same basic information: Docker Desktop is running and ready to use.
+
+:::
 
 ---
 
@@ -474,7 +487,7 @@ Run:
 docker --version
 ```
 
-### Expected result
+**Expected result**
 
 Docker returns a version number.
 
@@ -508,7 +521,7 @@ You may see information about:
 - Memory
 - Docker Engine
 
-### Expected result
+**Expected result**
 
 Docker returns information about the Docker environment without a connection error.
 
@@ -530,7 +543,7 @@ Docker checks whether the `hello-world` image is available locally.
 
 If it is not available, Docker downloads the image and creates a container from it.
 
-### Expected result
+**Expected result**
 
 You see a message explaining that Docker is working correctly.
 
@@ -548,7 +561,7 @@ Congratulations. You have run your first Docker container.
 
 ---
 
-# What happened when you ran the command?
+## What happened when you ran the command?
 
 You ran:
 
@@ -607,7 +620,7 @@ To see containers that have stopped, run:
 docker ps -a
 ```
 
-### Expected result
+**Expected result**
 
 You should see the `hello-world` container in the list.
 
@@ -632,7 +645,7 @@ hello-world   latest    xxxxxxxxxxxx   ...
 
 The exact values will be different.
 
-### Expected result
+**Expected result**
 
 The `hello-world` image appears in the list.
 
