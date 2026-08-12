@@ -23,7 +23,7 @@ export default function Hero(): JSX.Element {
           className="button button--primary button--lg"
           to="/docs/Welcome"
         >
-          🚀 Start Learning
+          Start Learning
         </Link>
 
       </div>

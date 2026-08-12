@@ -5,27 +5,27 @@ import styles from './styles.module.css';
 const categories = [
   {
     title: 'Documentation',
-    icon: '📄',
+    
     tools: ['Markdown', 'Docusaurus', 'GitHub Pages'],
   },
   {
     title: 'Version Control',
-    icon: '🔀',
+    
     tools: ['Git', 'GitHub', 'Pull Requests'],
   },
   {
     title: 'Development',
-    icon: '💻',
+    
     tools: ['VS Code', 'React', 'Node.js'],
   },
   {
     title: 'API Documentation',
-    icon: '📘',
+    
     tools: ['REST APIs', 'OpenAPI', 'Swagger', 'Postman'],
   },
   {
     title: 'AI',
-    icon: '🤖',
+    
     tools: [
       'Claude',
       'ChatGPT',
@@ -35,7 +35,7 @@ const categories = [
   },
   {
     title: 'Automation',
-    icon: '⚙️',
+    
     tools: [
       'Python',
       'GitHub Actions',
@@ -50,7 +50,7 @@ export default function TechnologyStack(): JSX.Element {
     <section className={styles.techStack}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <Heading as="h2">🛠 Technology Stack</Heading>
+          <Heading as="h2">Technology Stack</Heading>
 
           <p>
             Learn the modern tools and technologies used by technical writers,

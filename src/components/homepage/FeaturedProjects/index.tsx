@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 const projects = [
   {
-    icon: '🌐',
+    
     title: 'Start Docs-as-Code with Me',
     description:
       'Build the documentation website you are using right now. Throughout this course, you will enhance it into a professional Docs-as-Code learning platform and publish it using GitHub Pages.',
@@ -21,7 +21,7 @@ const projects = [
     button: 'View Learning Path',
   },
   {
-    icon: '🤖',
+    
     title: 'AI Release Note Generator',
     description:
       'Build an AI-powered release note generation workflow that transforms Azure DevOps work items & ServiceNow cases into customer-ready release notes using AI agents, GitHub Actions, and automated documentation workflows.',
@@ -39,7 +39,7 @@ const projects = [
     button: 'View Case Study',
   },
   {
-    icon: '📘',
+    
     title: 'API Documentation Portal',
     description:
       'Build a developer portal featuring REST APIs, OpenAPI specifications, Swagger UI, authentication, and Postman collections.',
@@ -55,7 +55,7 @@ const projects = [
     button: 'Coming Soon',
   },
   {
-    icon: '💼',
+    
     title: 'Professional Documentation Portfolio',
     description:
       'Combine everything you learn into a polished portfolio showcasing Docs-as-Code, AI, API documentation, automation, and real-world documentation projects.',
@@ -77,7 +77,7 @@ export default function FeaturedProjects(): JSX.Element {
       <div className="container">
 
         <div className={styles.sectionHeader}>
-          <Heading as="h2">🛠 What You'll Build</Heading>
+          <Heading as="h2">What You'll Build</Heading>
 
           <p>
             Apply your knowledge through practical, real-world projects that
