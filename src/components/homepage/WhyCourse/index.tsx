@@ -14,7 +14,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '📚 Learn by Building',
+    title: 'Learn by Building',
     image: LearnIcon,
     description: (
       <>
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '⚙️ Modern Documentation',
+    title: 'Modern Documentation',
     image: ModernIcon,
     description: (
       <>
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '🚀 Build Your Portfolio',
+    title: 'Build Your Portfolio',
     image: PortfolioIcon,
     description: (
       <>
