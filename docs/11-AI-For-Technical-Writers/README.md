@@ -3,8 +3,8 @@ title: AI for Technical Writers
 sidebar_label: Overview
 sidebar_position: 1
 ---
-> 🚧 This module is currently under development.
-# ✍️ Module 12 – AI for Technical Writers
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
+# Module 12 – AI for Technical Writers
 
 Discover how AI enhances every stage of the documentation lifecycle—from planning and content creation to review, localization, and publishing. This module focuses on practical AI workflows specifically for Technical Writers.
 

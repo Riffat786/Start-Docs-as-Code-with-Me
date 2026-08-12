@@ -39,13 +39,13 @@ After completing this module, you will be able to:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 45–60 minutes
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - Module 1 · Welcome
 - Module 2 · Environment Setup
@@ -82,4 +82,4 @@ You will have:
 
 ## Next Module
 
-Continue to **🌿 Module 4 · Git**.
+Continue to **Module 4 · Git**.

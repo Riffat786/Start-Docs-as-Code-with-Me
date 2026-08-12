@@ -3,7 +3,7 @@ title: AI
 sidebar_label: Overview
 sidebar_position: 1
 ---
-> 🚧 This module is currently under development.
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
 # Module 10 – AI
 
 Artificial Intelligence is transforming technical communication. In this module, you'll learn the fundamentals of AI, Large Language Models (LLMs), prompt engineering, and how modern AI assistants improve documentation workflows.

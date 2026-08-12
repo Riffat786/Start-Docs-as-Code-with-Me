@@ -43,13 +43,13 @@ After completing this module, you will be able to:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 60–90 minutes
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - Module 1 · Welcome
 - Module 2 · Environment Setup
@@ -66,7 +66,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 🎓 Skills You'll Gain
+## Skills You'll Gain
 
 - Version control
 - Branching strategy
@@ -75,7 +75,7 @@ After completing this module, you will be able to:
 - Git command-line basics
 
 ---
-## 🏗️ By the End of This Module
+## By the End of This Module
 
 You will have:
 
@@ -87,6 +87,6 @@ You will have:
 
 ---
 
-## 🚀 Next Module
+## Next Module
 
-Continue to **🐙 Module 5 · GitHub**.
+Continue to **Module 5 · GitHub**.

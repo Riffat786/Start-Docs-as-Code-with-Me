@@ -46,12 +46,12 @@ After completing this module, you will be able to:
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
-- 👋 Module 1 · Welcome
-- 💻 Module 2 · Environment Setup
-- 📝 Module 3 · Markdown
-- 🌿 Module 4 · Git
+- Module 1 · Welcome
+- Module 2 · Environment Setup
+- Module 3 · Markdown
+- Module 4 · Git
 
 ---
 

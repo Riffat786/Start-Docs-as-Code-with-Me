@@ -56,7 +56,7 @@ You will have:
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - Module 1 · Welcome
 - Module 2 · Environment Setup
