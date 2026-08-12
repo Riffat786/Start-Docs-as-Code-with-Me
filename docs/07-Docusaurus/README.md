@@ -3,12 +3,7 @@ title: Docusaurus
 sidebar_label: Overview
 sidebar_position: 1
 ---
-<img
-  src="/img/logo-horizontal.png"
-  alt="Start Docs-as-Code with Me logo"
-  width="400"
-  style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
-/>
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
 # Module 8 · Docusaurus
 
 Docusaurus is the documentation platform used throughout this course. It combines Markdown, React, and modern web technologies to create fast, scalable, and maintainable documentation websites.

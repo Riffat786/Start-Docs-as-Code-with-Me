@@ -382,7 +382,7 @@ After restarting, open PowerShell and run:
 wsl --version
 ```
 
-### Expected result
+**Expected result**
 
 WSL displays its version information.
 
@@ -421,7 +421,7 @@ After the download finishes:
 
 Docker's current Windows installer supports a per-user installation mode, which is recommended for most users. The installer can also be configured for an all-users installation when required.
 
-### Expected result
+**Expected result**
 
 The Docker Desktop installation completes successfully.
 
@@ -559,9 +559,7 @@ The important part is that Docker successfully:
 
 Congratulations. You have run your first Docker container.
 
----
-
-## What happened when you ran the command?
+**What happened when you ran the command?**
 
 You ran:
 
