@@ -756,28 +756,18 @@ Each tool has a different role.
 ```mermaid
 flowchart TD
 
-A[Check whether Node.js is installed]
-B[Check Node.js version]
-C[Download Node.js LTS]
-D[Install Node.js]
-E[Restart terminal]
-F[Verify Node.js]
-G[Verify npm]
-H[Test Node.js]
-I[Check project requirements]
-J[Install project dependencies]
-K[Ready for documentation tools]
+A[Check Node.js] --> B{Already installed?}
 
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
-F --> G
-G --> H
-H --> I
-I --> J
-J --> K
+B -->|Yes| C[Check Node.js version]
+B -->|No| D[Download Node.js LTS]
+
+D --> E[Install Node.js]
+E --> F[Restart terminal]
+F --> C
+
+C --> G[Check npm]
+G --> H[Test Node.js]
+H --> I[Ready for documentation tools]
 ```
 
 ---

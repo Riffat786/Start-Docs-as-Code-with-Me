@@ -1,4 +1,8 @@
-## Glossary Terms
+---
+title: Glossary Terms
+sidebar_label: Glossary Terms
+sidebar_position: 2
+---
 
 | Term         | Definition                                                                               |
 | ------------ | ---------------------------------------------------------------------------------------- |
