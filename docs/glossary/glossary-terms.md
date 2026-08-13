@@ -105,3 +105,13 @@ sidebar_position: 2
 | Runtime | Software that provides the environment required to execute a program. |
 | CI/CD | Automated processes used to build, test, and deliver software or documentation changes. |
 | Troubleshooting | The process of identifying and resolving a problem. |
+| Markdown | A lightweight text-based format used to structure and format content. |
+| Markdown source | The Markdown text that a writer edits. |
+| Rendered content | The formatted result produced when Markdown is processed by a publishing tool. |
+| Heading | A piece of text used to organize the structure of a document. |
+| Paragraph | A group of sentences that presents a related idea. |
+| Blockquote | A Markdown element used to visually distinguish quoted or highlighted content. |
+| Bulleted list | A list used when the order of items does not matter. |
+| Numbered list | A list used when items need to be followed in a specific order. |
+| Horizontal rule | A visual separator created with Markdown syntax. |
+| Docs-as-Code | A documentation approach that uses software development tools and workflows to create, manage, review, and publish documentation. |
