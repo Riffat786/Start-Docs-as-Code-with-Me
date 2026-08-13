@@ -1080,17 +1080,11 @@ Create a danger callout explaining that a destructive command should be checked 
 
 Then add a short procedure containing one code block inside a callout.
 
-For example:
+:::important
 
+Always run the local documentation site before committing a major change.
 
 :::
-Run the local documentation site before committing a major change.
-
-```bash
-npm run start
-```
-:::
-
 
 Open the file in your Docusaurus site.
 
