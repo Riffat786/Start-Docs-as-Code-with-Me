@@ -1510,7 +1510,7 @@ That is one of the central ideas behind Docs-as-Code.
 
 ---
 
-# Key terms
+## Key terms
 
 | Term | Definition |
 | --- | --- |
@@ -1731,7 +1731,7 @@ When you finish, you should have a working GitHub account and understand how you
 
 ---
 
-# Next lesson
+## Next lesson
 
 **Docs-as-Code Workflow**
 
@@ -1750,4 +1750,3 @@ You will learn how documentation moves from source files through editing, versio
 - [Create a new repository](https://github.com/new)
 - [GitHub Desktop](https://desktop.github.com/)
 - [GitHub Desktop documentation](https://docs.github.com/en/desktop)
-
