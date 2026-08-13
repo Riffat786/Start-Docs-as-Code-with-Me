@@ -124,3 +124,11 @@ sidebar_position: 2
 | Terminology | The words and terms used to describe a product, feature, process, or concept. |
 | MDX | A format that extends Markdown with JSX and additional capabilities. |
 | Review | The process of checking documentation for quality, accuracy, consistency, and completeness. |
+| Callout | A visually highlighted section used to draw attention to specific information. |
+| Admonition | A Docusaurus feature used to create visually distinct blocks such as notes, tips, and warnings. |
+| Note | A callout used to provide additional information or context. |
+| Tip | A callout used to provide useful advice or a recommended practice. |
+| Important | A callout used when information requires particular attention. |
+| Warning | A callout used to identify a possible problem or risk. |
+| Danger | A callout used to identify a serious or potentially destructive action. |
+| Rendered content | The formatted documentation produced from the source Markdown. |
