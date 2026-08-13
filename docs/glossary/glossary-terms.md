@@ -115,3 +115,12 @@ sidebar_position: 2
 | Numbered list | A list used when items need to be followed in a specific order. |
 | Horizontal rule | A visual separator created with Markdown syntax. |
 | Docs-as-Code | A documentation approach that uses software development tools and workflows to create, manage, review, and publish documentation. |
+| Accessibility | Designing content so that people with different abilities can use and understand it. |
+| Consistency | Using the same terminology, structure, and conventions throughout a documentation set. |
+| Maintainability | How easily documentation can be updated and kept accurate over time. |
+| Source of truth | The authoritative location where information should be maintained. |
+| Procedure | A set of instructions that helps a reader complete a task. |
+| Rendered content | The formatted documentation produced from the source Markdown. |
+| Terminology | The words and terms used to describe a product, feature, process, or concept. |
+| MDX | A format that extends Markdown with JSX and additional capabilities. |
+| Review | The process of checking documentation for quality, accuracy, consistency, and completeness. |

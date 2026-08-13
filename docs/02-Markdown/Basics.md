@@ -1,7 +1,7 @@
 ---
 title: Markdown Basics
 sidebar_label: Markdown Basics
-sidebar_position: 1
+sidebar_position: 2
 description: Learn the Markdown syntax used to create clear and maintainable technical documentation.
 ---
 
