@@ -546,25 +546,27 @@ If you are using Docusaurus, also check the generated documentation site after s
 
 ## Step 15 — Verify Docusaurus
 
-If your Docusaurus project is already configured, open a terminal in the project folder.
+If you already have a Docusaurus project configured, you can verify it now.
 
-Install dependencies if required:
+> **Don't have a Docusaurus project yet?**
+>
+> That's OK.
+>
+> Docusaurus is introduced later in this learning journey. You do **not** need a Docusaurus project to complete the Environment Setup module.
+>
+> We will build and configure the Docusaurus documentation site in **Module 7 — Docusaurus**.
+>
+> For now, focus on making sure the development tools in this module are installed and working.
+
+### If you already have a Docusaurus project
+
+Open a terminal in your Docusaurus project folder.
+
+Run:
 
 ```bash
 npm install
 ```
-
-Then start the development server:
-
-```bash
-npm run start
-```
-
-Docusaurus should start the local development server.
-
-The terminal normally displays a local address.
-
-Open that address in your browser.
 
 **Expected result**
 
