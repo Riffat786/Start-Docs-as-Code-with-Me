@@ -1,3 +1,8 @@
+---
+title: Install Docker Desktop
+sidebar_label: Install Docker Desktop
+sidebar_position: 8
+---
 # Install Docker Desktop
 
 > **Lesson level:** Beginner

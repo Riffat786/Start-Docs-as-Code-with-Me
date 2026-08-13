@@ -683,7 +683,7 @@ Use this checklist to record your results.
 | Claude Code | `claude --version` | ☐ Passed |
 | GitHub | Sign in and open repository | ☐ Passed |
 | Documentation project | Open project folder | ☐ Passed |
-| Docusaurus | `npm run start` | ☐ Passed |
+| Docusaurus | `npm run start` | ☐ Passed / Not configured yet |
 | Git repository | `git status` | ☐ Passed |
 
 ---
