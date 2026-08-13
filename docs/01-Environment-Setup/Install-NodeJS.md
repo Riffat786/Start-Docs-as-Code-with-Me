@@ -777,11 +777,11 @@ H --> I[Ready for documentation tools]
 <details>
 <summary><strong>1. Node.js is not recognized</strong></summary>
 
-### Cause
+**Cause**
 
 Node.js may not be installed correctly, or the terminal may not have picked up the updated PATH.
 
-### Solution
+**Solution**
 
 1. Close PowerShell or Command Prompt.
 2. Open a new terminal window.

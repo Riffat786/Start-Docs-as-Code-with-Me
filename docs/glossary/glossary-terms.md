@@ -86,3 +86,22 @@ sidebar_position: 2
 | Docusaurus | A documentation website framework that uses the Node.js ecosystem. |
 | npm install | An npm command used to install project dependencies. |
 | npm run | An npm command used to run scripts defined by a project. |
+| Python | A programming language used for automation, software development, data processing, and many other tasks. |
+| Python interpreter | The software that reads and executes Python code. |
+| pip | The package installer used to install Python packages. |
+| Package | Reusable software that provides additional functionality for Python projects. |
+| PATH | An operating system setting that tells Windows where to find executable programs. |
+| Python script | A file containing Python code that can be executed by the Python interpreter. |
+| Virtual environment | An isolated Python environment used to manage project-specific packages and dependencies. |
+| Terminal | A text-based interface used to run commands and programs. |
+| PowerShell | A Windows command-line shell used to run commands and scripts. |
+| Verification | The process of checking that a tool or system works as expected. |
+| Terminal | A text-based interface used to run commands. |
+| PATH | An operating system setting that allows commands to find executable programs. |
+| Git repository | A folder managed by Git that contains files and their version history. |
+| Dependency | Software or a package that another application or project requires. |
+| Build | The process of generating the output required to publish or run a project. |
+| Docusaurus | A framework used to build documentation websites from content such as Markdown and React components. |
+| Runtime | Software that provides the environment required to execute a program. |
+| CI/CD | Automated processes used to build, test, and deliver software or documentation changes. |
+| Troubleshooting | The process of identifying and resolving a problem. |
