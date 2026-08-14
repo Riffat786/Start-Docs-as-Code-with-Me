@@ -132,3 +132,15 @@ sidebar_position: 2
 | Warning | A callout used to identify a possible problem or risk. |
 | Danger | A callout used to identify a serious or potentially destructive action. |
 | Rendered content | The formatted documentation produced from the source Markdown. |
+| Term                | Definition                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------- |
+| Inline code         | A short technical value displayed within normal text.                                       |
+| Code block          | A separate block used to display commands, code, configuration, or other technical content. |
+| Language identifier | The value after the opening code fence that identifies the language used in the code block. |
+| Code fence          | The three backticks used to open and close a Markdown code block.                           |
+| Command             | An instruction entered into a terminal or command-line interface.                           |
+| Placeholder         | Example text that the reader replaces with their own value.                                 |
+| Terminal            | A text-based interface used to run commands.                                                |
+| Syntax highlighting | Visual formatting that helps readers distinguish different parts of code.                   |
+| API key             | A secret value used to authenticate access to an API or service.                            |
+| Configuration       | Settings that control how an application or system behaves.                                 |
