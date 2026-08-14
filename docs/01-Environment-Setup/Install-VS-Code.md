@@ -1,11 +1,9 @@
 ---
 title: Install Visual Studio Code
 sidebar_label: Install VS Code
-sidebar_position: 6
+sidebar_position: 2
 description: Learn how to install Visual Studio Code and prepare it for documentation and Docs-as-Code work.
 ---
-
-# Install Visual Studio Code
 
 > **Lesson level:** Beginner
 >
@@ -156,11 +154,9 @@ VS Code supports Windows, macOS, and Linux.
 
 For this lesson, check that you are using a supported version of Windows.
 
-**Windows**
-
 Press:
 
-**Windows + R**
+On your keyboard - **Windows + R**
 
 Type:
 
@@ -172,7 +168,7 @@ Select **OK**.
 
 Windows displays information about your operating system.
 
-**Expected result**
+#### Result
 
 A window displays your Windows version.
 
@@ -186,7 +182,7 @@ Open your web browser.
 
 Go to the official Visual Studio Code website:
 
-https://code.visualstudio.com/
+[Visual Studio Code](https://code.visualstudio.com/)
 
 Select **Download for Windows**.
 
@@ -292,11 +288,13 @@ If VS Code did not start automatically:
 Visual Studio Code
 ```
 
-3. Select **Visual Studio Code**.
+Select **Visual Studio Code**.
 
 VS Code opens.
 
 You should see the VS Code welcome or start screen.
+
+![VS Code with the documentation project open](../../assets/screenshots/vscode-welcome.png)
 
 ---
 
@@ -342,6 +340,8 @@ The project appears in the Explorer.
 
 You should now be able to see the files and folders that make up the project.
 
+![VS Code with the documentation project open](../../assets/screenshots/vscode-project-open.png)
+
 ---
 
 ### Step 10 — Open the integrated terminal
@@ -376,10 +376,12 @@ You should see the Git version installed on your computer.
 For example:
 
 ```text
-git version 2.55.0.windows.1
+git version 2.54.0.windows.1
 ```
 
 If you see a Git version, VS Code can find your Git installation.
+
+![Git verification in the VS Code terminal](../../assets/screenshots/vscode-git-verification.png)
 
 If you receive an error that Git is not recognized, see the **Common installation problems** section later in this lesson.
 
@@ -401,7 +403,7 @@ You can check whether the command is available by running:
 code --version
 ```
 
-**Expected result**
+### Expected result for the VS Code CLI
 
 VS Code displays version information.
 
@@ -410,12 +412,14 @@ The output may contain the VS Code version, commit information, and architecture
 For example:
 
 ```text
-1.130.0
+1.125.1
 xxxxxxxxxxxxxxxx
 x64
 ```
 
 Your version will probably be different.
+
+![VS Code command-line verification](../../assets/screenshots/vscode-code-verification.png)
 
 ---
 
@@ -441,7 +445,7 @@ The period means:
 
 > Open the current folder.
 
-**Expected result**
+#### Expected result for opening a folder with the `code` command
 
 VS Code opens the folder as a project.
 
@@ -556,7 +560,7 @@ To open the Extensions view:
 
 ---
 
-## Which extensions should technical writers install?
+### Which extensions should technical writers install?
 
 Do not install a large number of extensions just because they are available.
 
@@ -673,6 +677,8 @@ Publish documentation
 
 This workflow will become more detailed as you progress through the course.
 
+![Docusaurus running from the VS Code terminal](../../assets/screenshots/vscode-docusaurus-running.png)
+
 ---
 
 ### Step 20 — Configure VS Code for documentation work
@@ -787,13 +793,14 @@ K --> L
 ## Common installation problems
 
 <details>
+
 <summary><strong>1. VS Code does not start after installation</strong></summary>
 
-**Cause**
+Cause:
 
 The installation may not have completed correctly, or Windows may not have created the expected application entry.
 
-**Solution**
+Solution:
 
 Try the following:
 
@@ -815,11 +822,11 @@ If your organization manages your computer, contact your IT team if you cannot i
 <details>
 <summary><strong>2. Windows displays a security warning</strong></summary>
 
-**Cause**
+Cause:
 
 Windows may display a security prompt when you install software downloaded from the internet.
 
-**Solution**
+Solution:
 
 Make sure you downloaded VS Code from the official Visual Studio Code website.
 
@@ -834,11 +841,11 @@ Do not bypass your organization's security controls.
 <details>
 <summary><strong>3. The <code>code</code> command is not recognized</strong></summary>
 
-**Cause**
+Cause
 
 The VS Code command-line tools may not have been added to your PATH, or your terminal was open before VS Code was installed.
 
-**Solution**
+Solution
 
 First, close the terminal.
 
@@ -863,11 +870,11 @@ If the problem continues, reinstall VS Code and make sure the installer option t
 <details>
 <summary><strong>4. VS Code cannot find Git</strong></summary>
 
-**Cause**
+Cause:
 
 Git may not be installed, or VS Code may not be able to find the Git installation.
 
-**Solution**
+Solution:
 
 Open the VS Code integrated terminal.
 
@@ -895,11 +902,11 @@ If the problem continues, verify your Git installation before continuing.
 <details>
 <summary><strong>5. I cannot open my documentation project</strong></summary>
 
-**Cause**
+Cause:
 
 You may have selected an individual file instead of the project folder, or you may have selected the wrong folder.
 
-**Solution**
+Solution:
 
 In VS Code:
 
@@ -920,15 +927,16 @@ You should see the project files and folders in the Explorer.
 </details>
 
 <details>
+
 <summary><strong>6. My Markdown preview does not look like the Docusaurus site</strong></summary>
 
-**Cause**
+Cause:
 
 VS Code's standard Markdown preview and Docusaurus do not process exactly the same content.
 
 Docusaurus uses MDX, which provides additional functionality on top of Markdown.
 
-**Solution**
+Solution:
 
 Use the VS Code Markdown preview for a quick check of standard Markdown.
 
@@ -948,11 +956,11 @@ This is particularly important when your page contains:
 <details>
 <summary><strong>7. An extension does not work as expected</strong></summary>
 
-**Cause**
+Cause:
 
 The extension may be incompatible with your VS Code version, another extension, or your project configuration.
 
-**Solution**
+Solution:
 
 Try the following:
 
@@ -971,13 +979,13 @@ Do not install several extensions to solve the same problem without first identi
 <details>
 <summary><strong>8. VS Code looks different from the screenshots in this lesson</strong></summary>
 
-**Cause**
+Cause:
 
 VS Code changes over time as new versions are released.
 
 The interface can also vary depending on your operating system, installed extensions, settings, and account configuration.
 
-**Solution**
+Solution:
 
 Do not worry if your screen does not look exactly like the screenshots.
 
@@ -1201,15 +1209,15 @@ Complete the following tasks:
 5. Open the integrated terminal.
 6. Run:
 
-```bash
-git --version
-```
+     ```bash
+     git --version
+     ```
 
 7. Run:
 
-```bash
-code --version
-```
+     ```bash
+     code --version
+     ```
 
 8. Open a Markdown file.
 9. Add a short paragraph.
@@ -1227,15 +1235,13 @@ When you finish, you should be comfortable using VS Code as your documentation w
 
 ---
 
-# Next lesson
+## Next lesson
 
-In the next lessonS, you will install Cursor and learn how an AI-assisted development environment can support technical writing and documentation work.
-
-You will also compare Cursor with VS Code and understand how the two tools can fit into an AI-assisted Docs-as-Code workflow.
+In the next lesson, you will install Git and prepare it for use with your documentation projects.
 
 ---
 
-# References
+## References
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Installing Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
