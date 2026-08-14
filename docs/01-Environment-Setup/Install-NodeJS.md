@@ -5,8 +5,6 @@ sidebar_position: 5
 description: Learn how to install Node.js and prepare your environment for modern documentation tools and Docs-as-Code workflows.
 ---
 
-# Install Node.js
-
 > **Lesson level:** Beginner
 >
 > **Time to complete:** 20–30 minutes
@@ -189,7 +187,7 @@ For example:
 10.x.x
 ```
 
-**Expected result**
+Expected result:
 
 Both commands return version numbers.
 
@@ -213,7 +211,7 @@ For a learning environment and most general documentation projects, the **LTS** 
 
 LTS means:
 
-**Long-Term Support**
+Long-Term Support:
 
 LTS releases are intended to provide a stable version for longer-term use.
 
@@ -235,7 +233,9 @@ Open your web browser.
 
 Go to the official Node.js website:
 
-https://nodejs.org/
+[Download Node.js](https://nodejs.org/)
+
+![Node.js download page](../../assets/screenshots/nodejs-download.png)
 
 Select the **LTS** release.
 
@@ -341,12 +341,14 @@ node --version
 Example:
 
 ```text
-v22.x.x
+v24.x.x
 ```
+
+![Node.js version verification](../../assets/screenshots/node-version.png)
 
 The exact version may be different.
 
-**Expected result**
+Expected result:
 
 You see a Node.js version number.
 
@@ -363,10 +365,12 @@ npm --version
 Example:
 
 ```text
-10.x.x
+11.x.x
 ```
 
-**Expected result**
+![npm version verification](../../assets/screenshots/npm-version.png)
+
+Expected result
 
 You see an npm version number.
 
@@ -380,9 +384,7 @@ If both commands work, your Node.js installation is working.
 
 ## Step 11 — What is npm?
 
-npm stands for:
-
-**Node Package Manager**
+npm stands for: **Node Package Manager**
 
 npm is installed with Node.js.
 
@@ -457,7 +459,7 @@ You can also check npm:
 where npm
 ```
 
-**Expected result**
+Expected result:
 
 Windows displays the location of the Node.js and npm executables.
 
@@ -499,7 +501,7 @@ Ctrl + C
 
 You may need to press it twice.
 
-**Expected result**
+Expected result:
 
 Node.js successfully runs the test command.
 
@@ -566,6 +568,8 @@ It may include:
 
 Do not change values in `package.json` unless you understand why the change is required.
 
+We will cover this later in Module 8.
+
 ---
 
 ## Step 17 — Understand project dependencies
@@ -617,7 +621,7 @@ npm reads the project's package configuration and installs the required dependen
 
 This can take several minutes depending on the project and your internet connection.
 
-**Expected result**
+Expected result:
 
 npm completes without errors and creates the required dependency files.
 
@@ -664,7 +668,7 @@ or:
 npm run build
 ```
 
-You will learn more about these commands when you work with Docusaurus.
+You will learn more about these commands when you work with **Module 8: Docusaurus**.
 
 ---
 
@@ -692,7 +696,7 @@ The exact address may be different depending on your configuration.
 
 Open the address in your browser.
 
-**Expected result**
+Expected result:
 
 Your documentation website opens locally.
 
@@ -777,11 +781,11 @@ H --> I[Ready for documentation tools]
 <details>
 <summary><strong>1. Node.js is not recognized</strong></summary>
 
-**Cause**
+Cause:
 
 Node.js may not be installed correctly, or the terminal may not have picked up the updated PATH.
 
-**Solution**
+Solution:
 
 1. Close PowerShell or Command Prompt.
 2. Open a new terminal window.
@@ -804,11 +808,11 @@ If the problem continues, reinstall Node.js from the official Node.js website.
 <details>
 <summary><strong>2. npm is not recognized</strong></summary>
 
-**Cause**
+Cause:
 
 The Node.js installation may not have completed correctly, or the terminal may not have picked up the updated PATH.
 
-**Solution**
+Solution:
 
 Close the terminal.
 
@@ -833,11 +837,11 @@ If the problem continues, reinstall Node.js.
 <details>
 <summary><strong>3. I installed Node.js but the old version is still displayed</strong></summary>
 
-**Cause**
+Cause:
 
 You may have an old terminal window open, or multiple Node.js installations may exist on your computer.
 
-**Solution**
+Solution:
 
 Close all terminal windows.
 
@@ -864,11 +868,11 @@ If this is a work computer, contact your IT team before removing an installation
 <details>
 <summary><strong>4. The Node.js installer will not run</strong></summary>
 
-**Cause**
+Cause:
 
 Your computer may have security restrictions, or your organization may control software installation.
 
-**Solution**
+Solution:
 
 If this is a work computer:
 
@@ -883,13 +887,13 @@ Do not bypass your organization's security controls.
 <details>
 <summary><strong>5. Node.js is installed but Docusaurus does not work</strong></summary>
 
-**Cause**
+Cause:
 
 Node.js is only one part of the Docusaurus environment.
 
 The project dependencies may not have been installed, or the project may require a specific Node.js version.
 
-**Solution**
+Solution:
 
 Open the Docusaurus project folder.
 
@@ -912,11 +916,11 @@ If the project reports a Node.js version requirement, check the project document
 <details>
 <summary><strong>6. I have multiple Node.js versions installed</strong></summary>
 
-**Cause**
+Cause:
 
 Node.js may have been installed more than once, or another development tool may have installed another version.
 
-**Solution**
+Solution:
 
 Check your current version:
 
@@ -941,11 +945,11 @@ If you are using a company-managed computer, contact your IT team.
 <details>
 <summary><strong>7. npm displays a permissions error</strong></summary>
 
-**Cause**
+Cause:
 
 Windows permissions or your npm configuration may prevent npm from accessing a location.
 
-**Solution**
+Solution:
 
 Read the complete error message first.
 
@@ -966,11 +970,11 @@ If the problem continues, check your organization's development environment guid
 <details>
 <summary><strong>8. npm install fails</strong></summary>
 
-**Cause**
+Cause:
 
 The project may have a dependency problem, network problem, incompatible Node.js version, or another configuration issue.
 
-**Solution**
+Solution:
 
 First check your Node.js version:
 
@@ -1257,15 +1261,15 @@ Complete the following tasks:
 2. Check whether Node.js is already installed.
 3. Run:
 
-```bash
-node --version
-```
+   ```bash
+   node --version
+   ```
 
 4. Run:
 
-```bash
-npm --version
-```
+   ```bash
+   npm --version
+   ```
 
 5. If Node.js is not installed, download the LTS release from the official Node.js website.
 6. Install Node.js using the standard installation options.
@@ -1273,39 +1277,39 @@ npm --version
 8. Open a new terminal.
 9. Run:
 
-```bash
-node --version
-```
+   ```bash
+   node --version
+   ```
 
 10. Run:
 
-```bash
-npm --version
-```
+      ```bash
+      npm --version
+      ```
 
 11. Check the Node.js installation location:
 
-```bash
-where node
-```
+      ```bash
+      where node
+      ```
 
 12. Start Node.js:
 
-```bash
-node
-```
+      ```bash
+      node
+      ```
 
 13. Test Node.js:
 
-```javascript
-console.log("Node.js is working");
-```
+      ```javascript
+      console.log("Node.js is working");
+       ```
 
 14. Exit Node.js by pressing:
 
-```text
-Ctrl + C
-```
+      ```text
+      Ctrl + C
+      ```
 
 15. Open the Docusaurus project used in this course.
 16. Open the integrated terminal.
@@ -1313,24 +1317,24 @@ Ctrl + C
 18. Check the npm version.
 19. If the project dependencies are not installed, run:
 
-```bash
-npm install
-```
+      ```bash
+      npm install
+      ```
 
 20. Start the local documentation website:
 
-```bash
-npm run start
-```
+      ```bash
+      npm run start
+      ```
 
 21. Open the local documentation site in your browser.
 22. Stop the development server with:
 
-```text
-Ctrl + C
-```
+      ```text
+      Ctrl + C
+       ```
 
-**Expected result**
+Expected result:
 
 You should have:
 
@@ -1342,9 +1346,9 @@ You should have:
 
 ---
 
-# Next lesson
+## Next lesson
 
-**Verify the Development Environment**
+Verify the Development Environment:
 
 In the next lessons, you will check the tools installed during the Environment Setup module and confirm that your computer is ready for the Docs-as-Code workflow.
 
@@ -1352,11 +1356,10 @@ You will also start connecting the individual tools together instead of treating
 
 ---
 
-# References
+## References
 
 - [Node.js](https://nodejs.org/)
 - [Node.js Downloads](https://nodejs.org/en/download)
 - [Node.js Documentation](https://nodejs.org/docs/latest/api/)
 - [npm Documentation](https://docs.npmjs.com/)
 - [Docusaurus](https://docusaurus.io/)
-
