@@ -1,11 +1,9 @@
 ---
 title: Install Python
 sidebar_label: Install Python
-sidebar_position: 8
+sidebar_position: 6
 description: Learn how to install and verify Python on Windows for documentation and automation work.
 ---
-
-# Install Python
 
 > **Lesson level:** Beginner
 >
@@ -124,7 +122,7 @@ You can also try:
 py --version
 ```
 
-**Expected result**
+Expected result:
 
 If Python is installed, you should see a version number.
 
@@ -152,9 +150,11 @@ Some Windows installations use the `py` command to start Python. This is why it 
 
 Download Python from the official Python website.
 
+![Python installer](../../assets/screenshots/python-download.png)
+
 Go to:
 
-https://www.python.org/downloads/
+[Download Python](https://www.python.org/downloads/)
 
 Select the Windows download that matches your computer.
 
@@ -177,6 +177,9 @@ After the download finishes:
 1. Open the downloaded installer.
 2. Review the installation options.
 3. Make sure the option to add Python to your PATH is selected.
+
+   ![Python installer](../../assets/screenshots/python-installer.png)
+
 4. Select **Install Now**.
 
 The installer may request administrator permission.
@@ -227,7 +230,7 @@ The installer will copy Python and its supporting files to your computer.
 
 Wait for the installation to finish.
 
-**Expected result**
+Expected result:
 
 You should see a message indicating that the installation was successful.
 
@@ -255,14 +258,14 @@ Run:
 python --version
 ```
 
-**Expected result**
+Expected result:
 
 You should see a Python version.
 
 For example:
 
 ```text
-Python 3.13.x
+Python 3.14.x
 ```
 
 The exact version may be different.
@@ -274,6 +277,8 @@ py --version
 ```
 
 You should see a Python version here as well.
+
+![Python and pip version verification](../../assets/screenshots/python-version.png)
 
 ---
 
@@ -321,15 +326,17 @@ You can also use:
 python -m pip --version
 ```
 
-**Expected result**
+Expected result:
 
 You should see a version number and the location of the Python installation.
 
 For example:
 
 ```text
-pip 25.x from ... (python 3.13)
+pip 26.x from ... (python 3.14)
 ```
+
+![Python and pip version verification](../../assets/screenshots/python-version.png)
 
 The exact version will vary.
 
@@ -367,13 +374,15 @@ print("Hello, Docs-as-Code!")
 
 Press **Enter**.
 
-**Expected result**
+Expected result:
 
 You should see:
 
 ```text
 Hello, Docs-as-Code!
 ```
+
+![Python and pip version verification](../../assets/screenshots/python-command.png)
 
 To exit Python, enter:
 
@@ -419,13 +428,15 @@ Run:
 python hello.py
 ```
 
-**Expected result**
+Expected result:
 
 The terminal displays:
 
 ```text
 Hello, Docs-as-Code!
 ```
+
+![Python and pip version verification](../../assets/screenshots/python-file.png)
 
 You have now created and executed your first Python script.
 
@@ -591,11 +602,11 @@ I --> J
 <details>
 <summary><strong>1. Python is not recognized</strong></summary>
 
-**Cause**
+Cause:
 
 Python may not be installed, or Python may not have been added to the Windows PATH.
 
-**Solution**
+Solution:
 
 Close PowerShell or Command Prompt.
 
@@ -627,13 +638,13 @@ If neither command works:
 <details>
 <summary><strong>2. Python is installed but the terminal still cannot find it</strong></summary>
 
-**Cause**
+Cause:
 
 The terminal may have been open while Python was installed.
 
 The existing terminal session may not have the updated PATH information.
 
-**Solution**
+Solution:
 
 Close PowerShell or Command Prompt.
 
@@ -652,11 +663,11 @@ If the problem continues, restart Windows and try again.
 <details>
 <summary><strong>3. The Microsoft Store opens when I run python</strong></summary>
 
-**Cause**
+Cause:
 
 Windows may be using an app execution alias instead of the Python installation.
 
-**Solution**
+Solution:
 
 First check whether the Python launcher works:
 
@@ -683,11 +694,11 @@ If you want the `python` command to work as well, check your Python installation
 <details>
 <summary><strong>4. pip is not recognized</strong></summary>
 
-**Cause**
+Cause:
 
 The `pip` command may not be available directly from PATH.
 
-**Solution**
+Solution:
 
 Try:
 
@@ -718,13 +729,13 @@ python -m pip install requests
 <details>
 <summary><strong>5. Python installation is blocked by my organization</strong></summary>
 
-**Cause**
+Cause:
 
 Your computer may be managed by your organization.
 
 Your organization may restrict software installation or require administrator approval.
 
-**Solution**
+Solution:
 
 Contact your IT team.
 
@@ -737,11 +748,11 @@ Do not bypass your organization's security controls.
 <details>
 <summary><strong>6. I have more than one Python version installed</strong></summary>
 
-**Cause**
+Cause:
 
 Python may have been installed more than once, or another application may have installed its own Python environment.
 
-**Solution**
+Solution:
 
 Check which Python installations Windows can find:
 
@@ -764,11 +775,11 @@ Do not delete a Python installation simply because it is not the version you exp
 <details>
 <summary><strong>7. A Python script does not run in Visual Studio Code</strong></summary>
 
-**Cause**
+Cause:
 
 Visual Studio Code may not be using the Python installation you expect.
 
-**Solution**
+Solution:
 
 Check that Python is installed:
 
@@ -1015,10 +1026,6 @@ It is to practice using AI as a documentation tool while applying your own edito
 
 ---
 
-# Next lesson
-
-**Verify Your Installation**
-
-In the next lesson, you will check that the tools installed during the Environment Setup module are working together correctly.
+In the next lessons, you will check that the tools installed during the Environment Setup module are working together correctly.
 
 You will verify the development environment before moving on to Markdown, Git, GitHub, and the Docs-as-Code workflow.
