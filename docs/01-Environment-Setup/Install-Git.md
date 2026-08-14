@@ -1,11 +1,9 @@
 ---
 title: Install Git
 sidebar_label: Install Git
-sidebar_position: 5
+sidebar_position: 3
 description: Learn how to install Git, verify the installation, and configure Git for your documentation projects.
 ---
-
-# Install Git
 
 > **Lesson level:** Beginner
 >
@@ -141,7 +139,6 @@ You need:
 | Administrator access | Recommended                             |
 | Git                  | No — you will install it in this lesson |
 
-
 Git works on Windows, macOS, and Linux.
 
 This lesson uses Windows for the installation steps.
@@ -155,20 +152,30 @@ Before installing Git, check whether it is already available on your computer.
 Open PowerShell or Command Prompt.
 
 Run:
+
 ```bash
 git --version
 ```
-**Expected result**
+
+Expected result:
 
 If Git is already installed, you should see a version number.
 
 For example:
+
 ```text
-git version 2.55.0.windows.1
+git version 2.54.0.windows.1
 ```
+
+![Git version verification in the VS Code terminal](../../assets/screenshots/git-version.png)
+
+:::tip
+
 The version number may be different on your computer.
 
 Git releases new versions over time, so you do not need to have exactly the version shown in this example.
+
+:::
 
 If the command returns a Git version, Git is already installed. You can continue with the configuration steps in this lesson.
 
@@ -177,6 +184,7 @@ If you see an error such as:
 ```text
 git is not recognized as an internal or external command
 ```
+
 continue with the installation.
 
 ### Step 2 — Download Git
@@ -185,7 +193,7 @@ The official Git website provides Git for Windows.
 
 Open your browser and go to:
 
-https://git-scm.com/install/windows
+[Git](https://git-scm.com/install/windows)
 
 Download the current Git for Windows installer.
 
@@ -255,6 +263,7 @@ If you are given the option, using:
 ```text
 main
 ```
+
 is a sensible choice for new projects.
 
 Git allows you to configure the default initial branch name with:
@@ -293,15 +302,17 @@ Run:
 git --version
 ```
 
-**Expected result**
+Expected result:
 
 You should see a Git version.
 
 For example:
 
 ```bash
-git version 2.55.0.windows.1
+git version 2.54.0.windows.1
 ```
+
+![Git version verification in the VS Code terminal](../../assets/screenshots/git-version.png)
 
 Your version may be different.
 
@@ -312,6 +323,7 @@ The important thing is that Git returns a version number instead of an error.
 Before you start creating commits, configure the name and email address that Git will associate with your commits.
 
 Run:
+
 ```text
 git config --global user.name "Your Name"
 ```
@@ -367,6 +379,7 @@ For example:
 ```text
 Riffat Wyne
 ```
+
 Now run:
 
 ```bash
@@ -374,6 +387,8 @@ git config --global user.email
 ```
 
 You should see your configured email address.
+
+![Git identity configuration](../../assets/screenshots/git-identity.png)
 
 ### Step 14 — Check your Git configuration
 
@@ -390,6 +405,7 @@ user.name=Riffat Wyne
 user.email=riffat@example.com
 init.defaultbranch=main
 ```
+
 The exact output depends on your configuration.
 
 You can also use:
@@ -416,21 +432,24 @@ The three main levels are:
 | Global | Your user account                          |
 | Local  | One repository                             |
 
-
 When you use:
 
 ```bash
 git config --global
 ```
+
 you are setting a value for your user account.
 
 When you use:
+
 ```bash
 git config --local
 ```
+
 you are setting a value for the current repository.
 
 For example:
+
 ```bash
 git config --local user.name "Project Name"
 ```
@@ -448,9 +467,11 @@ Let's make sure Git can work with a project.
 Create a test folder.
 
 For example:
+
 ```text
 C:\Projects\git-test
 ```
+
 Open PowerShell in that folder.
 
 Run:
@@ -459,7 +480,7 @@ Run:
 git init
 ```
 
-**Expected result**
+Expected result:
 
 Git creates a new repository.
 
@@ -479,11 +500,12 @@ Run:
 git status
 ```
 
-**Expected result**
+Expected result:
 
 Git displays information about the repository.
 
 You may see:
+
 ```text
 On branch main
 
@@ -494,6 +516,8 @@ The exact output depends on your Git version and configuration.
 
 The important point is that Git recognizes the folder as a repository.
 
+![Git test repository created and verified](../../assets/screenshots/git-test-repository.png)
+
 ### Step 17 — Understand the .git folder
 
 When you run:
@@ -501,9 +525,11 @@ When you run:
 ```bash
 git init
 ```
+
 Git creates a hidden .git directory inside the project.
 
 For example:
+
 ```text
 git-test/
 │
@@ -528,6 +554,7 @@ For example:
 ```text
 C:\Projects\git-test
 ```
+
 If you want to keep it for practice, you can leave it in place.
 
 We will create and use the actual documentation repository in the following lessons.
@@ -559,16 +586,16 @@ G --> H
 
 ---
 
-# Common installation problems
+## Common installation problems
 
 <details>
 <summary><strong>1. Git is not recognized</strong></summary>
 
-**Cause**
+Cause:
 
 Git may not be installed correctly, or the terminal may not have picked up the updated PATH.
 
-**Solution**
+Solution:
 
 1. Close PowerShell or Command Prompt.
 2. Open a new terminal window.
@@ -589,11 +616,11 @@ If Git is still not recognized:
 <details>
 <summary><strong>2. Git was installed but the version command does not work</strong></summary>
 
-**Cause**
+Cause:
 
 The terminal may have been open while Git was being installed.
 
-**Solution**
+Solution:
 
 1. Close the terminal.
 2. Open a new PowerShell or Command Prompt window.
@@ -608,11 +635,11 @@ git --version
 <details>
 <summary><strong>3. Git asks for my name and email</strong></summary>
 
-**Cause**
+Cause:
 
 Git has not been configured with your identity.
 
-**Solution**
+Solution:
 
 Run:
 
@@ -638,11 +665,11 @@ git config --global user.email
 <details>
 <summary><strong>4. I entered the wrong name or email address</strong></summary>
 
-**Cause**
+Cause:
 
 The Git identity was configured incorrectly.
 
-**Solution**
+Solution:
 
 Run the configuration command again.
 
@@ -668,25 +695,26 @@ git config --global user.email
 </details>
 
 <details>
-<summary><strong>5. Git installation is blocked by my organisation</strong></summary>
+<summary><strong>5. Git installation is blocked by my organization</strong></summary>
 
-**Cause**
+Cause:
 
-Your computer may be managed by your organisation and may restrict software installation.
+Your computer may be managed by your organization and may restrict software installation.
 
-**Solution**
+Solution:
 
 Contact your IT team.
 
 Ask whether Git for Windows can be installed on your computer.
 
-Do not bypass your organisation's security controls.
+Do not bypass your organization's security controls.
 
 </details>
 
 ---
 
 ## Best practices
+
 - Download Git from the official Git website.
 - Keep Git reasonably up to date.
 - Use a consistent name and email address for your commits.
@@ -740,7 +768,7 @@ You now have a working Git installation and the basic configuration needed for t
 
 ---
 
-# Knowledge check
+## Knowledge check
 
 <details>
 <summary><strong>1. What is Git?</strong></summary>
@@ -815,6 +843,7 @@ Complete the following tasks:
 - Install Git.
 - Open a new PowerShell or Command Prompt window.
 - Run:
+  
 ```bash
 git --version
 ```
@@ -834,9 +863,11 @@ git init
 ```bash
 git status
 ```
+
 - Identify the .git folder created by Git.
 
 When you finish, you should have a working Git installation and understand the basic purpose of a Git repository.
 
 ## Next lesson
+
 - Install GitHub

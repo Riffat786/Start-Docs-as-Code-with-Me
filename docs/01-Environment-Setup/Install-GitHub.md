@@ -1,11 +1,9 @@
 ---
 title: Set Up GitHub
 sidebar_label: Install GitHub
-sidebar_position: 7
+sidebar_position: 4
 description: Learn how to create and secure a GitHub account, connect GitHub to your local documentation workflow, and create your first repository.
 ---
-
-# Set Up GitHub
 
 > **Lesson level:** Beginner
 >
@@ -182,7 +180,7 @@ Open your web browser.
 
 Go to:
 
-https://github.com/
+[GitHub](https://github.com/)
 
 You should see the GitHub home page.
 
@@ -232,7 +230,7 @@ Follow the verification instructions.
 
 Return to GitHub after your email address has been verified.
 
-**Expected result**
+Expected result:
 
 Your GitHub account shows your email address as verified.
 
@@ -276,7 +274,7 @@ Depending on the options available to you, you may be able to use an authenticat
 
 Follow the instructions shown by GitHub rather than relying on screenshots from older versions of the interface.
 
-**Expected result**
+Expected result:
 
 Two-factor authentication is enabled for your GitHub account.
 
@@ -359,7 +357,7 @@ Select the option to create a new repository.
 
 You can also navigate directly to:
 
-https://github.com/new
+[GitHub](https://github.com/new)
 
 Enter a repository name.
 
@@ -393,7 +391,7 @@ Do not make a repository public if it contains confidential company information,
 
 GitHub provides different repository visibility options.
 
-## Public
+#### Public
 
 A public repository can be viewed by other people.
 
@@ -404,7 +402,7 @@ This is useful for:
 - Documentation portfolios.
 - Public examples.
 
-## Private
+#### Private
 
 A private repository is restricted to the people you authorize.
 
@@ -495,7 +493,7 @@ Check that Git recognizes the repository:
 git status
 ```
 
-**Expected result**
+Expected result:
 
 Git displays information about your repository.
 
@@ -548,7 +546,7 @@ origin  https://github.com/your-username/my-documentation-project.git (fetch)
 origin  https://github.com/your-username/my-documentation-project.git (push)
 ```
 
-**Expected result**
+Expected result:
 
 Git shows your GitHub repository as the `origin` remote.
 
@@ -632,7 +630,7 @@ git push -u origin main
 
 Git sends your local commits to the GitHub repository.
 
-**Expected result**
+Expected result:
 
 Your files appear in the GitHub repository.
 
@@ -870,7 +868,7 @@ You can complete this course using Git from the command line and VS Code.
 
 If you want to use GitHub Desktop, download it from:
 
-https://desktop.github.com/
+[GitHub Desktop](https://desktop.github.com/)
 
 GitHub Desktop is currently supported on Windows and macOS.
 
@@ -894,7 +892,7 @@ Follow the authentication process.
 
 After you authenticate, GitHub Desktop can work with repositories associated with your GitHub account.
 
-**Expected result**
+Expected result:
 
 GitHub Desktop shows that you are signed in.
 
@@ -1241,11 +1239,11 @@ I --> J
 
 <summary><strong>1. I cannot create a GitHub account</strong></summary>
 
-**Cause**
+Cause:
 
 The sign-up process may have failed, or the email address may already be associated with another account.
 
-**Solution**
+Solution:
 
 1. Check that you entered the correct email address.
 2. Check your internet connection.
@@ -1260,11 +1258,11 @@ If the problem continues, use the GitHub support resources.
 
 <summary><strong>2. I did not receive the GitHub verification email</strong></summary>
 
-**Cause**
+Cause:
 
 The message may have been delayed or filtered by your email provider.
 
-**Solution**
+Solution:
 
 Check:
 
@@ -1283,11 +1281,11 @@ If the message still does not arrive, use GitHub's email verification troublesho
 
 <summary><strong>3. I cannot create a repository</strong></summary>
 
-**Cause**
+Cause:
 
 Your email address may not be verified, or your organization may restrict repository creation.
 
-**Solution**
+Solution:
 
 Check that your GitHub email address is verified.
 
@@ -1299,11 +1297,11 @@ If you are using an organization-managed GitHub account, contact your GitHub or 
 
 <summary><strong>4. Git says that the remote already exists</strong></summary>
 
-**Cause**
+Cause:
 
 The local repository already has a remote named `origin`.
 
-**Solution**
+Solution:
 
 Check the existing remote:
 
@@ -1331,11 +1329,11 @@ git remote -v
 
 <summary><strong>5. GitHub rejects my push</strong></summary>
 
-**Cause**
+Cause:
 
 The local repository and GitHub repository may have different histories, or GitHub may require authentication.
 
-**Solution**
+Solution:
 
 First check the remote:
 
@@ -1359,11 +1357,11 @@ Do not use force-push commands unless you understand the consequences and your p
 
 <summary><strong>6. GitHub asks me to authenticate</strong></summary>
 
-**Cause**
+Cause:
 
 GitHub needs to verify that you are authorized to access the repository.
 
-**Solution**
+Solution:
 
 Use the authentication method configured for your environment.
 
@@ -1381,11 +1379,11 @@ If you are working on an organization-managed computer, follow your organization
 
 <summary><strong>7. My repository is not showing in VS Code</strong></summary>
 
-**Cause**
+Cause:
 
 The repository folder may not be open in VS Code, or the folder may not contain a Git repository.
 
-**Solution**
+Solution:
 
 Open the project folder:
 
@@ -1407,11 +1405,11 @@ If Git recognizes the repository, VS Code should also be able to detect it.
 
 <summary><strong>8. I accidentally made a private repository public</strong></summary>
 
-**Cause**
+Cause:
 
 Repository visibility was changed during repository creation or later settings changes.
 
-**Solution**
+Solution:
 
 Open the repository settings and review the repository visibility.
 
@@ -1425,11 +1423,11 @@ Do not assume that making a repository private automatically removes information
 
 <summary><strong>9. I accidentally committed a password or API key</strong></summary>
 
-**Cause**
+Cause:
 
 Sensitive information was added to a file and committed to Git.
 
-**Solution**
+Solution:
 
 Treat the credential as exposed.
 
@@ -1692,34 +1690,34 @@ Complete the following tasks:
 10. Open your local Git project.
 11. Run:
 
-```bash
-git status
-```
+     ```bash
+     git status
+     ```
 
 12. Add the GitHub repository as a remote:
 
-```bash
-git remote add origin https://github.com/your-username/your-repository.git
-```
+     ```bash
+     git remote add origin https://github.com/your-username/your-repository.git
+     ```
 
 13. Verify the remote:
 
-```bash
-git remote -v
-```
+     ```bash
+     git remote -v
+     ```
 
 14. Create a commit if your local repository contains uncommitted files:
 
-```bash
-git add .
-git commit -m "Initial documentation project"
-```
+     ```bash
+     git add .
+     git commit -m "Initial documentation project"
+     ```
 
 15. Push the branch to GitHub:
 
-```bash
-git push -u origin main
-```
+     ```bash
+     git push -u origin main
+     ```
 
 16. Open the repository in your browser.
 17. Confirm that your files are visible on GitHub.
@@ -1733,7 +1731,7 @@ When you finish, you should have a working GitHub account and understand how you
 
 ## Next lesson
 
-**Docs-as-Code Workflow**
+Docs-as-Code Workflow
 
 In the next lessons, you will bring Git, GitHub, Markdown, VS Code, and documentation publishing together into a practical Docs-as-Code workflow.
 
@@ -1750,3 +1748,4 @@ You will learn how documentation moves from source files through editing, versio
 - [Create a new repository](https://github.com/new)
 - [GitHub Desktop](https://desktop.github.com/)
 - [GitHub Desktop documentation](https://docs.github.com/en/desktop)
+  
