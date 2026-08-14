@@ -651,7 +651,7 @@ You can combine inline code with links when appropriate.
 
 For example:
 
-See the [`package.json`](../package.json) file for the project configuration.
+See the [`package.json`](https://github.com/Riffat786/Start-Docs-as-Code-with-Me/blob/main/package.json) file for the project configuration.
 
 This can be useful when the reader needs to understand that the linked item is a technical file.
 
