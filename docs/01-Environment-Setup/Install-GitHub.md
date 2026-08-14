@@ -186,6 +186,8 @@ You should see the GitHub home page.
 
 Select **Sign up**.
 
+![GitHub home page](../../assets/screenshots/github-homepage.png)
+
 ---
 
 ### Step 2 — Create your GitHub account
@@ -294,6 +296,8 @@ Open your GitHub profile.
 
 Your profile contains information about your activity on GitHub.
 
+![GitHub profile](../../assets/screenshots/github-profile.png)
+
 You can eventually use your profile to showcase documentation projects, contributions, and other work.
 
 For example:
@@ -367,6 +371,8 @@ For example:
 my-documentation-project
 ```
 
+![Create a GitHub repository](../../assets/screenshots/github-create-repository.png)
+
 Add a short description.
 
 For example:
@@ -430,6 +436,8 @@ For example:
 ```text
 https://github.com/your-username/my-documentation-project
 ```
+
+![GitHub repository created](../../assets/screenshots/github-repository-created.png)
 
 At this point, the repository exists on GitHub.
 
@@ -550,6 +558,8 @@ Expected result:
 
 Git shows your GitHub repository as the `origin` remote.
 
+![GitHub remote configured](../../assets/screenshots/github-remote.png)
+
 ---
 
 ### Step 15 — Check your current branch
@@ -633,6 +643,8 @@ Git sends your local commits to the GitHub repository.
 Expected result:
 
 Your files appear in the GitHub repository.
+
+![Git push result](../../assets/screenshots/github-files-pushed.png)
 
 Refresh the GitHub repository page in your browser.
 
