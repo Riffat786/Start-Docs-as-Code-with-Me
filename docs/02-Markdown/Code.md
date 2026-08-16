@@ -5,8 +5,6 @@ sidebar_position: 5
 description: Learn how to format commands, code examples, file names, paths, and technical values clearly in Markdown.
 ---
 
-# Markdown Code
-
 > **Lesson level:** Beginner
 >
 > **Time to complete:** 15–20 minutes
@@ -678,6 +676,9 @@ Keep code examples readable and avoid unnecessary complexity.
 <details> 
 
 <summary><strong>1. A command is difficult to distinguish from normal text</strong></summary>
+
+<div>
+
 Cause
 
 The command has not been formatted as inline code or a code block.
@@ -695,11 +696,15 @@ git status
 git branch
 ```
 
+</div>
+
 </details> 
 
 <details> 
 
 <summary><strong>2. The code block does not render correctly</strong></summary>
+
+<div>
 Cause
 
 The code fence may not have been closed.
@@ -716,11 +721,16 @@ git status
 
 The three backticks must be closed.
 
+</div>
+
 </details> 
 
 <details> 
 
 <summary><strong>3. The wrong language identifier is used</strong></summary>
+
+<div>
+
 Cause
 
 The language identifier does not match the content.
@@ -737,11 +747,16 @@ print("Hello")
 
 Use powershell for PowerShell commands and bash for Bash or shell examples where appropriate.
 
+</div>
+
 </details> 
 
 <details> 
 
 <summary><strong>4. The command includes the terminal prompt</strong></summary>
+
+<div>
+
 Cause
 
 The writer copied the entire terminal line into the documentation.
@@ -764,11 +779,16 @@ PS C:\Projects\my-project> npm install
 
 Explain the project folder outside the code block if necessary.
 
+</div>
+
 </details> 
 
 <details> 
 
 <summary><strong>5. The example contains a real API key or password</strong></summary>
+
+<div>
+
 Cause
 
 A real value was copied into the documentation.
@@ -783,11 +803,16 @@ YOUR_API_KEY
 
 Never commit real credentials to the repository.
 
+</div>
+
 </details> 
 
 <details> 
 
 <summary><strong>6. The code example is too long</strong></summary>
+
+<div>
+
 Cause
 
 The writer included more code than the reader needs.
@@ -797,6 +822,8 @@ Solution
 Show only the relevant section.
 
 If the complete example is required, explain why and provide enough context for the reader to use it correctly.
+
+</div>
 
 </details>
 

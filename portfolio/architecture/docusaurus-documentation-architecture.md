@@ -564,7 +564,7 @@ The platform is therefore both the **subject of the documentation** and a **work
 
 ### Architecture
 
-* [AI Documentation Intelligence](/portfolio/ai-documentation-intelligence/)
+* [AI Documentation Intelligence](./ai-documentation-intelligence/)
 
 ### Architecture Decision Records
 
