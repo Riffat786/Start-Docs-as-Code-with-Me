@@ -59,15 +59,15 @@ const projects = [
     title: 'Professional Documentation Portfolio',
     description:
       'Combine everything you learn into a polished portfolio showcasing Docs-as-Code, AI, API documentation, automation, and real-world documentation projects.',
-    status: '🔜 Coming Soon',
+    status: '✅ Available',
     technologies: [
       'Docs-as-Code',
       'AI',
       'Automation',
       'Portfolio',
     ],
-    link: '/docs/Real-World-Projects',
-    button: 'Coming Soon',
+    link: '/portfolio/',
+    button: 'Explore Portfolio',
   },
 ];
 

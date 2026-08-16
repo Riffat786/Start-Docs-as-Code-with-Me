@@ -71,6 +71,20 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'portfolio',
+        path: 'portfolio',
+        routeBasePath: 'portfolio',
+        sidebarPath: './sidebarsPortfolio.ts',
+        showLastUpdateTime: false,
+      },
+    ],
+  ],
+
   themes: ['@docusaurus/theme-mermaid'],
 
   themeConfig: {
@@ -99,6 +113,13 @@ const config: Config = {
       label: '📰 Insights & Articles',
       position: 'left',
     },
+
+    {
+      to: '/portfolio',
+      label: '💼 Documentation Portfolio',
+      position: 'left',
+    },
+
     {
       href: 'https://riffat786.github.io/portfolio/',
       label: 'About Me',
