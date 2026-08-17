@@ -55,6 +55,19 @@ const sidebarsPortfolio: SidebarsConfig = {
         },
       ],
     },
+
+    {
+      type: 'category',
+      label: 'API Documentation',
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'api/release-management/release-management-api',
+          label: 'Release Management API',
+        },
+      ],
+    },
   ],
 };
 
