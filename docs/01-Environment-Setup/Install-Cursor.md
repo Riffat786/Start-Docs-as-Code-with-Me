@@ -128,6 +128,7 @@ Git remains responsible for version control, and your team's review and publishi
 ## Before you begin
 
 You need:
+
 | Requirement          | Required            |
 | -------------------- | ------------------- |
 | Internet connection  | Yes                 |
@@ -174,7 +175,7 @@ Windows displays information about your operating system.
 
 2. Go to the official Cursor download page:
 
-[Download Cursor](https://cursor.com/download)
+    [Download Cursor](https://cursor.com/download)
 
 3. Cursor provides separate downloads for Windows, macOS, and Linux.
 
@@ -186,7 +187,6 @@ Windows ARM64 — System
 Windows ARM64 — User
 
 > If you are using a standard Windows computer with an Intel or AMD processor, select the appropriate Windows x64 installer.
-
 > If you are not sure which installer to choose, check your Windows system information before continuing.
 
 **Best Practice**
@@ -212,6 +212,7 @@ Cursor should now be available on your computer.
 ---
 
 ### Step 4: Start Cursor
+
 Open the Windows Start menu.
 
 Search for:
@@ -394,6 +395,7 @@ Docusaurus
   ▼
 Documentation Website
 ```
+
 Understanding this distinction will become important as you continue through the course.
 
 --- 

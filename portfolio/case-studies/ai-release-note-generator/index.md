@@ -65,6 +65,43 @@ AI Quality Review
 Create Document360 Draft
 ```
 
+### Evolved workflow with MCP
+
+```text
+1. PREPARE
+   Download Release Manager attachment
+        ↓
+2. FETCH
+   Parse manifest + retrieve Azure DevOps WIs
+        ↓
+   input/work-items.json
+        ↓
+3. CONSOLIDATE
+   Combine & normalize release data
+        ↓
+   collected-release-data.json
+        ↓
+4. ANALYZE
+   AI understands the changes
+   + preserves authoritative metadata
+        ↓
+   analyzed-release.json
+        ↓
+5. REVIEW
+   AI quality/release-readiness review
+        ↓
+   review-report.json / .md
+        ↓
+6. GENERATE
+   Create audience-specific drafts
+        ↓
+   Customer Notes + Technical Services Notes
+        ↓
+Technical Writer + SME
+        ↓
+Final approval / publication
+```
+
 The POC therefore demonstrated the workflow without requiring direct access to production Azure DevOps or ServiceNow environments.
 
 ---
@@ -111,15 +148,11 @@ Each stage of the workflow performs a specific responsibility.
                 └──────────┬──────────┘
                            ↓
                 ┌─────────────────────┐
-                │   Writer Agent      │
-                └──────────┬──────────┘
-                           ↓
-                ┌─────────────────────┐
                 │   Reviewer Agent    │
                 └──────────┬──────────┘
                            ↓
                 ┌─────────────────────┐
-                │  Draft Generator    │
+                │  Publishing Agent    │
                 └──────────┬──────────┘
                            ↓
                 ┌─────────────────────┐
@@ -132,9 +165,73 @@ Each stage can evolve independently.
 
 For example, the collection layer can change without requiring the writing or review stages to be redesigned.
 
+**4 AI agents + deterministic components + MCP integrations**
+
+```text
+
+                 Azure DevOps MCP
+                       │
+                       ▼
+                 Collector Agent
+                  /            \
+             Fetch            Consolidate
+                │                  │
+                └───────┬──────────┘
+                        ▼
+               collected-release-data
+                        │
+                        ▼
+                 Analyzer Agent
+                        │
+              + deterministic
+              metadata protection
+                        │
+                        ▼
+                 Reviewer Agent
+                        │
+                        ▼
+                review-report
+                        │
+                        ▼
+                Publishing Agent
+                  /            \
+                 ▼              ▼
+          Customer Notes    Technical Notes
+```
+
+![6 Steps Workflow](/assets/screenshots/data-ownership.png)
+
 ---
 
-## 4. From Release Notes to Documentation Intelligence
+## 4. The six-Command workflow
+
+| #     | Command                     | Input                                                                        | What happens                                                                                                                                                                                                                                  | Output                                                              | Agent / component                                 |
+| ----- | --------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------- |
+| **1** | `/prepare-release`          | Release tag / release source                                                 | Prepares the release workspace and **downloads/saves the Release Manager attachment** needed by the pipeline.                                                                                                                                 | `attachments/ReleaseNotes (<tag>).docx` and prepared release inputs | **Preparation step**                              |
+| **2** | `/fetch-release-data`       | Prepared Release Manager `.docx`                                             | Parses the ReleaseManifest, identifies the WIs, then calls **Azure DevOps MCP** to retrieve the complete work-item data.                                                                                                                      | `input/work-items.json`                                             | **Collector Agent + Azure DevOps MCP**            |
+| **3** | `/consolidate-release-data` | ReleaseManifest + `input/work-items.json` (+ ServiceNow data when available) | Combines the source information and builds the canonical release dataset.                                                                                                                                                                     | `output/artifacts/ai/collected-release-data.json`                   | **Collector Agent**                               |
+| **4** | `/analyze-release-data`     | `collected-release-data.json`                                                | AI interprets the release: customer impact, change classification, grouping, technical/customer relevance, etc. The **manifest metadata restoration functionality** ensures authoritative fields are preserved/restored as part of this flow. | `output/artifacts/ai/analyzed-release.json`                         | **Analyzer Agent + deterministic metadata logic** |
+| **5** | `/review-release-analysis`  | `analyzed-release.json`                                                      | Independently reviews the analysis, identifies issues, assigns readiness, and provides recommendations.                                                                                                                                       | `review-report.json` + `review-report.md`                           | **Reviewer Agent**                                |
+| **6** | `/generate-release-drafts`  | Analyzed/restored release data + review context                              | Generates audience-specific Markdown release-note drafts.                                                                                                                                                                                     | `customer-release-notes.md` + `technical-services-release-notes.md` | **Publishing Agent**                              |
+
+![6 Steps Workflow](/assets/screenshots/6-step-workflow.png)
+
+---
+
+## 5. Data progression
+
+| Stage                   | File                          | What it contains                                                                              |
+| ----------------------- | ----------------------------- | --------------------------------------------------------------------------------------------- |
+| **Fetch / Consolidate** | `collected-release-data.json` | **Source/authoritative data** — ReleaseManifest + Azure DevOps (+ ServiceNow when available). |
+| **Analyze**             | `analyzed-release.json`       | Everything from the collected dataset **plus AI-derived analysis fields**.                    |
+| **Review**              | `review-report.json/.md`      | Quality/readiness assessment and reviewer findings.                                           |
+| **Generate**            | Customer & Technical drafts   | Final audience-specific Markdown content.                                                     |
+
+![6 Steps Workflow](/assets/screenshots/6-step-workflow-input-output.png)
+
+---
+
+## 6. From Release Notes to Documentation Intelligence
 
 As the architecture evolved, **MCP was identified as a potential integration layer** for connecting external information sources to the documentation workflow.
 
@@ -167,7 +264,7 @@ The core workflow can therefore remain intact while the surrounding integrations
 
 ---
 
-## 5. Source-Agnostic Architecture
+## 7. Source-Agnostic Architecture
 
 One of the central design principles is **source independence**.
 
@@ -196,7 +293,7 @@ This separation makes the architecture reusable beyond release notes.
 
 ---
 
-## 6. Documentation as a Pipeline
+## 8. Documentation as a Pipeline
 
 The project treats documentation as a transformation pipeline:
 
@@ -224,11 +321,13 @@ Publication
 
 Each stage creates a structured artifact that can be inspected, validated, reviewed, or reused.
 
+![Pipeline](/assets/screenshots/pipeline.png)
+
 This approach makes the documentation process more **traceable, testable, and maintainable**.
 
 ---
 
-## 7. AI + Human Review
+## 9. AI + Human Review
 
 AI-generated documentation is not treated as automatically publishable.
 
@@ -250,7 +349,7 @@ This human-in-the-loop approach is important for customer-facing documentation w
 
 ---
 
-## 8. Current Implementation
+## 10. Current Implementation
 
 The project has evolved from an initial proof-of-concept using mock release data into a Documentation Intelligence Platform with MCP-based integration to Azure DevOps.
 
@@ -263,12 +362,11 @@ The project has evolved from an initial proof-of-concept using mock release data
 | ServiceNow MCP integration                 | **Architecture / future integration** if not yet connected |
 | Additional interchangeable sources/outputs | **Architectural extensibility**                            |
 
-
 The repository also demonstrates Git-based development, Markdown artifacts, Python automation, and GitHub Actions validation.
 
 ---
 
-## 9. Extensibility
+## 11. Extensibility
 
 The architecture is intentionally designed so that the core workflow does not depend on one specific input or output system.
 
@@ -297,7 +395,7 @@ A new source or publishing destination can therefore be introduced without requi
 
 ---
 
-## 10. What This Project Demonstrates
+## 12. What This Project Demonstrates
 
 This project demonstrates the combination of:
 

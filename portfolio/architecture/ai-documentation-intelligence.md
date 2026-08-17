@@ -60,6 +60,8 @@ Potential information sources include:
 * Other engineering systems
 * Future MCP-connected sources
 
+![Documentation Intelligence Platform](/assets/screenshots/docs-int-plat.png)
+
 ### Initial POC Input
 
 The initial POC uses **mock release data**.
@@ -166,13 +168,35 @@ The current implementation can generate a **Document360 draft** as a publishing 
 
 A key architectural feature is that each stage produces a persistent artifact.
 
-```mermaid
-flowchart TD
-    A[Mock Release Data] --> B[collected-release-data]
-    B --> C[analyzed-release]
-    C --> D[release-notes.md]
-    D --> E[review-report.md]
-    E --> F[document360-draft.md]
+```text
+                 Azure DevOps MCP
+                       │
+                       ▼
+                 Collector Agent
+                  /            \
+             Fetch            Consolidate
+                │                  │
+                └───────┬──────────┘
+                        ▼
+               collected-release-data
+                        │
+                        ▼
+                 Analyzer Agent
+                        │
+              + deterministic
+              metadata protection
+                        │
+                        ▼
+                 Reviewer Agent
+                        │
+                        ▼
+                review-report
+                        │
+                        ▼
+                Publishing Agent
+                  /            \
+                 ▼              ▼
+          Customer Notes    Technical Notes
 ```
 
 This makes the workflow observable and easier to validate.
