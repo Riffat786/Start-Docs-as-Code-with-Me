@@ -66,6 +66,22 @@ const sidebarsPortfolio: SidebarsConfig = {
           id: 'api/release-management/release-management-api',
           label: 'Release Management API',
         },
+
+        {
+          type: 'doc',
+          id: 'api/release-management/getting-started',
+          label: 'Getting Started',
+        },
+        {
+          type: 'doc',
+          id: 'api/release-management/authentication',
+          label: 'Authentication',
+       },
+       {
+          type: 'doc',
+          id: 'api/release-management/api-reference',
+          label: 'API Reference',
+        },
       ],
     },
   ],
