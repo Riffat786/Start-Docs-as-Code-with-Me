@@ -126,7 +126,7 @@ const config: Config = {
       position: 'left',
     },
     {
-      href: 'https://github.com/Riffat786/',
+      href: 'https://github.com/Riffat786/Start-Docs-as-Code-with-Me',
       label: 'GitHub',
       position: 'right',
     },
