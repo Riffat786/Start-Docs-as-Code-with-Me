@@ -26,7 +26,8 @@ Instead of writing documentation in traditional word processors, documentation i
 
 Typical workflow:
 
-```
+```text
+
 Word Document
 
 ↓

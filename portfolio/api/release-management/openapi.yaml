@@ -1,0 +1,826 @@
+openapi: 3.0.3
+
+info:
+  title: Release Management API
+  version: 1.0.0
+  description: |
+    A fictional REST API for managing software releases,
+    tracking changes and work items, coordinating approvals,
+    and preparing release notes.
+
+    This API is a portfolio project designed to demonstrate
+    realistic API design and developer documentation practices.
+  license:
+    name: Portfolio Project
+    url: https://github.com/Riffat786/Start-Docs-as-Code-with-Me
+
+servers:
+  - url: https://api.release-management.test/v1
+    description: Fictional API server for portfolio demonstration
+
+tags:
+  - name: Releases
+    description: Manage software releases.
+
+  - name: Changes
+    description: Track changes associated with releases.
+
+  - name: Work Items
+    description: Manage work items associated with releases.
+
+  - name: Approvals
+    description: Manage release approval workflows.
+
+  - name: Release Notes
+    description: Generate and manage release notes.
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Release:
+      type: object
+      description: Represents a software release.
+      required:
+        - id
+        - version
+        - name
+        - status
+        - targetDate
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the release.
+          example: rel_2026_08
+
+        version:
+          type: string
+          description: Release version identifier.
+          example: "2026.08"
+
+        name:
+          type: string
+          description: Human-readable name of the release.
+          example: Customer Portal Release
+
+        status:
+          type: string
+          description: Current lifecycle status of the release.
+          enum:
+            - draft
+            - in_progress
+            - ready_for_approval
+            - approved
+            - released
+            - cancelled
+          example: ready_for_approval
+
+        targetDate:
+          type: string
+          format: date
+          description: Planned release date.
+          example: "2026-08-28"
+
+        description:
+          type: string
+          description: Summary of the release.
+          example: Improvements to customer portal navigation and reporting.
+
+        createdAt:
+          type: string
+          format: date-time
+          description: Date and time when the release was created.
+          example: "2026-08-10T09:30:00Z"
+
+        updatedAt:
+          type: string
+          format: date-time
+          description: Date and time when the release was last updated.
+          example: "2026-08-15T14:20:00Z"
+    CreateReleaseRequest:
+      type: object
+      description: Request body used to create a new release.
+      required:
+        - version
+        - name
+        - targetDate
+      properties:
+        version:
+          type: string
+          description: Release version identifier.
+          example: "2026.09"
+
+        name:
+          type: string
+          description: Human-readable name of the release.
+          example: Customer Portal September Release
+
+        status:
+          type: string
+          description: Initial lifecycle status of the release.
+          enum:
+            - draft
+            - in_progress
+          default: draft
+          example: draft
+
+        targetDate:
+          type: string
+          format: date
+          description: Planned release date.
+          example: "2026-09-25"
+
+        description:
+          type: string
+          description: Summary of the release.
+          example: New features and improvements for the customer portal.
+    UpdateReleaseRequest:
+      type: object
+      description: Request body used to update an existing release.
+      properties:
+        name:
+          type: string
+          description: Human-readable name of the release.
+          example: Customer Portal August Release
+
+        status:
+          type: string
+          description: Updated lifecycle status of the release.
+          enum:
+            - draft
+            - in_progress
+            - ready_for_approval
+            - approved
+            - released
+            - cancelled
+          example: approved
+
+        targetDate:
+          type: string
+          format: date
+          description: Updated planned release date.
+          example: "2026-08-30"
+
+        description:
+          type: string
+          description: Updated summary of the release.
+          example: Final approved release for the customer portal.
+    Change:
+      type: object
+      description: Represents a change associated with a software release.
+      required:
+        - id
+        - title
+        - type
+        - status
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the change.
+          example: chg_2026_1042
+
+        title:
+          type: string
+          description: Short title describing the change.
+          example: Improved customer portal search
+
+        description:
+          type: string
+          description: Detailed description of the change.
+          example: Customers can now filter search results by document type and date.
+
+        type:
+          type: string
+          description: Classification of the change.
+          enum:
+            - feature
+            - enhancement
+            - bug_fix
+            - security
+            - performance
+            - documentation
+          example: enhancement
+
+        status:
+          type: string
+          description: Current status of the change.
+          enum:
+            - proposed
+            - in_progress
+            - completed
+            - cancelled
+          example: completed
+
+        customerImpact:
+          type: string
+          description: Summary of the expected customer impact.
+          example: Makes it easier for customers to find relevant documentation.
+
+        createdAt:
+          type: string
+          format: date-time
+          description: Date and time when the change was created.
+          example: "2026-08-12T10:15:00Z"
+
+        updatedAt:
+          type: string
+          format: date-time
+          description: Date and time when the change was last updated.
+          example: "2026-08-18T13:45:00Z"
+    AssociateChangeRequest:
+      type: object
+      description: Request body used to associate an existing change with a release.
+      required:
+        - changeId
+      properties:
+        changeId:
+          type: string
+          description: Unique identifier of the change to associate.
+          example: chg_2026_1042
+    WorkItem:
+      type: object
+      description: Represents a work item associated with a software release.
+      required:
+        - id
+        - title
+        - type
+        - status
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the work item.
+          example: wi_2026_2451
+
+        title:
+          type: string
+          description: Short title describing the work item.
+          example: Add advanced search filters
+
+        description:
+          type: string
+          description: Detailed description of the work item.
+          example: Add filtering options for document type, date, and product area.
+
+        type:
+          type: string
+          description: Classification of the work item.
+          enum:
+            - feature
+            - enhancement
+            - bug
+            - task
+            - technical_debt
+          example: feature
+
+        status:
+          type: string
+          description: Current status of the work item.
+          enum:
+            - open
+            - in_progress
+            - completed
+            - cancelled
+          example: completed
+
+        priority:
+          type: string
+          description: Priority assigned to the work item.
+          enum:
+            - low
+            - medium
+            - high
+            - critical
+          example: high
+
+        createdAt:
+          type: string
+          format: date-time
+          description: Date and time when the work item was created.
+          example: "2026-08-11T08:45:00Z"
+
+        updatedAt:
+          type: string
+          format: date-time
+          description: Date and time when the work item was last updated.
+          example: "2026-08-17T16:30:00Z"
+
+security:
+  - bearerAuth: []
+
+paths:
+  /releases:
+    get:
+      tags:
+        - Releases
+      summary: List releases
+      description: Returns a paginated list of software releases.
+      operationId: listReleases
+
+      parameters:
+        - name: status
+          in: query
+          description: Filter releases by lifecycle status.
+          required: false
+          schema:
+            type: string
+            enum:
+              - draft
+              - in_progress
+              - ready_for_approval
+              - approved
+              - released
+              - cancelled
+          example: released
+
+        - name: page
+          in: query
+          description: Page number to return.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+          example: 1
+
+        - name: pageSize
+          in: query
+          description: Number of releases to return per page.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+          example: 20
+
+      responses:
+        '200':
+          description: A list of releases.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Release'
+
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        example: 1
+
+                      pageSize:
+                        type: integer
+                        example: 20
+
+                      totalItems:
+                        type: integer
+                        example: 42
+
+                      totalPages:
+                        type: integer
+                        example: 3
+        '401':
+          description: Authentication is required.
+    post:
+      tags:
+        - Releases
+      summary: Create a release
+      description: Creates a new software release.
+      operationId: createRelease
+
+      requestBody:
+        required: true
+        description: Release information required to create a new release.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateReleaseRequest'
+            example:
+              version: "2026.09"
+              name: Customer Portal September Release
+              status: draft
+              targetDate: "2026-09-25"
+              description: New features and improvements for the customer portal.
+
+      responses:
+        '201':
+          description: Release created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Release'
+
+        '400':
+          description: Invalid request data.
+
+        '401':
+          description: Authentication is required.
+
+        '409':
+          description: A release with the same version already exists.
+  /releases/{releaseId}:
+    get:
+      tags:
+        - Releases
+      summary: Get a release
+      description: Returns a specific software release by its unique identifier.
+      operationId: getRelease
+
+      parameters:
+        - name: releaseId
+          in: path
+          required: true
+          description: Unique identifier of the release.
+          schema:
+            type: string
+          example: rel_2026_08
+
+      responses:
+        '200':
+          description: Release retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Release'
+
+        '401':
+          description: Authentication is required.
+
+        '404':
+          description: The requested release was not found.
+    put:
+      tags:
+        - Releases
+      summary: Update a release
+      description: Updates an existing software release.
+      operationId: updateRelease
+
+      parameters:
+        - name: releaseId
+          in: path
+          required: true
+          description: Unique identifier of the release.
+          schema:
+            type: string
+          example: rel_2026_08
+
+      requestBody:
+        required: true
+        description: Updated release information.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateReleaseRequest'
+            example:
+              name: Customer Portal August Release
+              status: approved
+              targetDate: "2026-08-30"
+              description: Final approved release for the customer portal.
+
+      responses:
+        '200':
+          description: Release updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Release'
+
+        '400':
+          description: Invalid request data.
+
+        '401':
+          description: Authentication is required.
+
+        '404':
+          description: The requested release was not found.
+
+        '409':
+          description: The release cannot be updated in its current lifecycle state.
+    delete:
+      tags:
+        - Releases
+      summary: Delete a release
+      description: Deletes an existing software release.
+      operationId: deleteRelease
+
+      parameters:
+        - name: releaseId
+          in: path
+          required: true
+          description: Unique identifier of the release.
+          schema:
+            type: string
+          example: rel_2026_08
+
+      responses:
+        '204':
+          description: Release deleted successfully.
+
+        '401':
+          description: Authentication is required.
+
+        '404':
+          description: The requested release was not found.
+
+        '409':
+          description: The release cannot be deleted in its current lifecycle state.
+  /changes:
+    get:
+      tags:
+        - Changes
+      summary: List changes
+      description: Returns a list of changes, optionally filtered by release and status.
+      operationId: listChanges
+
+      parameters:
+        - name: releaseId
+          in: query
+          description: Filter changes associated with a specific release.
+          required: false
+          schema:
+            type: string
+          example: rel_2026_08
+
+        - name: status
+          in: query
+          description: Filter changes by their current status.
+          required: false
+          schema:
+            type: string
+            enum:
+              - proposed
+              - in_progress
+              - completed
+              - cancelled
+          example: completed
+
+        - name: page
+          in: query
+          description: Page number to return.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+          example: 1
+
+        - name: pageSize
+          in: query
+          description: Number of changes to return per page.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+          example: 20
+
+      responses:
+        '200':
+          description: A list of changes.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Change'
+
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        example: 1
+
+                      pageSize:
+                        type: integer
+                        example: 20
+
+                      totalItems:
+                        type: integer
+                        example: 58
+
+                      totalPages:
+                        type: integer
+                        example: 3
+
+        '401':
+          description: Authentication is required.
+  /changes/{changeId}:
+    get:
+      tags:
+        - Changes
+      summary: Get a change
+      description: Returns a specific change by its unique identifier.
+      operationId: getChange
+
+      parameters:
+        - name: changeId
+          in: path
+          required: true
+          description: Unique identifier of the change.
+          schema:
+            type: string
+          example: chg_2026_1042
+
+      responses:
+        '200':
+          description: Change retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Change'
+
+        '401':
+          description: Authentication is required.
+
+        '404':
+          description: The requested change was not found.
+  /releases/{releaseId}/changes:
+    post:
+      tags:
+        - Changes
+      summary: Associate a change with a release
+      description: Associates an existing change with a specific release.
+      operationId: associateChangeWithRelease
+
+      parameters:
+        - name: releaseId
+          in: path
+          required: true
+          description: Unique identifier of the release.
+          schema:
+            type: string
+          example: rel_2026_08
+
+      requestBody:
+        required: true
+        description: Change to associate with the release.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssociateChangeRequest'
+            example:
+              changeId: chg_2026_1042
+
+      responses:
+        '201':
+          description: Change successfully associated with the release.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Change'
+
+        '400':
+          description: Invalid request data.
+
+        '401':
+          description: Authentication is required.
+
+        '404':
+          description: The release or change was not found.
+
+        '409':
+          description: The change is already associated with the release.
+  /work-items:
+    get:
+      tags:
+        - Work Items
+      summary: List work items
+      description: Returns a list of work items, optionally filtered by release and status.
+      operationId: listWorkItems
+
+      parameters:
+        - name: releaseId
+          in: query
+          description: Filter work items associated with a specific release.
+          required: false
+          schema:
+            type: string
+          example: rel_2026_08
+
+        - name: status
+          in: query
+          description: Filter work items by their current status.
+          required: false
+          schema:
+            type: string
+            enum:
+              - open
+              - in_progress
+              - completed
+              - cancelled
+          example: completed
+
+        - name: priority
+          in: query
+          description: Filter work items by priority.
+          required: false
+          schema:
+            type: string
+            enum:
+              - low
+              - medium
+              - high
+              - critical
+          example: high
+
+        - name: page
+          in: query
+          description: Page number to return.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+          example: 1
+
+        - name: pageSize
+          in: query
+          description: Number of work items to return per page.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+          example: 20
+
+      responses:
+        '200':
+          description: A list of work items.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/WorkItem'
+
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        example: 1
+
+                      pageSize:
+                        type: integer
+                        example: 20
+
+                      totalItems:
+                        type: integer
+                        example: 76
+
+                      totalPages:
+                        type: integer
+                        example: 4
+
+        '401':
+          description: Authentication is required.
+  /work-items/{workItemId}:
+    get:
+      tags:
+        - Work Items
+      summary: Get a work item
+      description: Returns a specific work item by its unique identifier.
+      operationId: getWorkItem
+
+      parameters:
+        - name: workItemId
+          in: path
+          required: true
+          description: Unique identifier of the work item.
+          schema:
+            type: string
+          example: wi_2026_2451
+
+      responses:
+        '200':
+          description: Work item retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WorkItem'
+
+        '401':
+          description: Authentication is required.
+
+        '404':
+          description: The requested work item was not found.
+
+          
