@@ -43,7 +43,7 @@ const projects = [
     title: 'API Documentation Portal',
     description:
       'Build a developer portal featuring REST APIs, OpenAPI specifications, Swagger UI, authentication, and Postman collections.',
-    status: '🔜 Coming Soon',
+    status: '🚧 In Progress',
     technologies: [
       'REST API',
       'OpenAPI',
@@ -51,8 +51,8 @@ const projects = [
       'Postman',
       'JSON',
     ],
-    link: '/docs/API-Documentation',
-    button: 'Coming Soon',
+    link: '/portfolio/api/release-management',
+    button: 'View API Documentation',
   },
   {
     
