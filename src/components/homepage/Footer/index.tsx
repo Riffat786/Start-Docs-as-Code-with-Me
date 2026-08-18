@@ -47,7 +47,7 @@ export default function Footer(): JSX.Element {
             <ul>
              
               <li><Link to="/docs/showcase/ai-release-note-generator">AI Release Note Generator</Link></li>
-              <li><Link to="/docs/API-Documentation">API Documentation Portal</Link></li>
+              <li><Link to="/portfolio/api/release-management">API Documentation Portal</Link></li>
               <li><Link to="/portfolio/">Documentation Portfolio</Link></li>
             </ul>
           </div>
