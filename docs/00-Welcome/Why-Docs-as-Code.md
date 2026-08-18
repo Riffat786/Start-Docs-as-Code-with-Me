@@ -85,4 +85,4 @@ Docs-as-Code improves collaboration, traceability, automation, and documentation
 
 ## Next Lesson
 
-➡️ Environmental Setup
+Environmental Setup

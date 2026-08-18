@@ -104,19 +104,19 @@ const config: Config = {
   items: [
     {
       to: '/',
-      label: '🏠 Home',
+      label: 'Home',
       position: 'left',
     },
   
     {
       to: '/insights',
-      label: '📰 Insights & Articles',
+      label: 'Insights & Articles',
       position: 'left',
     },
 
     {
       to: '/portfolio',
-      label: '💼 Documentation Portfolio',
+      label: 'Documentation Portfolio',
       position: 'left',
     },
 

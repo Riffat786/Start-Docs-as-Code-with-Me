@@ -72,4 +72,4 @@ Continue to **Module 2 · Environment Setup**.
 
 ## Next Lesson
 
-➡️ [Learning-Roadmap](Learning-Roadmap.md)
+[Learning-Roadmap](Learning-Roadmap.md)

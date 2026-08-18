@@ -59,7 +59,7 @@ Common challenges include:
 
 ## Docs-as-Code Workflow
 
-```
+```TEXT
 Markdown
 
 ↓
@@ -133,4 +133,4 @@ Docs-as-Code treats documentation as a software project, enabling collaboration,
 
 ## Next Lesson
 
-➡️ [Why-Docs-as-Code](Why-Docs-as-Code.md)
+[Why-Docs-as-Code](Why-Docs-as-Code.md)
