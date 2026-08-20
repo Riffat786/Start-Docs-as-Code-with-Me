@@ -12,6 +12,7 @@ sidebar_position: 8
 > **Prerequisites:** A Windows 10 or Windows 11 computer with administrator access available if required
 
 ---
+
 ## Learning objectives
 
 After you complete this lesson, you will be able to:
@@ -28,6 +29,7 @@ After you complete this lesson, you will be able to:
 - Fix common installation problems.
 
 ---
+
 ## What is Docker?
 
 Docker is a platform that allows applications and their dependencies to run in isolated environments called **containers**.
