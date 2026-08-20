@@ -2,6 +2,7 @@
 id: api-reference
 title: API Reference
 sidebar_label: API Reference
+sidebar_position: 3
 description: Generated API reference and endpoint examples for the Release Management API.
 ---
 
