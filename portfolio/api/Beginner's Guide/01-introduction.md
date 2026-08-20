@@ -6,7 +6,7 @@ This section demonstrates the fundamental concepts that a technical writer needs
 
 It covers the terminology, concepts, and technical building blocks commonly encountered when documenting APIs.
 
-> For a structured, step-by-step learning experience, see [**Module 09 — API Documentation**](/docs/08-API-Documentation/) in the Learning Hub.
+> For a structured, step-by-step learning experience, see **Module 09 — API Documentation** in the Learning Hub.
 
 ## API documentation at a glance
 
