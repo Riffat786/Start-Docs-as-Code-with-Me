@@ -76,4 +76,3 @@ When documenting a REST API, technical writers should clearly describe:
 - Working examples
 
 The **Release Management API** used in this portfolio follows this resource-oriented approach and provides practical examples of REST API documentation.
-

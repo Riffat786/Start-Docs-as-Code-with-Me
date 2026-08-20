@@ -20,7 +20,18 @@ Redocly API documentation
 Rendered endpoint reference
 ```
 
-The generated reference provides the developer-facing view of the API, including operations, authentication, parameters, responses, schemas, and examples.
+The generated reference provides the developer-facing view of the API, including:
+
+- Operations
+- Authentication requirements
+- Parameters
+- Request bodies
+- Responses
+- Schemas
+- Status codes
+- Examples
+
+The purpose of this approach is to maintain the API contract as a structured source and generate consistent reference documentation from it.
 
 ---
 
@@ -41,13 +52,15 @@ npx redocly build-docs portfolio/api/release-management/openapi.yaml \
 
 ### Generated reference
 
-Redocly-generated API reference from the project's OpenAPI specification.
+The following screenshot shows the Redocly-generated API reference from the project's OpenAPI specification.
 
 ![Generated Release Management API reference](/img/portfolio/api/release-management-api-reference.png)
 
+The generated reference provides navigation across the API resources and exposes the endpoint definitions, parameters, authentication requirements, responses, schemas, and examples defined in the OpenAPI contract.
+
 ---
 
-## Endpoint Example: List Releases
+## Endpoint Example: `GET /releases`
 
 ```text
 GET /releases
@@ -59,7 +72,7 @@ GET /releases
 
 The generated documentation exposes the endpoint together with its authentication requirements, query parameters, responses, and response example.
 
-Generated documentation for ```GET /releases```.
+Generated documentation for `GET /releases`.
 
 ### Authentication
 
@@ -118,14 +131,16 @@ The response contains the releases for the requested page and pagination informa
 
 ### Response structure
 
-The data array contains Release resources.
+The `data array` contains Release resources.
 
-The pagination object provides:
+The `pagination` object provides:
 
-```page``` — Current page.
-```pageSize``` — Number of results returned.
-```totalItems``` — Total number of matching releases.
-```totalPages``` — Total number of available pages.
+| Property     | Description                          |
+| ------------ | ------------------------------------ |
+| `page`       | Current page number.                 |
+| `pageSize`   | Number of results returned per page. |
+| `totalItems` | Total number of matching releases.   |
+| `totalPages` | Total number of available pages.     |
 
 ### Other response
 
@@ -137,7 +152,7 @@ Returned when the request does not contain valid authentication.
 
 ---
 
-## Endpoint Example: Get a Release
+## Endpoint Example: `GET /releases/{releaseId}`
 
 ```text
 GET /releases/{releaseId}
@@ -232,9 +247,11 @@ OpenAPI
 API Reference
 ```
 
-This avoids maintaining separate, manually copied descriptions of the same API information.
+This approach reduces duplication because API reference information does not need to be manually copied into a separate reference format.
 
-> The screenshots above are taken from the actual generated reference for this project.
+The OpenAPI specification provides the structured API contract, while the generated reference presents that contract in a format that developers can navigate and use.
+
+> The screenshots above are taken from the actual generated reference for this portfolio project.
 
 ---
 
@@ -260,6 +277,60 @@ Publish
 
 The API reference is therefore generated from the same source that defines the API contract.
 
+The workflow separates two related documentation responsibilities:
+
+---
+
+## API contract
+
+The OpenAPI specification defines the technical API contract, including:
+
+- Endpoints
+- Methods
+- Parameters
+- Schemas
+- Security
+- Responses
+
+---
+
+## Developer documentation
+
+The surrounding documentation explains how developers understand and use the API, including:
+
+- Getting started
+- Authentication
+- Common workflows
+- Examples
+- Error handling
+- API concepts
+
+This separation helps avoid duplicating the same technical information across multiple manually maintained reference pages.
+
+---
+
+## Documentation Source of Truth
+
+For the generated API reference, the OpenAPI specification is the primary technical source.
+
+```text
+portfolio/api/release-management/openapi.yaml
+```
+
+Changes to the API contract should therefore be reflected in the OpenAPI specification before the generated reference is rebuilt.
+
+A documentation review should verify that:
+
+- The OpenAPI specification is current.
+- Endpoint definitions match the implemented API.
+- Parameters are accurate.
+- Request schemas are accurate.
+- Response schemas are accurate.
+- Authentication requirements are current.
+- Examples are valid.
+- Deprecated operations are identified.
+- Generated documentation renders correctly.
+
 ---
 
 ## Current Coverage
@@ -274,6 +345,8 @@ The generated API reference currently includes:
 
 The endpoint examples above demonstrate two different API patterns:
 
+### Collection Resource
+
 ```TEXT
 GET /releases
         ↓
@@ -284,7 +357,7 @@ Query parameters
 Paginated response
 ```
 
-and:
+### Individual Resource
 
 ```TEXT
 GET /releases/{releaseId}
@@ -297,3 +370,79 @@ Single-resource response
 ```
 
 Additional operations will be documented as the API contract evolves.
+
+These patterns are common in REST API documentation and provide a useful basis for demonstrating how endpoint reference information can be structured and presented.
+
+---
+
+## Documentation Quality Checks
+
+Before publishing a generated API reference, verify:
+
+| Check              | Expected result                                       |
+| ------------------ | ----------------------------------------------------- |
+| OpenAPI validation | Specification passes validation                       |
+| Endpoint coverage  | Documented operations match the API contract          |
+| Authentication     | Security requirements are displayed correctly         |
+| Parameters         | Names, types, and requirements are accurate           |
+| Request examples   | Examples match the defined schemas                    |
+| Response examples  | Examples match the response schemas                   |
+| Status codes       | Documented responses reflect the API contract         |
+| Links              | Internal and external links work                      |
+| Screenshots        | Screenshots represent the current generated reference |
+| Rendering          | Generated documentation displays correctly            |
+| Version            | Reference corresponds to the intended API version     |
+
+---
+
+## Maintaining the Generated Reference
+
+The generated API reference should not be treated as a static artifact.
+
+When the API changes:
+
+```TEXT
+API change
+    ↓
+Update OpenAPI contract
+    ↓
+Validate specification
+    ↓
+Regenerate reference
+    ↓
+Review rendered output
+    ↓
+Update supporting documentation
+    ↓
+Publish
+```
+
+This workflow makes API documentation part of the API lifecycle rather than a separate activity performed after development is complete.
+
+---
+
+## Documentation Management Perspective
+
+A generated API reference solves only part of the documentation problem.
+
+Automation is valuable for keeping technical reference information synchronized with the API contract, but developers also need task-oriented and conceptual documentation.
+
+A complete API documentation experience therefore combines:
+
+```text
+API Contract
+     +
+Generated Reference
+     +
+Getting Started
+     +
+Authentication
+     +
+Examples
+     +
+Error Guidance
+     +
+Developer Workflows
+```
+
+The **Release Management API** demonstrates this combined approach by using an OpenAPI contract for structured reference information while maintaining supporting documentation for developers.

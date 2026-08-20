@@ -6,9 +6,20 @@ sidebar_position: 1
 description: Get started with the Release Management API.
 ---
 
-The **Release Management API** provides a REST interface for managing software releases, changes, work items, approvals, and release notes.
+The **Release Management API** provides a REST interface for managing software releases, engineering changes, work items, approvals, and release notes.
 
-This guide introduces the basic information needed to understand and work with the API.
+This guide provides the information needed to understand the API and make your first request.
+
+---
+
+## Prerequisites
+
+Before working with the API, you should have:
+
+- Basic knowledge of HTTP and REST APIs
+- An API client such as Postman, cURL, or Swagger UI
+- A valid access token for the target environment
+- Access to the API's OpenAPI specification
 
 ---
 
@@ -24,9 +35,11 @@ The ```/v1``` path identifies the first version of the API.
 
 :::info
 
-This is a fictional API created for documentation portfolio purposes. It does not represent a live production service.
+The Release Management API is a fictional API created specifically for this documentation portfolio. It does not represent a live production service.
 
 :::
+
+All endpoint examples in this documentation use this base URL unless otherwise specified.
 
 ---
 
@@ -45,9 +58,10 @@ For example:
 ```http
 GET /v1/releases
 Authorization: Bearer <access-token>
+Accept: application/json
 ```
 
-See Authentication for more information.
+See Authentication for more information about authentication requirements and security considerations.
 
 ---
 
@@ -58,9 +72,15 @@ The following example retrieves a list of releases:
 ```http
 GET https://api.release-management.test/v1/releases
 Authorization: Bearer <access-token>
+Accept: application/json
 ```
 
 A successful response returns HTTP 200 OK.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 Example:
 
@@ -89,6 +109,30 @@ Example:
 
 ---
 
+## Understand the Response
+
+The response contains two main sections:
+
+| Property     | Description                                          |
+| ------------ | ---------------------------------------------------- |
+| `data`       | Collection containing the returned releases          |
+| `pagination` | Information about the result set and available pages |
+
+Each release contains information such as:
+
+| Field         | Description                                |
+| ------------- | ------------------------------------------ |
+| `id`          | Unique release identifier                  |
+| `version`     | Release version                            |
+| `name`        | Release name                               |
+| `status`      | Current release status                     |
+| `targetDate`  | Planned release date                       |
+| `description` | Description of the release                 |
+| `createdAt`   | Date and time the release was created      |
+| `updatedAt`   | Date and time the release was last updated |
+
+---
+
 ## Common API Operations
 
 The API uses standard HTTP methods.
@@ -99,6 +143,8 @@ The API uses standard HTTP methods.
 | `POST`   | Create or associate resources | `POST /releases`               |
 | `PUT`    | Update a resource             | `PUT /releases/{releaseId}`    |
 | `DELETE` | Delete a resource             | `DELETE /releases/{releaseId}` |
+
+The API reference provides the complete request and response details for each operation.
 
 ---
 
@@ -182,6 +228,35 @@ The API is designed around this workflow so that related resources can be manage
 
 ---
 
+## Using an API Client
+
+The API can be explored using tools such as:
+
+- cURL
+- Postman
+- Swagger UI
+- Other HTTP/API clients
+
+For example, the following cURL command retrieves releases:
+
+```bash
+curl --request GET \
+  --url https://api.release-management.test/v1/releases \
+  --header 'Authorization: Bearer <access-token>' \
+  --header 'Accept: application/json'
+```
+
+The same request can be configured in an API client by providing:
+
+| Request setting | Value                                             |
+| --------------- | ------------------------------------------------- |
+| Method          | `GET`                                             |
+| URL             | `https://api.release-management.test/v1/releases` |
+| Authorization   | Bearer token                                      |
+| Accept          | `application/json`                                |
+
+---
+
 ## API Specification
 
 The complete API contract is defined using OpenAPI 3.0.3.
@@ -208,3 +283,28 @@ The specification is also validated using Redocly:
 npm run validate:api
 ```
 
+---
+
+## Documentation Workflow
+
+The API documentation is maintained using a Docs-as-Code workflow.
+
+The workflow is:
+
+```text
+OpenAPI specification
+        ↓
+Markdown documentation
+        ↓
+Git version control
+        ↓
+Review
+        ↓
+Automated validation
+        ↓
+Docusaurus build
+        ↓
+Published documentation
+```
+
+This approach keeps the API contract and developer-facing documentation versioned, reviewable, and maintainable.
