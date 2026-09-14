@@ -296,9 +296,9 @@ Example response:
 
 ---
 
-### Endpoint Example: `PUT /releases/`
+### Endpoint Example: `PUT /releases/{releaseId}`
 
-<span className="http-method http-put">PUT</span> `/releases`
+<span className="http-method http-put">PUT</span> `/releases/{releaseId}`
 
 **Purpose:** Updates an existing software release.
 
@@ -366,9 +366,9 @@ Example response:
 
 ---
 
-## Endpoint Example: `DELETE /releases`
+## Endpoint Example: `DELETE /releases/{releaseId}`
 
-<span className="http-method http-delete">DELETE</span> `/releases`
+<span className="http-method http-delete">DELETE</span> `/releases/{releaseId}`
 
 **Purpose:** Deletes an existing software release.
 
