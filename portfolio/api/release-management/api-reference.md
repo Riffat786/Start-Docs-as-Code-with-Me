@@ -8,6 +8,8 @@ description: Generated API reference and endpoint examples for the Release Manag
 
 The API reference is generated directly from the project's OpenAPI specification using **Redocly CLI**.
 
+This API reference documents the available endpoints for managing software releases. It includes supported HTTP methods, request parameters, request bodies, response examples, and common error responses.
+
 The workflow is:
 
 ```text
