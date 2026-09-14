@@ -62,9 +62,7 @@ The generated reference provides navigation across the API resources and exposes
 
 ## Endpoint Example: `GET /releases`
 
-```text
-GET /releases
-```
+<span className="http-method http-get">GET</span> `/releases`
 
 **Purpose**: Returns a paginated list of software releases.
 
@@ -154,9 +152,7 @@ Returned when the request does not contain valid authentication.
 
 ## Endpoint Example: `GET /releases/{releaseId}`
 
-```text
-GET /releases/{releaseId}
-```
+<span className="http-method http-get">GET</span> `/releases/{releaseId}`
 
 **Purpose**: Returns a specific software release by its unique identifier.
 
@@ -223,6 +219,209 @@ Authentication is required.
 ```
 
 The requested release does not exist.
+
+---
+
+## Endpoint Example: `POST /releases`
+
+<span className="http-method http-post">POST</span> `/releases`
+
+**Purpose:** Creates a new software release.
+
+![POST releases endpoint](/img/portfolio/api/release-management-api-post-release.png)
+
+### Authentication
+
+Bearer authentication is required.
+
+### Request
+
+```http
+POST /v1/releases
+
+Authorization: Bearer <access-token>
+Content-Type: application/json
+Accept: application/json
+```
+
+### Request Body
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `version` | string | Yes | Release version. |
+| `name` | string | Yes | Name of the release. |
+| `status` | string | No | Initial release status. |
+| `targetDate` | string | Yes | Planned release date. |
+| `description` | string | No | Description of the release. |
+
+Example request body:
+
+```json
+{
+  "version": "2026.09",
+  "name": "Customer Portal Release",
+  "status": "draft",
+  "targetDate": "2026-09-30",
+  "description": "Improvements to customer portal navigation and reporting."
+}
+```
+
+### Successful Response
+
+```http
+201 Created
+```
+
+Example response:
+
+```json
+{
+  "id": "rel_2026_09",
+  "version": "2026.09",
+  "name": "Customer Portal Release",
+  "status": "draft",
+  "targetDate": "2026-09-30",
+  "description": "Improvements to customer portal navigation and reporting."
+}
+```
+
+### Other Responses
+
+| Status code | Description |
+|---|---|
+| `400 Bad Request` | Request contains invalid data. |
+| `401 Unauthorized` | Authentication is missing or invalid. |
+| `422 Unprocessable Content` | Request fails validation. |
+| `409 Conflict` | Release already exists. |
+
+---
+
+### Endpoint Example: `PUT /releases/`
+
+<span className="http-method http-put">PUT</span> `/releases`
+
+**Purpose:** Updates an existing software release.
+
+![PUT releases endpoint](/img/portfolio/api/release-management-api-put-release.png)
+
+### Authentication
+
+Bearer authentication is required.
+
+### Path parameter
+
+| Parameter   | Type   | Required | Description                       |
+| ----------- | ------ | -------- | --------------------------------- |
+| `releaseId` | string | Yes      | Unique identifier of the release. |
+
+### Request 
+
+```http
+PUT /v1/releases/rel_2026_09
+
+Authorization: Bearer <access-token>
+Content-Type: application/json
+Accept: application/json
+```
+
+Example request body:
+
+```json
+{
+  "version": "2026.09",
+  "name": "Customer Portal Release",
+  "status": "ready_for_approval",
+  "targetDate": "2026-09-30",
+  "description": "Improvements to customer portal navigation and reporting."
+}
+```
+
+### Successful Response
+
+```http
+200 OK
+```
+
+Example response:
+
+```json
+{
+  "id": "rel_2026_09",
+  "version": "2026.09",
+  "name": "Customer Portal Release",
+  "status": "ready_for_approval",
+  "targetDate": "2026-09-30",
+  "description": "Improvements to customer portal navigation and reporting."
+}
+```
+
+### Other Responses
+
+| Status code | Description |
+|---|---|
+| `400 Bad Request` | Request contains invalid data. |
+| `401 Unauthorized` | Authentication is missing or invalid. |
+| `404 Not Found` | Release does not exist. |
+| `422 Unprocessable Content` | Request fails validation. |
+
+---
+
+## Endpoint Example: `DELETE /releases`
+
+<span className="http-method http-delete">DELETE</span> `/releases`
+
+**Purpose:** Deletes an existing software release.
+
+![DELETE releases endpoint](/img/portfolio/api/release-management-api-delete-release.png)
+
+### Authentication
+
+Bearer authentication is required.
+
+### Path parameter
+
+| Parameter   | Type   | Required | Description                       |
+| ----------- | ------ | -------- | --------------------------------- |
+| `releaseId` | string | Yes      | Unique identifier of the release. |
+
+### Request
+
+```http
+DELETE /v1/releases/rel_2026_09
+
+Authorization: Bearer <access-token>
+```
+
+### Successful Response
+
+```http
+204 No Content
+```
+
+The request succeeded and the release was deleted. No response body is returned.
+
+### Other Responses
+
+| Status code | Description |
+|---|---|
+| `401 Unauthorized` | Authentication is missing or invalid. |
+| `404 Not Found` | Release does not exist. |
+| `409 Conflict` | Release can not be deleted in its current state. |
+
+
+### 
+
+## Endpoint Coverage Summary
+
+| Method | Endpoint | Description | Success Response |
+|---|---|---|---|
+| GET | `/releases` | List releases with optional filters and pagination | `200 OK` |
+| GET | `/releases/{releaseId}` | Retrieve a specific release | `200 OK` |
+| POST | `/releases` | Create a new release | `201 Created` |
+| PUT | `/releases/{releaseId}` | Replace an existing release | `200 OK` |
+| DELETE | `/releases/{releaseId}` | Delete a release | `204 No Content` |
+
+These examples demonstrate collection retrieval, individual resource retrieval, resource creation, resource updates, and resource deletion.
 
 ---
 

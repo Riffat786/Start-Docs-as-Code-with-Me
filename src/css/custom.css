@@ -53,3 +53,35 @@
   height: auto;
   margin: 0 auto 0.5rem;
 }
+
+/* HTTP method badges */
+
+.http-method {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  margin-right: 0.4rem;
+}
+
+.http-get {
+  background-color: #16a34a;
+}
+
+.http-post {
+  background-color: #2563eb;
+}
+
+.http-put {
+  background-color: #d97706;
+}
+
+.http-patch {
+  background-color: #9333ea;
+}
+
+.http-delete {
+  background-color: #dc2626;
+}
