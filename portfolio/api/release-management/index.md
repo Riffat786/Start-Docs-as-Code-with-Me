@@ -239,18 +239,30 @@ More importantly, it demonstrates how a Technical Writer can work with an API as
 
 ## Project Status
 
-**In development**: The API contract is being developed incrementally.
+**In development:** The API contract and documentation are being developed incrementally.
 
-Future stages will include:
+### Completed
 
-- Additional API resources
+- API overview
 - Authentication documentation
 - Getting started guidance
-- Workflow examples
-- API reference generation
-- API documentation navigation
+- API reference documentation
+- CRUD endpoint examples
+- Request body and response documentation
+- HTTP methods and status codes
+- OpenAPI specification
+- Redocly API reference generation
+- API validation using Redocly CLI
+- Documentation navigation
+- Git and GitHub version control
+
+### Planned
+
+- Additional API resources
+- More realistic workflow examples
 - Automated validation through GitHub Actions
-- Publication as part of this documentation site
+- Further API reference expansion
+- Publication as part of the documentation portfolio
 
 ---
 
