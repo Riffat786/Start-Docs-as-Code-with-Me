@@ -13,11 +13,11 @@ The Release Management API uses resource-oriented endpoints for working with sof
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/releases` | Retrieve a list of releases |
-| `GET` | `/releases/{releaseId}` | Retrieve a specific release |
-| `POST` | `/releases` | Create a release |
-| `PUT` | `/releases/{releaseId}` | Replace a release |
-| `DELETE` | `/releases/{releaseId}` | Delete a release |
+| <span className="http-method http-get">GET</span> | `/releases` | Retrieve a list of releases |
+| <span className="http-method http-get">GET</span> | `/releases/{releaseId}` | Retrieve a specific release |
+| <span className="http-method http-post">POST</span> | `/releases` | Create a release |
+| <span className="http-method http-put">PUT</span> | `/releases/{releaseId}` | Replace a release |
+| <span className="http-method http-delete">DELETE</span> | `/releases/{releaseId}` | Delete a release |
 
 ---
 
