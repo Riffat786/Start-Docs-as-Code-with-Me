@@ -103,12 +103,6 @@ const config: Config = {
 
   items: [
     {
-      to: '/',
-      label: 'Home',
-      position: 'left',
-    },
-  
-    {
       to: '/insights',
       label: 'Insights & Articles',
       position: 'left',

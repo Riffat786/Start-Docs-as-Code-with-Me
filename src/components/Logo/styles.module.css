@@ -1,0 +1,66 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.logoContainer:hover {
+  background-color: rgba(46, 133, 85, 0.1);
+}
+
+[data-theme='dark'] .logoContainer:hover {
+  background-color: rgba(37, 194, 160, 0.1);
+}
+
+.svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+[data-theme='dark'] .svg {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.logoContainer:hover .svg {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.12));
+}
+
+[data-theme='dark'] .logoContainer:hover .svg {
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.text {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+/* Responsive: Hide text on smaller screens */
+@media (max-width: 768px) {
+  .textContainer {
+    display: none;
+  }
+
+  .logoContainer {
+    gap: 0;
+    padding: 0;
+  }
+}
+
+/* Accessibility */
+.logoContainer:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
