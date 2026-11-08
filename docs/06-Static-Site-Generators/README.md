@@ -48,7 +48,7 @@ You will have:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 45–60 minutes
 
