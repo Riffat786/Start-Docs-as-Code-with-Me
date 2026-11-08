@@ -74,6 +74,7 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Editor | The area where you view and edit files. |
+| Event | Something that happens, such as a push or a file save, that can start an automated task. |
 | Explorer | The part of the editor that displays project files and folders. |
 | Extension | An add-on that provides additional functionality in VS Code. |
 
@@ -85,6 +86,7 @@ sidebar_position: 2
 | `.git` | The directory where Git stores repository information. |
 | Git configuration | Settings that control how Git behaves. |
 | Git diff | A command that shows the changes between your working files and the last commit, line by line. |
+| Git hook | A script that Git runs automatically at a point in its workflow, such as before a commit. |
 | Git repository | A folder managed by Git that contains files and their version history. |
 | GitHub | A platform for hosting Git repositories and collaborating on projects. |
 | GitHub Actions | GitHub's automation platform for running workflows in response to repository events. |
@@ -96,6 +98,7 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Heading | A piece of text used to organize the structure of a document. |
+| Hook | An automated action that runs when a specific event happens. |
 | Horizontal rule | A visual separator created with Markdown syntax. |
 | HTTPS | A secure web protocol that can be used for Git repository connections. |
 | Human-in-the-loop | A review model in which a person approves the result before it is used. |
@@ -205,6 +208,7 @@ sidebar_position: 2
 | Terminology | The words and terms used to describe a product, feature, process, or concept. |
 | Tip | A callout used to provide useful advice or a recommended practice. |
 | Tool | An external system or connector that an agent can call, such as an API connector. |
+| Trigger | An event that starts a specific automated workflow or task. |
 | Troubleshooting | The process of identifying and resolving a problem. |
 
 ## V
@@ -221,5 +225,6 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Warning | A callout used to identify a possible problem or risk. |
+| Workflow | A defined sequence of steps that runs automatically or on demand. |
 | Working tree | The files you currently have checked out and are working on. |
 | WSL 2 | Windows Subsystem for Linux 2, which provides a Linux environment used by Docker Desktop on Windows. |
