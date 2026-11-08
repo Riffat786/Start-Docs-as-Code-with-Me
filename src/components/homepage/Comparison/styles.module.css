@@ -1,5 +1,5 @@
 .comparison {
-  padding: 80px 20px;
+  padding: 48px 20px;
   background: var(--ifm-color-emphasis-100);
 }
 
@@ -13,10 +13,10 @@
 }
 
 .title {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 800;
   text-align: center;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   color: var(--ifm-heading-color);
 }
 
@@ -24,7 +24,7 @@
   text-align: center;
   font-size: 18px;
   color: var(--ifm-text-color-secondary);
-  margin: 0 0 50px 0;
+  margin: 0 0 28px 0;
 }
 
 .comparisonTable {
@@ -50,7 +50,7 @@
 }
 
 .header > div {
-  padding: 20px 24px;
+  padding: 14px 24px;
 }
 
 .row {
@@ -71,7 +71,7 @@
 }
 
 .row > div {
-  padding: 18px 24px;
+  padding: 12px 24px;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -141,7 +141,7 @@
 
 @media (max-width: 768px) {
   .comparison {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .title {

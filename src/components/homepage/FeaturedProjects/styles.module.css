@@ -1,16 +1,16 @@
 .projects {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: var(--site-surface-muted);
 }
 
 .sectionHeader {
   text-align: center;
   max-width: 760px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
 }
 
 .sectionHeader h2 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 800;
 }
 
@@ -30,7 +30,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 20px;
   background: var(--site-surface);
   border: 1px solid var(--site-border);
@@ -58,7 +58,7 @@
 .description {
   color: var(--ifm-color-emphasis-700);
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   flex-grow: 1;
 }
 
@@ -126,6 +126,6 @@
   }
 
   .projects {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 }

@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 80px 20px;
+  padding: 48px 20px;
   background: var(--ifm-background-color);
 }
 
@@ -9,10 +9,10 @@
 }
 
 .title {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 800;
   text-align: center;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   color: var(--ifm-heading-color);
 }
 
@@ -21,7 +21,7 @@
   font-size: 18px;
   color: var(--ifm-text-color-secondary);
   max-width: 600px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 32px auto;
   line-height: 1.6;
 }
 
@@ -34,7 +34,7 @@
 .card {
   background: var(--site-surface);
   border-radius: 16px;
-  padding: 32px;
+  padding: 24px;
   box-shadow: var(--site-shadow-sm);
   border: 1px solid var(--site-border);
   border-left: 4px solid var(--site-accent);
@@ -65,8 +65,8 @@
   font-style: italic;
   line-height: 1.8;
   color: var(--ifm-text-color);
-  margin: 0 0 24px 0;
-  min-height: 80px;
+  margin: 0 0 16px 0;
+  min-height: 0;
 }
 
 .author {
@@ -88,7 +88,7 @@
 
 @media (max-width: 768px) {
   .testimonials {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .title {

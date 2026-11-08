@@ -1,5 +1,5 @@
 .faq {
-  padding: 80px 20px;
+  padding: 48px 20px;
   background: var(--ifm-background-color);
 }
 
@@ -9,10 +9,10 @@
 }
 
 .title {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 800;
   text-align: center;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   color: var(--ifm-heading-color);
 }
 
@@ -20,13 +20,13 @@
   text-align: center;
   font-size: 18px;
   color: var(--ifm-text-color-secondary);
-  margin: 0 0 48px 0;
+  margin: 0 0 28px 0;
 }
 
 .faqList {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .item {
@@ -52,7 +52,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  padding: 20px 24px;
+  padding: 16px 22px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -112,7 +112,7 @@
 
 @media (max-width: 768px) {
   .faq {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .title {

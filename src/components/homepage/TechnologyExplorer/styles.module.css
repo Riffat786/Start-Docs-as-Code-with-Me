@@ -1,16 +1,16 @@
 .techStack {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: var(--ifm-color-emphasis-100);
 }
 
 .sectionHeader {
   text-align: center;
   max-width: 760px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
 }
 
 .sectionHeader h2 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 800;
 }
 
@@ -24,14 +24,14 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .card {
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .icon {
@@ -74,6 +74,6 @@
 
 @media (max-width: 768px) {
   .techStack {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 }
