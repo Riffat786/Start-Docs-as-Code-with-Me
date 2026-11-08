@@ -357,4 +357,4 @@ The goal is to show readers what the plugin does, what it can access, who approv
 
 ## Next lesson
 
-Continue to **Prompt Engineering**. You will learn how to write prompts that give clear, consistent, and reviewable results.
+Continue to **Claude Code**. You will learn how to use Claude Code to draft, review, and update documentation safely.

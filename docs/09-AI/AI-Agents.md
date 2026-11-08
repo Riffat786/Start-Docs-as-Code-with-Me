@@ -420,4 +420,4 @@ The goal is to show readers what the agent does, what it produces, what it canno
 
 ## Next lesson
 
-Continue to **MCP**. You will learn how the Model Context Protocol connects AI tools to external systems, such as Azure DevOps.
+Continue to **Prompt engineering**. You will learn how to write prompts that give clear, consistent, and reviewable results.

@@ -420,4 +420,4 @@ The goal is to turn a repeated documentation task into clear, tested, and review
 
 ## Next lesson
 
-Continue to **Plugins**. You will learn how plugins add features to AI tools, and how to review them before your team uses them.
+Continue to **MCP**. You will learn how the Model Context Protocol connects AI tools to external systems, such as Azure DevOps.

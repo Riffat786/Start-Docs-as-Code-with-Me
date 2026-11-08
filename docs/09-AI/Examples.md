@@ -400,4 +400,4 @@ The goal is to teach the AI the style you need, and to check every result before
 
 ## Next module
 
-Continue to **Module 10 · Automation**. You will learn how to automate documentation tasks with scripts and workflows.
+Continue to **Module 11 · Automation**. You will learn how to automate documentation tasks with scripts and workflows.

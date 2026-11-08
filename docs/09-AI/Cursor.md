@@ -383,6 +383,6 @@ The goal is to work faster with AI help, while the review, the facts, and the ap
 
 ---
 
-## Next module
+## Next lesson
 
-Continue to **Module 10 · Automation**. You will learn how to automate documentation tasks with scripts and workflows.
+Continue to **Hooks**. You will learn how hooks run automated actions in response to events.

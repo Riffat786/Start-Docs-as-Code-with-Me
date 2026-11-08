@@ -381,6 +381,6 @@ The goal is to write prompts that give results you can check, repeat, and explai
 
 ---
 
-## Next module
+## Next lesson
 
-Continue to **Module 10 · Automation**. You will learn how to automate documentation tasks with scripts and workflows.
+Continue to **Skills**. You will learn how to write reusable instructions for repeated documentation tasks.
