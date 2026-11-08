@@ -197,6 +197,8 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Session | One period of work with Claude Code, from the moment you start it until you exit. |
+| Skill | A set of reusable instructions for one kind of task, which an AI tool loads when the task matches. |
+| SKILL.md | The main file of a skill. It holds a short name and description, and the instructions the AI follows. |
 | Slash command | A short name that starts a saved request or workflow, such as /review. |
 | Source Control | The VS Code interface for working with version control systems such as Git. |
 | Source of truth | The authoritative location where information should be maintained. |
