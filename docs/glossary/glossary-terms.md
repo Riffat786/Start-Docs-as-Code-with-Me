@@ -20,6 +20,7 @@ sidebar_position: 2
 | AI | Artificial intelligence used to assist with tasks such as analysis, writing, and coding. |
 | AI agent | An AI model that completes a task in steps, using inputs, tools, and outputs. |
 | API key | A secret value used to authenticate access to an API or service. |
+| Argument | A value that a command uses, such as a file name or a script name. |
 
 ## B
 
@@ -56,6 +57,7 @@ sidebar_position: 2
 | --- | --- |
 | Danger | A callout used to identify a serious or potentially destructive action. |
 | Dependency | Software or a package that another application or project requires. |
+| Deploy | To publish a site or a change to a live environment where readers can use it. |
 | Deterministic step | A step that always produces the same result for the same input. |
 | Docker | A platform for building, running, and managing applications in containers. |
 | Docker CLI | The command-line interface used to interact with Docker. |
@@ -134,12 +136,14 @@ sidebar_position: 2
 | npm | The Node Package Manager used to install and manage packages. |
 | npm install | An npm command used to install project dependencies. |
 | npm run | An npm command used to run scripts defined by a project. |
+| npm script | A named shortcut in package.json that runs a longer command, such as npm run build. |
 | Numbered list | A list used when items need to be followed in a specific order. |
 
 ## O
 
 | Term | Definition |
 | --- | --- |
+| Option | A setting that changes how a command runs, often written with two dashes, such as --port. |
 | `origin` | The conventional name for the main remote repository. |
 | Output | The data or file that an agent produces for the next step. |
 
@@ -187,6 +191,7 @@ sidebar_position: 2
 | Source Control | The VS Code interface for working with version control systems such as Git. |
 | Source of truth | The authoritative location where information should be maintained. |
 | SSH | A secure protocol that can be used to authenticate Git operations. |
+| Subcommand | The action that a tool performs, such as run in npm run or status in git status. |
 | Syntax highlighting | Visual formatting that helps readers distinguish different parts of code. |
 
 ## T
