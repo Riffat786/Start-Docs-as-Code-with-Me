@@ -54,4 +54,4 @@ By the end of this module, you will be able to:
 
 ## Next Module
 
-➡️ Module 10 – AI
+Module 10 – AI
