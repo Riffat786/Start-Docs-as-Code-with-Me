@@ -243,7 +243,7 @@ npm run dev
 
 ## Style Guide
 
-See [STYLE_GUIDE.md](STYLE_GUIDE.md) for documentation standards.
+Follow your documentation standards for formatting and writing style.
 ```
 
 ### .gitignore
