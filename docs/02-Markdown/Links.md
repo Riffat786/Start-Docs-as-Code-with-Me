@@ -1,6 +1,6 @@
 ---
 title: Creating Links in Markdown
-sidebar_position: 4
+sidebar_position: 7
 description: Learn how to create internal and external links effectively in your documentation.
 ---
 
@@ -145,8 +145,8 @@ Link text should be descriptive and meaningful.
 
 ### Do
 
-- Write descriptive link text: `[Installation guide](/docs/install)`
-- Use the article title: `[Getting Started Guide](/docs/intro)`
+- Write descriptive link text: `[Installation guide](./installation.md)`
+- Use the article title: `[Getting Started Guide](./getting-started.md)`
 - Match the destination page title: Link text and page title should align.
 
 ### Don't
@@ -160,14 +160,14 @@ Link text should be descriptive and meaningful.
 
 **Good:**
 ```markdown
-[View the API reference](/docs/api)
-[Learn about deployment](/docs/deployment)
+[View the API reference](./api-reference.md)
+[Learn about deployment](./deployment-guide.md)
 ```
 
 **Poor:**
 ```markdown
-[Click here](/docs/api)
-[More information](/docs/deployment)
+[Click here](./api-reference.md)
+[More information](./deployment-guide.md)
 ```
 
 ---
@@ -207,9 +207,9 @@ Group related links in a dedicated section:
 ```markdown
 ## See Also
 
-- [Configuration Guide](/docs/config)
-- [Best Practices](/docs/best-practices)
-- [API Reference](/docs/api)
+- [Configuration Guide](./configuration.md)
+- [Best Practices](./best-practices.md)
+- [API Reference](./api-reference.md)
 ```
 
 ### Link Grouping by Category
@@ -218,12 +218,12 @@ Group related links in a dedicated section:
 ## Learn More
 
 ### Getting Started
-- [Installation](/docs/install)
-- [Quick Start](/docs/quick-start)
+- [Installation](./installation.md)
+- [Quick Start](./quick-start.md)
 
 ### Advanced Topics
-- [Configuration](/docs/config)
-- [Deployment](/docs/deployment)
+- [Configuration](./configuration.md)
+- [Deployment](./deployment.md)
 ```
 
 ---
@@ -268,14 +268,14 @@ Later in the document:
 **Docusaurus:**
 
 ```markdown
-[Link to page](/docs/page-name)
-[Link to section](/docs/page-name#section)
+[Link to page](./page-name.md)
+[Link to section](./page-name.md#section)
 ```
 
 **Jekyll:**
 
 ```markdown
-[Link to page](/docs/page-name)
+[Link to page](./page-name.md)
 ```
 
 **MkDocs:**
@@ -317,12 +317,12 @@ Make links accessible to all users.
 Screen reader users rely on link text to understand where a link goes.
 
 **Do:**
-- Use descriptive text: `[Read the installation guide](/docs/install)`
+- Use descriptive text: `[Read the installation guide](./installation.md)`
 - Make sense out of context: A screen reader lists links without surrounding text.
 
 **Don't:**
-- Use empty links: `[](/docs/page)` ❌
-- Use only punctuation: `[...](/docs/page)` ❌
+- Use empty links: `[](./page.md)` ❌
+- Use only punctuation: `[...](./page.md)` ❌
 - Repeat the URL: `[https://example.com](https://example.com)` ❌
 
 ### Color and Contrast
@@ -376,7 +376,7 @@ Place files in a `public` or `static` folder in your project.
 Add title text that appears on hover (HTML only):
 
 ```html
-<a href="/docs/page" title="Visit this page">Link text</a>
+<a href="./page.md" title="Visit this page">Link text</a>
 ```
 
 ---
@@ -388,25 +388,25 @@ Add title text that appears on hover (HTML only):
 ```markdown
 ## Related Topics
 
-- [Getting started](/docs/getting-started)
-- [Configuration options](/docs/config)
-- [API reference](/docs/api)
+- [Getting started](./getting-started.md)
+- [Configuration options](./configuration.md)
+- [API reference](./api-reference.md)
 ```
 
 ### Cross-References
 
 ```markdown
-For more information, see [Advanced Configuration](/docs/advanced-config).
+For more information, see [Advanced Configuration](./advanced-configuration.md).
 ```
 
 ### Step-by-Step Navigation
 
 ```markdown
-**Prerequisites:** [Install the software](/docs/install)
+**Prerequisites:** [Install the software](./installation.md)
 
-**Next:** [Configure your project](/docs/configure)
+**Next:** [Configure your project](./configuration.md)
 
-**Troubleshooting:** [Solve common problems](/docs/troubleshoot)
+**Troubleshooting:** [Solve common problems](./troubleshooting.md)
 ```
 
 ### Resource Links
@@ -432,7 +432,7 @@ For more information, see [Advanced Configuration](/docs/advanced-config).
 - Group related links. Place similar links together for better user experience.
 - Use reference-style links in long documents. They improve readability of your source Markdown.
 - Link to sections within long pages. Help readers jump to relevant content.
-- Use consistent link naming. If you use "Installation" as a heading, link to "[Installation](/docs/install)" consistently.
+- Use consistent link naming. If you use "Installation" as a heading, link to `[Installation](./installation.md)` consistently.
 - Provide context for external links. Explain why you're linking and what readers will find.
 - Never link to external sites for critical information. Keep critical content within your documentation.
 - Update links when pages move. Use redirects or update all references.
