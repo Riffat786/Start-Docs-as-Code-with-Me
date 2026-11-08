@@ -17,6 +17,7 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Accessibility | Designing content so that people with different abilities can use and understand it. |
+| Action | A reusable step, published by GitHub or others, that a workflow runs with the `uses` keyword. |
 | AI | Artificial intelligence used to assist with tasks such as analysis, writing, and coding. |
 | AI agent | An AI model that completes a task in steps, using inputs, tools, and outputs. |
 | AI chat | A panel in an AI-enabled editor where you ask questions about files and request proposed changes. |
@@ -80,6 +81,7 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Editor | The area where you view and edit files. |
+| Environment | A named deployment target, such as github-pages, that can have its own rules and required reviewers. |
 | Event | Something that happens, such as a push or a file save, that can start an automated task. |
 | Example pair | An input and the output that you want for it, used to teach an AI tool a pattern. |
 | Explorer | The part of the editor that displays project files and folders. |
@@ -200,12 +202,14 @@ sidebar_position: 2
 | Review artifact | A file that records the result of a review, including scores and recommendations. |
 | Role | The responsibility of an agent in a workflow. |
 | RTCCO framework | A prompt structure with five parts: Role, Task, Context, Constraints, and Output. |
+| Runner | The virtual machine that runs a job in a workflow, such as ubuntu-latest. |
 | Runtime | Software that provides the environment required to execute a program. |
 
 ## S
 
 | Term | Definition |
 | --- | --- |
+| Secret | An encrypted value, such as a token, stored in GitHub and passed to a workflow without being shown in logs. |
 | Session | One period of work with Claude Code, from the moment you start it until you exit. |
 | Skill | A set of reusable instructions for one kind of task, which an AI tool loads when the task matches. |
 | SKILL.md | The main file of a skill. It holds a short name and description, and the instructions the AI follows. |
@@ -213,6 +217,7 @@ sidebar_position: 2
 | Source Control | The VS Code interface for working with version control systems such as Git. |
 | Source of truth | The authoritative location where information should be maintained. |
 | SSH | A secure protocol that can be used to authenticate Git operations. |
+| Step | One task inside a job in a workflow, run with a command or a reusable action. |
 | Subcommand | The action that a tool performs, such as run in npm run or status in git status. |
 | Syntax highlighting | Visual formatting that helps readers distinguish different parts of code. |
 
