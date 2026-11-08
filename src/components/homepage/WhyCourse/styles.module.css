@@ -6,9 +6,9 @@
 .featureCard {
   background: var(--site-surface);
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 1rem;
 
-  height: 90%;
+  height: auto;
 
   text-align: center;
 
@@ -44,7 +44,7 @@
 }
 
 .featureDescription {
-  min-height: 72px;
+  min-height: 6rem;
 }
 .featureTitle {
     font-size: 1.3rem;
