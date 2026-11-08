@@ -1,6 +1,6 @@
 ---
 title: Working with Images in Markdown
-sidebar_position: 3
+sidebar_position: 8
 description: Learn how to insert, optimize, and manage images in your documentation.
 ---
 
