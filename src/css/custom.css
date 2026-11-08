@@ -29,6 +29,13 @@
   --site-footer-bg: #135d8f;
   --site-footer-text: #f6f6f7;
   --site-footer-heading: #ffffff;
+  --site-footer-surface: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+  --site-tint: #e8f5ef;
+  --site-chip-bg: #f1f5f9;
+  --site-warn-bg: #fff7ed;
+  --site-warn-text: #c2410c;
+  --site-cta-start: #2e8555;
+  --site-cta-end: #3b7cd9;
 }
 
 /* Dark mode uses lighter accents so text and gradients stay readable on dark surfaces. */
@@ -52,6 +59,13 @@
   --site-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
   --site-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
   --site-shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.55);
+  --site-footer-surface: linear-gradient(180deg, #161a1f 0%, #1d2228 100%);
+  --site-tint: rgba(37, 194, 160, 0.15);
+  --site-chip-bg: #2a3038;
+  --site-warn-bg: rgba(251, 146, 60, 0.15);
+  --site-warn-text: #fdba74;
+  --site-cta-start: #1a7f66;
+  --site-cta-end: #2f5fae;
 }
 
 /* Footer background is the same blue in both modes, so its text is always light. */

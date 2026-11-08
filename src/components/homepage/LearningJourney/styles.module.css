@@ -1,6 +1,6 @@
 .learningJourney {
   padding: 2rem 0;
-  background: #f8fafc;
+  background: var(--site-surface-muted);
 }
 
 .sectionHeader {
@@ -17,7 +17,7 @@
 
 .sectionHeader p {
   font-size: 1.2rem;
-  color: #64748b;
+  color: var(--ifm-color-emphasis-700);
   line-height: 1.8;
 }
 
@@ -30,12 +30,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--site-surface);
   border-radius: 20px;
   padding: 2rem;
   text-decoration: none;
   color: inherit;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--site-border);
   box-shadow: 0 8px 30px rgba(0,0,0,.06);
   transition: all .3s ease;
 }
@@ -50,7 +50,7 @@
 .badge {
   display: inline-block;
   align-self: flex-start;
-  background: #e8f1ff;
+  background: var(--site-tint);
   color: var(--ifm-color-primary);
   padding: .35rem .9rem;
   border-radius: 999px;
@@ -71,7 +71,7 @@
 }
 
 .description {
-  color: #64748b;
+  color: var(--ifm-color-emphasis-700);
   line-height: 1.7;
   flex-grow: 1;
   margin-bottom: 1.5rem;
@@ -82,8 +82,8 @@
   justify-content: space-between;
   margin-bottom: 1.8rem;
   font-size: .9rem;
-  color: #475569;
-  border-top: 1px solid #edf2f7;
+  color: var(--ifm-color-emphasis-700);
+  border-top: 1px solid var(--site-border);
   padding-top: 1rem;
 }
 
@@ -99,21 +99,6 @@
 
 .card:hover .button {
   background: var(--ifm-color-primary-dark);
-}
-
-html[data-theme='dark'] .learningJourney {
-  background: var(--ifm-background-surface-color);
-}
-
-html[data-theme='dark'] .card {
-  background: var(--ifm-card-background-color);
-  border-color: var(--ifm-color-emphasis-300);
-}
-
-html[data-theme='dark'] .description,
-html[data-theme='dark'] .meta,
-html[data-theme='dark'] .sectionHeader p {
-  color: var(--ifm-color-emphasis-700);
 }
 
 @media (max-width: 768px) {
