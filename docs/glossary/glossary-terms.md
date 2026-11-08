@@ -60,6 +60,7 @@ sidebar_position: 2
 | Continuous deployment | A practice in which each checked change is published automatically. |
 | Continuous integration | A practice in which each change is built and checked as soon as it is added. |
 | Counter-example | An output that you do not want an AI tool to produce, used to show what to avoid. |
+| cSpell | A spell checker extension for VS Code that reads a custom word list from the project settings. |
 | Cursor | An AI-powered code editor used to work with software projects and files. |
 
 ## D
@@ -223,6 +224,7 @@ sidebar_position: 2
 | Slash command | A short name that starts a saved request or workflow, such as /review. |
 | Source Control | The VS Code interface for working with version control systems such as Git. |
 | Source of truth | The authoritative location where information should be maintained. |
+| Spell checker | A tool that compares each word with a dictionary, and flags words it does not recognize. |
 | SSH | A secure protocol that can be used to authenticate Git operations. |
 | Step | One task inside a job in a workflow, run with a command or a reusable action. |
 | Subcommand | The action that a tool performs, such as run in npm run or status in git status. |
