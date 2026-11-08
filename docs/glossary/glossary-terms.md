@@ -21,6 +21,7 @@ sidebar_position: 2
 | AI | Artificial intelligence used to assist with tasks such as analysis, writing, and coding. |
 | AI agent | An AI model that completes a task in steps, using inputs, tools, and outputs. |
 | AI chat | A panel in an AI-enabled editor where you ask questions about files and request proposed changes. |
+| Anchor | A named location on a page, such as a heading, that a link can point to with a # symbol. |
 | API key | A secret value used to authenticate access to an API or service. |
 | Argument | A value that a command uses, such as a file name or a script name. |
 | Artifact | A file or set of files that a pipeline produces and stores, such as a built site. |
@@ -32,6 +33,7 @@ sidebar_position: 2
 | --- | --- |
 | Blockquote | A Markdown element used to visually distinguish quoted or highlighted content. |
 | Branch | A separate line of development within a repository. |
+| Broken link | A link whose target page, file, or anchor does not exist. |
 | Build | The process of generating the output required to publish or run a project. |
 | Bulleted list | A list used when the order of items does not matter. |
 
@@ -86,6 +88,7 @@ sidebar_position: 2
 | Example pair | An input and the output that you want for it, used to teach an AI tool a pattern. |
 | Explorer | The part of the editor that displays project files and folders. |
 | Extension | An add-on that provides additional functionality in VS Code. |
+| External link | A link to a page on another website, which the build does not check by default. |
 
 ## G
 
@@ -122,6 +125,7 @@ sidebar_position: 2
 | Inline edit | A change that an AI tool proposes within the open file, which you accept or reject. |
 | Input | The data or file that an agent receives. |
 | Integrated Terminal | A terminal built into VS Code. |
+| Internal link | A link to a page or file within the documentation site, which the build checks. |
 
 ## L
 
