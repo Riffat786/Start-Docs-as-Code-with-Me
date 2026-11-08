@@ -1,19 +1,98 @@
-> 🚧 This module is currently under development.
+---
+title: OpenAPI
+sidebar_position: 7
+description: Learn how the OpenAPI specification defines an API contract, and how to read and write it to produce accurate API reference documentation.
+---
 
-## Step 1: Create a openapi file
+# OpenAPI
 
-As openapi.yaml
+> **Lesson level:** Intermediate
+>
+> **Time to complete:** 35–45 minutes
+>
+> **Prerequisites:** Complete the HTTP, REST, JSON, and Examples lessons.
 
 ---
 
-## Step 2 — Define the API metadata
+## Learning objectives
 
-Now we'll put the foundation into openapi.yaml.
+After you complete this lesson, you will be able to:
 
-Paste this exactly into the file:
+- Explain what the OpenAPI Specification is and why it matters.
+- Identify the main sections of an OpenAPI file.
+- Read an operation and map it to the HTTP lesson concepts.
+- Describe authentication with a security scheme.
+- Define a reusable schema and reference it with `$ref`.
+- Explain how an enum affects the documentation.
+- Validate an OpenAPI file before you generate documentation.
+- Use the Release Management API in this repository as a real example.
 
-```YAML
-openapi: 3.0.3
+---
+
+## Why OpenAPI matters for technical writers
+
+An OpenAPI file describes the API contract. The contract lists every endpoint, parameter, request body, response, and schema.
+
+Tools read the contract to create reference documentation. When the contract changes, the reference can change too. This reduces the risk that the documentation and the API disagree.
+
+> **Documentation Manager's Tip**
+>
+> Treat the OpenAPI file as the source of truth for the reference. If the docs and the contract disagree, the contract is correct until the API team says otherwise.
+
+---
+
+## Before you start
+
+Make sure you have:
+
+- Completed the HTTP, REST, JSON, and Examples lessons.
+- Visual Studio Code or Cursor, with a YAML extension installed.
+- The course repository cloned to your computer.
+- Node.js installed, so that you can run the Redocly command.
+
+:::note
+
+**For beginners**
+
+OpenAPI files use YAML. YAML uses indentation to show structure. Use spaces, not tabs. Two spaces per level is the common style in this repository.
+
+:::
+
+---
+
+## What is OpenAPI?
+
+The OpenAPI Specification is a standard format for describing HTTP APIs. This repository uses OpenAPI version `3.0.3`.
+
+The file is written in YAML or JSON. This repository uses YAML:
+
+```text
+portfolio/api/release-management/openapi.yaml
+```
+
+Each OpenAPI file has the same main sections.
+
+---
+
+## Main sections of an OpenAPI file
+
+| Section | Purpose | Example in this repository |
+|---|---|---|
+| `openapi` | The version of the specification | `3.0.3` |
+| `info` | The name, version, and description of the API | Release Management API, version `1.0.0` |
+| `servers` | The base URLs of the API | `https://api.release-management.test/v1` |
+| `tags` | Groups of operations for the navigation | Releases, Changes, Work Items |
+| `paths` | Endpoints and their operations | `/releases`, `/releases/{releaseId}` |
+| `components` | Reusable definitions | `bearerAuth` and `Release` |
+| `security` | The default authentication for operations | `bearerAuth` |
+
+---
+
+## Info and servers
+
+The `info` section identifies the API. The `servers` section tells tools where the API runs.
+
+```yaml
 info:
   title: Release Management API
   version: 1.0.0
@@ -22,13 +101,26 @@ info:
     tracking changes and work items, coordinating approvals,
     and preparing release notes.
 
-    This API is a portfolio project designed to demonstrate
-    realistic API design and developer documentation practices.
-
 servers:
-  - url: https://api.example.com/v1
-    description: Fictional production server
+  - url: https://api.release-management.test/v1
+    description: Fictional API server for portfolio demonstration
+```
 
+The `description` uses the pipe character (`|`). This keeps the line breaks. The `version` in `info` describes the API version. The `/v1` in the server URL is part of the base URL.
+
+:::note
+
+The server address ends in `.test`. This is a reserved test domain. It shows the structure of a real address without pointing to a real service.
+
+:::
+
+---
+
+## Tags
+
+Tags group operations. The generated reference uses tags to build the navigation.
+
+```yaml
 tags:
   - name: Releases
     description: Manage software releases.
@@ -38,264 +130,114 @@ tags:
 
   - name: Work Items
     description: Manage work items associated with releases.
-
-  - name: Approvals
-    description: Manage release approval workflows.
-
-  - name: Release Notes
-    description: Generate and manage release notes.
 ```
+
+The contract also defines `Approvals` and `Release Notes` tags. These tags do not have operations yet. The navigation for those groups stays empty until operations are added.
+
+:::warning
+
+A tag without operations can make the documentation look complete when it is not. Before you publish, check that every tag has at least one operation, or remove the tag.
+
+:::
 
 ---
 
-### What we've just defined
+## Paths and operations
 
-```openapi```
+The `paths` section lists each endpoint. Each endpoint can have several operations, one for each HTTP method.
 
-```YAML
-openapi: 3.0.3
+| Path | Method | Operation ID | Tag |
+|---|---|---|---|
+| `/releases` | `GET` | `listReleases` | Releases |
+| `/releases` | `POST` | `createRelease` | Releases |
+| `/releases/{releaseId}` | `GET` | `getRelease` | Releases |
+| `/releases/{releaseId}` | `PUT` | `updateRelease` | Releases |
+| `/releases/{releaseId}` | `DELETE` | `deleteRelease` | Releases |
+| `/changes` | `GET` | `listChanges` | Changes |
+| `/changes/{changeId}` | `GET` | `getChange` | Changes |
+| `/releases/{releaseId}/changes` | `POST` | `associateChangeWithRelease` | Changes |
+| `/work-items` | `GET` | `listWorkItems` | Work Items |
+| `/work-items/{workItemId}` | `GET` | `getWorkItem` | Work Items |
+
+The HTTP and REST lessons explain each method. The OpenAPI file describes the same methods in a structured format.
+
+### Read an operation
+
+This excerpt shows how an operation starts:
+
+```yaml
+  /releases/{releaseId}/changes:
+    post:
+      tags:
+        - Changes
+      summary: Associate a change with a release
+      description: Associates an existing change with a specific release.
+      operationId: associateChangeWithRelease
+
+      parameters:
+        - name: releaseId
+          in: path
+          required: true
+          description: Unique identifier of the release.
+          schema:
+            type: string
+          example: rel_2026_08
 ```
 
-This tells tools which OpenAPI specification version we're using.
+Map each line to a part of the documentation:
 
-```info```
+| OpenAPI field | Documentation part |
+|---|---|
+| `summary` | The heading for the operation |
+| `description` | The purpose statement |
+| `operationId` | A stable name that tools and links can use |
+| `parameters` | The parameter table |
+| `example` | The example value in the reference |
 
-Defines the API's identity:
+:::tip
 
-```text
-Title
-Version
-Description
-servers
-```
+The `summary` should be short. Use a verb and an object, such as "Associate a change with a release". The `description` can add one or two sentences.
 
-Defines where the API is hosted.
-
-We're deliberately using:
-
-```text
-https://api.example.com/v1
-
-```
-
-because this is a fictional portfolio API. We are not pretending that a real API exists.
-
-The ```/v1``` also gives us an opportunity to demonstrate API versioning.
-
-```tags```
-
-These become the major resource groups in the eventual API documentation:
-
-```text
-Releases
-Changes
-Work Items
-Approvals
-Release Notes
-```
-
-This will eventually give us navigation roughly like:
-
-```text
-Release Management API
-
-
-Overview
-
-
-Authentication
-
-
-Releases
-  ├── List releases
-  ├── Create release
-  ├── Get release
-  ├── Update release
-  └── Delete release
-
-
-Changes
-  ...
-
-
-Work Items
-  ...
-
-
-Approvals
-  ...
-
-
-Release Notes
-  ...
-
-```
+:::
 
 ---
 
-## One important learning point
+## Components
 
-We're deliberately not adding endpoints yet.
+The `components` section holds definitions that you reuse. The two most common types are security schemes and schemas.
 
-We're establishing:
+### Security schemes
 
-```text
-API identity
-     ↓
-API version
-     ↓
-Server
-     ↓
-Resource groups
-```
-
-before defining operations.
-
-That gives us a clean OpenAPI foundation.
-
----
-
-## We now have the API foundation
-
-```text
-Release Management API
-│
-├── OpenAPI 3.0.3
-├── API metadata
-├── Version 1.0.0
-├── Fictional server
-└── Resource tags
-    ├── Releases
-    ├── Changes
-    ├── Work Items
-    ├── Approvals
-    └── Release Notes
-```
-
----
-
-## Step 3 — Define Authentication
-
-Before we create any endpoints, let's define how clients authenticate with the API.
-
-We'll use Bearer token authentication, which is realistic and gives us useful documentation material later.
-
-Add this after the tags: section in openapi.yaml:
-
-```Yaml
+```yaml
 components:
   securitySchemes:
     bearerAuth:
       type: http
       scheme: bearer
       bearerFormat: JWT
-
-
-security:
-  - bearerAuth: []
 ```
 
-Your file should now have this overall structure:
+This definition tells tools that:
 
-```YAML
-openapi: 3.0.3
+- Authentication uses the HTTP `Authorization` header.
+- The scheme is `bearer`.
+- The token format is JWT.
 
+The request looks like this:
 
-info:
-  ...
-
-
-servers:
-  ...
-
-
-tags:
-  ...
-
-
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
-
-
-security:
-  - bearerAuth: []
-```
-
----
-
-### What this means
-
-The API expects clients to send an HTTP Authorization header:
-
-```HTTP
+```http
 Authorization: Bearer <access-token>
 ```
 
-The OpenAPI definition tells documentation tools that:
+### Schemas
 
-- authentication uses HTTP authentication
-- the scheme is bearer
-- the token format is JWT
-- the API requires authentication by default
-
----
-
-### Why define it globally?
-
-This:
+A schema describes the structure of data. The Release schema in this repository has these fields:
 
 ```yaml
-security:
-  - bearerAuth: []
-```
-
-means authentication applies to API operations by default.
-
-Later, if we have a genuinely public endpoint, we can explicitly override the security requirement for that individual operation.
-
-> That's a useful API-documentation concept for Technical Writers to learn.
-
----
-
-### One important distinction
-
-We're documenting an authentication model, not building an authentication server.
-
-There will be no real token or credentials in this portfolio project.
-
-The eventual documentation can explain:
-
-```text
-Authentication
-      ↓
-Bearer token
-      ↓
-Authorization header
-      ↓
-API request
-```
-
-without exposing any private system or credentials.
-
----
-
-## Step 4 — Define the Release resource
-
-Before creating GET, POST, PUT, and DELETE operations, we need to define what a Release actually looks like.
-
-This is important for API documentation because the schema becomes the reusable definition that endpoints reference.
-
-Add the following under your existing ```security:``` section:
-
-```YAML
+components:
   schemas:
     Release:
       type: object
-      description: Represents a software release.
       required:
         - id
         - version
@@ -305,22 +247,12 @@ Add the following under your existing ```security:``` section:
       properties:
         id:
           type: string
-          description: Unique identifier for the release.
           example: rel_2026_08
-
         version:
           type: string
-          description: Release version identifier.
           example: "2026.08"
-
-        name:
-          type: string
-          description: Human-readable name of the release.
-          example: Customer Portal Release
-
         status:
           type: string
-          description: Current lifecycle status of the release.
           enum:
             - draft
             - in_progress
@@ -329,58 +261,38 @@ Add the following under your existing ```security:``` section:
             - released
             - cancelled
           example: ready_for_approval
-
         targetDate:
           type: string
           format: date
-          description: Planned release date.
           example: "2026-08-28"
-
-        description:
-          type: string
-          description: Summary of the release.
-          example: Improvements to customer portal navigation and reporting.
-
-        createdAt:
-          type: string
-          format: date-time
-          description: Date and time when the release was created.
-          example: "2026-08-10T09:30:00Z"
-
-        updatedAt:
-          type: string
-          format: date-time
-          description: Date and time when the release was last updated.
-          example: "2026-08-15T14:20:00Z"
 ```
+
+The `required` list shows which fields the API must return or receive. The `enum` list shows the only allowed values for `status`.
 
 ---
 
-### What we're learning here
+## Reference a schema with `$ref`
 
-We've now separated:
+Use `$ref` to reuse a schema. Without `$ref`, you copy the same definition into every operation. With `$ref`, you change the definition in one place.
 
-#### Authentication
+Before (copied definition, avoid):
 
-```text
-securitySchemes
+```yaml
+responses:
+  '200':
+    description: Release retrieved successfully.
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            id:
+              type: string
 ```
 
-from:
+After (reference, use):
 
-#### Data model
-
-```text
-schemas
-```
-
-That's an important OpenAPI concept.
-
-The ```Release schema``` becomes reusable. We won't have to redefine the release structure every time an endpoint returns a Release.
-
-For example, later:
-
-```YAML
+```yaml
 responses:
   '200':
     description: Release retrieved successfully.
@@ -390,47 +302,263 @@ responses:
           $ref: '#/components/schemas/Release'
 ```
 
-The ```$ref``` means:
-
-> Use the Release schema defined in components.schemas.
-
-This is one of the key advantages of maintaining an OpenAPI specification as the source of truth.
+**Result:** The response uses the full Release schema. If you add a field to `Release`, every operation that references it shows the new field.
 
 ---
 
-## Our Release model
+## Security: global and per-operation
 
-We're deliberately making it realistic enough to document meaningful concepts:
+The contract applies Bearer authentication to every operation:
 
-```text
-Release
-├── id
-├── version
-├── name
-├── status
-├── targetDate
-├── description
-├── createdAt
-└── updatedAt
+```yaml
+security:
+  - bearerAuth: []
 ```
 
-And status gives us an opportunity to document an enum, which is something Technical Writers regularly need to explain in API reference documentation.
+This setting is global. If one operation does not need authentication, you can override it for that operation. The example below is hypothetical. This contract does not define a public endpoint:
+
+```yaml
+  /health:
+    get:
+      security: []
+```
+
+An empty list (`[]`) means that the operation does not require authentication.
+
+:::important
+
+Check the security setting for every operation. If an operation is public and the contract does not say so, the reference will show that the operation needs a token. Developers will then try to call it with a token it does not need, and they may be confused.
+
+:::
 
 ---
 
-### The hierarchy should be
+## How-to: Check an operation against the lessons
 
-```text
-components
-├── securitySchemes
-│   └── bearerAuth
-│
-└── schemas
-    └── Release
+**Goal:** Confirm that a documented operation matches the contract.
 
+Use this table for each operation:
 
-security
-└── bearerAuth
+| Question | Where to check in OpenAPI |
+|---|---|
+| What is the method and path? | The path key and the method under it |
+| Is authentication required? | `security`, or an override on the operation |
+| Which parameters are required? | `parameters`, with `required: true` |
+| What is in the request body? | `requestBody`, and its `schema` |
+| Which responses are possible? | `responses`, with each status code |
+| Which fields are allowed? | The `schema` and its `enum` values |
+
+**Result:** You know which parts of the documentation to write, and where each part comes from.
+
+---
+
+## How-to: Validate the contract before you generate documentation
+
+**Goal:** Find errors in the OpenAPI file before you build the reference.
+
+**Step 1: Run the linter.**
+
+```bash
+npx redocly lint portfolio/api/release-management/openapi.yaml
 ```
 
-So ```security``` is outside ```components```, while ```schemas``` is inside components.
+Expected result: The command reports no errors. Warnings can appear. Read each warning, and fix the ones that affect documentation.
+
+**Step 2: Preview the reference outside the repository.**
+
+Build the reference to a folder outside the repository, so that the repository files do not change:
+
+```bash
+npx redocly build-docs portfolio/api/release-management/openapi.yaml -o ../preview/api-reference.html
+```
+
+Open `../preview/api-reference.html` in your browser. Check each operation, schema, and example.
+
+:::warning
+
+The repository's own build command writes to `portfolio/api/release-management/api-reference.html`. Do not run that command as a test. Use a preview path, and run the repository command only when you intend to update the generated file.
+
+:::
+
+---
+
+## Docs-as-Code workflow for an API change
+
+Use this workflow when the API team changes an endpoint:
+
+```text
+API change
+    ↓
+Update the OpenAPI contract
+    ↓
+Run the linter
+    ↓
+Preview the reference
+    ↓
+Update the supporting pages
+    ↓
+Review in a pull request
+    ↓
+Publish
+```
+
+Use a branch for each change:
+
+```bash
+git switch -c docs/openapi-release-status
+```
+
+Commit only the files that you changed:
+
+```bash
+git add portfolio/api/release-management/openapi.yaml
+git commit -m "Document release status values in OpenAPI contract"
+git push -u origin docs/openapi-release-status
+```
+
+:::note
+
+If the change comes from the API team, ask them to update the contract. Writers review the contract and the wording. Do not change the API behavior in the documentation.
+
+:::
+
+---
+
+## Common mistakes
+
+| Mistake | What happens | How to fix it |
+|---|---|---|
+| Indentation uses tabs or the wrong number of spaces. | The file does not parse, and the reference fails to build. | Use spaces only. Use the linter to find the error line. |
+| A schema is copied instead of referenced with `$ref`. | Changes to the schema do not reach every operation. | Move the definition to `components/schemas` and reference it. |
+| An enum in the schema does not match the docs. | Readers use values that the API rejects. | Update the enum or the docs so that they match. |
+| A tag has no operations. | The navigation shows an empty group. | Add operations, or remove the tag. |
+| `security` is missing from a public operation. | The reference shows a token requirement that does not exist. | Add `security: []` to the operation. |
+| The `example` does not match the schema. | Readers copy an invalid value. | Check each example against its schema. |
+
+---
+
+## Summary
+
+In this lesson, you learned that:
+
+- OpenAPI is a standard format for describing an API contract.
+- The main sections are `info`, `servers`, `tags`, `paths`, `components`, and `security`.
+- Each operation maps to a part of the reference: heading, purpose, parameters, body, and responses.
+- Security schemes describe how to authenticate.
+- Schemas describe data. Use `$ref` to reuse them.
+- An enum lists the only allowed values for a field.
+- Lint and preview the contract before you publish.
+
+The aim is simple:
+
+**Keep the contract accurate, and let the documentation follow it.**
+
+---
+
+## Practice exercise
+
+Use `portfolio/api/release-management/openapi.yaml`.
+
+1. Find the `Release` schema under `components`. List each required field and each enum value.
+2. Find the `getRelease` operation under `/releases/{releaseId}`. List its parameters, responses, and security setting.
+3. Find a place where a schema is referenced with `$ref`. Explain what the reference points to.
+4. Identify the tags that have no operations. Write one sentence about how you would handle each tag.
+5. Run `npx redocly lint portfolio/api/release-management/openapi.yaml`. Record any warnings.
+6. Build a preview to `../preview/api-reference.html`. Compare one operation in the preview with its contract entry.
+
+---
+
+## Key terms
+
+| Term | Definition |
+|---|---|
+| OpenAPI Specification | A standard format for describing HTTP APIs. |
+| Contract | The API definition that lists endpoints, parameters, schemas, and responses. |
+| Operation | One method on one path, such as `GET /releases`. |
+| `operationId` | A unique name for an operation. |
+| Tag | A label that groups operations in the reference. |
+| Schema | A description of the structure and rules of data. |
+| `$ref` | A reference to a definition in `components`. |
+| Enum | A fixed list of allowed values. |
+| Security scheme | A definition of how clients authenticate. |
+| Linter | A tool that checks a file for errors and rule violations. |
+
+---
+
+## Knowledge check
+
+<details>
+<summary><strong>1. What is the OpenAPI Specification?</strong></summary>
+
+It is a standard format for describing HTTP APIs. An OpenAPI file describes the endpoints, parameters, schemas, responses, and authentication of an API.
+
+</details>
+
+<details>
+<summary><strong>2. Which sections are the main sections of an OpenAPI file?</strong></summary>
+
+`openapi`, `info`, `servers`, `tags`, `paths`, `components`, and `security`.
+
+</details>
+
+<details>
+<summary><strong>3. What does the `operationId` do?</strong></summary>
+
+It gives each operation a unique name. Tools and links can use the name to refer to the operation.
+
+</details>
+
+<details>
+<summary><strong>4. Why should you use `$ref` for a schema?</strong></summary>
+
+A reference lets many operations use one definition. If you change the definition, every operation that references it shows the change.
+
+</details>
+
+<details>
+<summary><strong>5. What does `required` mean in a schema?</strong></summary>
+
+It lists the fields that the API must include. A request without a required field fails validation.
+
+</details>
+
+<details>
+<summary><strong>6. What does an enum show in the documentation?</strong></summary>
+
+It shows the only allowed values for a field. For example, the `status` field accepts `draft`, `in_progress`, `ready_for_approval`, `approved`, `released`, and `cancelled`.
+
+</details>
+
+<details>
+<summary><strong>7. How does the global `security` setting work?</strong></summary>
+
+It applies Bearer authentication to every operation by default. An operation can override the setting. An empty list means the operation requires no authentication.
+
+</details>
+
+<details>
+<summary><strong>8. What is a common cause of a broken OpenAPI file?</strong></summary>
+
+Incorrect indentation. YAML uses indentation to show structure. Use spaces only, and use the linter to find the error.
+
+</details>
+
+<details>
+<summary><strong>9. Why should you preview the reference before you publish it?</strong></summary>
+
+A preview shows how the operations, schemas, and examples render. It helps you find layout and content problems before readers see them.
+
+</details>
+
+<details>
+<summary><strong>10. Who should change the API behavior in the contract?</strong></summary>
+
+The API team. Writers review the contract and the wording, and they ask the API team to make changes to the behavior.
+
+</details>
+
+---
+
+## Next lesson
+
+Continue to **Swagger**. You will learn how Swagger UI displays an OpenAPI contract as an interactive reference.
