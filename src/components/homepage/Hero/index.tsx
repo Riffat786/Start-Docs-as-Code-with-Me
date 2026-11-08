@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
+import Logo from "@site/src/components/Logo";
 import styles from "./styles.module.css";
 
 export default function Hero(): JSX.Element {
@@ -8,6 +9,10 @@ export default function Hero(): JSX.Element {
     <section className={styles.hero}>
 
       <div className="container">
+
+        <div className={styles.logoPlate}>
+          <Logo size="large" showText={false} />
+        </div>
 
         <Heading as="h1" className={styles.title}>
           Start Docs-as-Code with Me

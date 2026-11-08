@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
+import Logo from "@site/src/components/Logo";
 import styles from "./styles.module.css";
 
 export default function Footer(): JSX.Element {
@@ -12,6 +13,10 @@ export default function Footer(): JSX.Element {
 
         {/* Brand Section */}
         <div className={styles.brandSection}>
+          <div className={styles.brandLogo}>
+            <Logo size="medium" showText={true} />
+          </div>
+
           <Heading as="h2" className={styles.brandTitle}>
             Start Docs-as-Code with Me
           </Heading>

@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Start Docs-as-Code with Me',
   tagline: 'Learn modern Docs-as-Code by building real-world documentation projects with AI, Git, GitHub, VS Code, Markdown and Docusaurus, from Beginner to Advanced.',
-  favicon: 'img/favicon.png',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
