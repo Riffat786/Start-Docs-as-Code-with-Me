@@ -36,6 +36,8 @@ sidebar_position: 2
 | --- | --- |
 | Callout | A visually highlighted section used to draw attention to specific information. |
 | CI/CD | Automated processes used to build, test, and deliver software or documentation changes. |
+| Claude Code | An AI coding assistant that runs in a terminal and works with the files in a project folder. |
+| CLAUDE.md | A project memory file that Claude Code reads when a session starts, used to store project rules. |
 | Clone | Creates a local copy of a remote repository. |
 | Code block | A separate block used to display commands, code, configuration, or other technical content. |
 | Code fence | The three backticks used to open and close a Markdown code block. |
@@ -79,6 +81,7 @@ sidebar_position: 2
 | Git | A distributed version control system used to track changes to files. |
 | `.git` | The directory where Git stores repository information. |
 | Git configuration | Settings that control how Git behaves. |
+| Git diff | A command that shows the changes between your working files and the last commit, line by line. |
 | Git repository | A folder managed by Git that contains files and their version history. |
 | GitHub | A platform for hosting Git repositories and collaborating on projects. |
 | GitHub Actions | GitHub's automation platform for running workflows in response to repository events. |
@@ -148,6 +151,7 @@ sidebar_position: 2
 | `package.json` | A project file that contains information about a Node.js project, including scripts and dependencies. |
 | Paragraph | A group of sentences that presents a related idea. |
 | PATH | An operating system setting that allows command-line applications to be found from a terminal. |
+| Permission prompt | A request from Claude Code that asks you to approve a command or file change before it runs. |
 | pip | The package installer used to install Python packages. |
 | Placeholder | Example text that the reader replaces with their own value. |
 | PowerShell | A Windows command-line shell used to run commands and scripts. |
@@ -171,12 +175,15 @@ sidebar_position: 2
 | Review | The process of checking documentation for quality, accuracy, consistency, and completeness. |
 | Review artifact | A file that records the result of a review, including scores and recommendations. |
 | Role | The responsibility of an agent in a workflow. |
+| RTCCO framework | A prompt structure with five parts: Role, Task, Context, Constraints, and Output. |
 | Runtime | Software that provides the environment required to execute a program. |
 
 ## S
 
 | Term | Definition |
 | --- | --- |
+| Session | One period of work with Claude Code, from the moment you start it until you exit. |
+| Slash command | A short name that starts a saved request or workflow, such as /review. |
 | Source Control | The VS Code interface for working with version control systems such as Git. |
 | Source of truth | The authoritative location where information should be maintained. |
 | SSH | A secure protocol that can be used to authenticate Git operations. |
