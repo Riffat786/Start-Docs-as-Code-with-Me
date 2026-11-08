@@ -22,6 +22,7 @@ sidebar_position: 2
 | AI chat | A panel in an AI-enabled editor where you ask questions about files and request proposed changes. |
 | API key | A secret value used to authenticate access to an API or service. |
 | Argument | A value that a command uses, such as a file name or a script name. |
+| Artifact | A file or set of files that a pipeline produces and stores, such as a built site. |
 | Automation | A set of steps that runs without manual action, using rules that people define. |
 
 ## B
@@ -51,6 +52,9 @@ sidebar_position: 2
 | Configuration | Settings that control how an application or system behaves. |
 | Consistency | Using the same terminology, structure, and conventions throughout a documentation set. |
 | Container | A running, isolated environment created from a Docker image. |
+| Continuous delivery | A practice in which each checked change is prepared so that it can be published at any time. |
+| Continuous deployment | A practice in which each checked change is published automatically. |
+| Continuous integration | A practice in which each change is built and checked as soon as it is added. |
 | Counter-example | An output that you do not want an AI tool to produce, used to show what to avoid. |
 | Cursor | An AI-powered code editor used to work with software projects and files. |
 
@@ -168,6 +172,7 @@ sidebar_position: 2
 | PATH | An operating system setting that allows command-line applications to be found from a terminal. |
 | Permission prompt | A request from Claude Code that asks you to approve a command or file change before it runs. |
 | pip | The package installer used to install Python packages. |
+| Pipeline | A series of automated steps that run in order, where each step depends on the one before it. |
 | Placeholder | Example text that the reader replaces with their own value. |
 | Plugin | A package that adds features to an AI tool, such as commands, skills, connections, or hooks. |
 | PowerShell | A Windows command-line shell used to run commands and scripts. |
