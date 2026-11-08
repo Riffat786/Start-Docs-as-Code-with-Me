@@ -1,10 +1,6 @@
 .stats {
   padding: 80px 20px;
-  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--ifm-color-emphasis-100) 100%);
-}
-
-[data-theme='dark'] .stats {
-  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--ifm-color-emphasis-200) 100%);
+  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--site-surface-muted) 100%);
 }
 
 .container {
@@ -17,14 +13,7 @@
   font-weight: 800;
   text-align: center;
   margin: 0 0 16px 0;
-  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-emphasis-1000) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-[data-theme='dark'] .title {
-  background: linear-gradient(135deg, #25c2a0 0%, #80b3ff 100%);
+  background: var(--site-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -46,13 +35,13 @@
 }
 
 .statCard {
-  background: var(--ifm-card-background-color);
+  background: var(--site-surface);
   border-radius: 16px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--site-shadow-sm);
+  border: 1px solid var(--site-border);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -64,19 +53,15 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-emphasis-1000) 100%);
+  background: var(--site-gradient);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-[data-theme='dark'] .statCard::before {
-  background: linear-gradient(90deg, #25c2a0 0%, #80b3ff 100%);
-}
-
 .statCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
-  border-color: var(--ifm-color-primary);
+  box-shadow: var(--site-shadow-lg);
+  border-color: var(--site-accent);
 }
 
 .statCard:hover::before {
@@ -86,19 +71,12 @@
 .number {
   font-size: 56px;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-emphasis-1000) 100%);
+  background: var(--site-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 12px;
   line-height: 1;
-}
-
-[data-theme='dark'] .number {
-  background: linear-gradient(135deg, #25c2a0 0%, #80b3ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .label {

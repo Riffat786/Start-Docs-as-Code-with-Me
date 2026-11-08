@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Brand and surface tokens. Components reference these instead of hardcoding colors. */
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -14,10 +14,24 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --ifm-card-background-color: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --site-accent: #2e8555;
+  --site-accent-alt: #667eea;
+  --site-gradient: linear-gradient(135deg, #2e8555 0%, #667eea 100%);
+  --site-surface: #ffffff;
+  --site-surface-muted: #f5f7fa;
+  --site-border: #e3e7ec;
+  --site-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --site-shadow-md: 0 8px 24px rgba(15, 23, 42, 0.10);
+  --site-shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.16);
+  --site-footer-bg: #135d8f;
+  --site-footer-text: #f6f6f7;
+  --site-footer-heading: #ffffff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode uses lighter accents so text and gradients stay readable on dark surfaces. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -26,24 +40,37 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-card-background-color: #1d2228;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --site-accent: #25c2a0;
+  --site-accent-alt: #80b3ff;
+  --site-gradient: linear-gradient(135deg, #25c2a0 0%, #80b3ff 100%);
+  --site-surface: #1d2228;
+  --site-surface-muted: #161a1f;
+  --site-border: #2c333b;
+  --site-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --site-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --site-shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.55);
 }
+
+/* Footer background is the same blue in both modes, so its text is always light. */
 .footer {
-    background: #135d8f;
-    border-top: 1px solid #e5e7eb;
+  background: var(--site-footer-bg);
+  border-top: 1px solid var(--site-border);
 }
 
 .footer__title {
-    color: #111827;
-    font-weight: 700;
+  color: var(--site-footer-heading);
+  font-weight: 700;
 }
 
 .footer__link-item {
-    color: #f6f6f7;
+  color: var(--site-footer-text);
 }
 
 .footer__copyright {
-    color: #eceded;
+  color: var(--site-footer-text);
 }
 
 .theme-doc-markdown img[alt="Start Docs-as-Code with Me logo"] {
@@ -84,4 +111,15 @@
 
 .http-delete {
   background-color: #dc2626;
+}
+
+/* Respect users who turn off motion in their OS settings. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

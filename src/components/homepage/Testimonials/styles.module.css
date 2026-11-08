@@ -32,28 +32,20 @@
 }
 
 .card {
-  background: var(--ifm-card-background-color);
+  background: var(--site-surface);
   border-radius: 16px;
   padding: 32px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-left: 4px solid var(--ifm-color-primary);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--site-shadow-sm);
+  border: 1px solid var(--site-border);
+  border-left: 4px solid var(--site-accent);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-left-color 0.3s ease;
   position: relative;
-}
-
-[data-theme='dark'] .card {
-  border-left-color: #25c2a0;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
-  border-left-color: var(--ifm-color-emphasis-1000);
-}
-
-[data-theme='dark'] .card:hover {
-  border-left-color: #80b3ff;
+  box-shadow: var(--site-shadow-lg);
+  border-left-color: var(--site-accent-alt);
 }
 
 .rating {
@@ -78,19 +70,15 @@
 }
 
 .author {
-  border-top: 1px solid var(--ifm-color-emphasis-200);
+  border-top: 1px solid var(--site-border);
   padding-top: 16px;
 }
 
 .authorName {
   font-weight: 700;
-  color: var(--ifm-color-primary);
+  color: var(--site-accent);
   margin-bottom: 4px;
   font-size: 15px;
-}
-
-[data-theme='dark'] .authorName {
-  color: #25c2a0;
 }
 
 .authorRole {
