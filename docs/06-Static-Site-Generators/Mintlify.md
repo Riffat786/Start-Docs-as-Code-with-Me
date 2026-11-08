@@ -10,7 +10,7 @@ description: Profile of Mintlify, a hosted documentation platform built around M
 
 **Best for:** Developer-facing product docs and API references that need a polished default design and fast setup
 
-**Last verified:** Not yet. Check the official Mintlify site for current features and pricing before publishing.
+**Last verified:** Check the official Mintlify site for current features and pricing.
 
 ---
 

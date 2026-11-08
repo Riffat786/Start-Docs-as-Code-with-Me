@@ -10,7 +10,7 @@ description: Profile of Docusaurus, a React-based documentation generator, and w
 
 **Best for:** Documentation sites that need versioning, a custom homepage, React components, and a polished default design
 
-**Last verified:** Not yet. Check the official Docusaurus site for current features and version details before publishing.
+**Last verified:** Check the official Docusaurus site for current features and version details.
 
 ---
 

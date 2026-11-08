@@ -10,7 +10,7 @@ description: Profile of Document360, a hosted knowledge base platform, and when 
 
 **Best for:** Support and product teams that need a hosted, searchable help center with analytics
 
-**Last verified:** Not yet. Check the official Document360 site for current features and pricing before publishing.
+**Last verified:** Check the official Document360 site for current features and pricing.
 
 ---
 

@@ -10,7 +10,7 @@ description: Profile of GitBook, a hosted, collaborative documentation platform,
 
 **Best for:** Teams that want a collaborative editor for writers and engineers, with a hosted, branded documentation site
 
-**Last verified:** Not yet. Check the official GitBook site for current features and pricing before publishing.
+**Last verified:** Check the official GitBook site for current features and pricing.
 
 ---
 

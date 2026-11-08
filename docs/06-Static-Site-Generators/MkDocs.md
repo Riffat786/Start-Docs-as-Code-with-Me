@@ -10,7 +10,7 @@ description: Profile of MkDocs, a Python-based documentation generator, and when
 
 **Best for:** Technical documentation for software projects that already use Python or want a simple, Markdown-first setup
 
-**Last verified:** Not yet. Check the official MkDocs site for current features and themes before publishing.
+**Last verified:** Check the official MkDocs site for current features and themes.
 
 ---
 
