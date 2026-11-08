@@ -31,6 +31,7 @@ sidebar_position: 2
 
 | Term | Definition |
 | --- | --- |
+| Base URL | The path under a domain where a site is served, such as /Start-Docs-as-Code-with-Me/. |
 | Blockquote | A Markdown element used to visually distinguish quoted or highlighted content. |
 | Branch | A separate line of development within a repository. |
 | Broken link | A link whose target page, file, or anchor does not exist. |
@@ -103,6 +104,7 @@ sidebar_position: 2
 | GitHub | A platform for hosting Git repositories and collaborating on projects. |
 | GitHub Actions | GitHub's automation platform for running workflows in response to repository events. |
 | GitHub Desktop | A graphical application for working with GitHub repositories. |
+| GitHub Pages | A GitHub service that hosts static websites published from a repository. |
 | Guardrail | A rule that limits what an agent may change or decide. |
 
 ## H
@@ -205,6 +207,7 @@ sidebar_position: 2
 | Review | The process of checking documentation for quality, accuracy, consistency, and completeness. |
 | Review artifact | A file that records the result of a review, including scores and recommendations. |
 | Role | The responsibility of an agent in a workflow. |
+| Rollback | Restoring the previous version of published content after a bad change has been published. |
 | RTCCO framework | A prompt structure with five parts: Role, Task, Context, Constraints, and Output. |
 | Runner | The virtual machine that runs a job in a workflow, such as ubuntu-latest. |
 | Runtime | Software that provides the environment required to execute a program. |
