@@ -10,7 +10,7 @@ description: Learn how hooks run automated actions in response to events, and ho
 >
 > **Time to complete:** 30–40 minutes
 >
-> **Prerequisites:** Complete the Commands lesson, and the GitHub Actions lesson in Module 4.
+> **Prerequisites:** Complete the Commands lesson, and the GitHub Actions lesson in Module 5.
 
 ---
 
@@ -45,7 +45,7 @@ Hooks save time, and they also change the results of an action. A writer who doe
 Make sure you have:
 
 - Completed the Commands lesson.
-- Completed the GitHub Actions lesson in Module 4.
+- Completed the GitHub Actions lesson in Module 5.
 - The course repository cloned to your computer.
 - Read access to the `.github/workflows` folder.
 

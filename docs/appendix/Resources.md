@@ -1,3 +1,8 @@
+---
+title: Resources
+description: Official documentation, style guides, accessibility tools, and communities for technical writers working with Docs-as-Code.
+---
+
 ## Markdown
 
 - [Markdown Guide](https://markdownguide.org)
@@ -5,7 +10,7 @@
 
 ---
 
-## Docusaurus  
+## Docusaurus
 
 - [Docusaurus Docs](https://docusaurus.io/docs)
 
@@ -35,3 +40,23 @@
 - [Node.js Documentation](https://nodejs.org/docs/latest/api/)
 - [npm Documentation](https://docs.npmjs.com/)
 - [Docusaurus](https://docusaurus.io/)
+
+---
+
+## Style and tone
+
+- [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/)
+
+## Accessibility
+
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
+## API documentation
+
+- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Redocly documentation](https://redocly.com/docs/)
+
+## Professional communities
+
+- [Write the Docs](https://www.writethedocs.org/)
+- [Society for Technical Communication](https://www.stc.org/)
