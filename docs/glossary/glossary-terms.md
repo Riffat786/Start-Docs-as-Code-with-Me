@@ -22,6 +22,7 @@ sidebar_position: 2
 | AI chat | A panel in an AI-enabled editor where you ask questions about files and request proposed changes. |
 | API key | A secret value used to authenticate access to an API or service. |
 | Argument | A value that a command uses, such as a file name or a script name. |
+| Automation | A set of steps that runs without manual action, using rules that people define. |
 
 ## B
 
