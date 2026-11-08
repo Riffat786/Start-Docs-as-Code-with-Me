@@ -899,6 +899,6 @@ Go to the Actions tab, click the failed workflow run, and review the logs to fin
 
 ---
 
-## Next Lesson
+## Next Steps
 
-When you're comfortable with basic GitHub Actions, proceed to [Pull Requests](./PullRequests.md) to learn how to integrate Actions into your pull request review process.
+You now understand GitHub Actions and can automate your documentation workflows. Continue practicing with different workflows and explore the GitHub Marketplace for additional actions that fit your team's needs.
