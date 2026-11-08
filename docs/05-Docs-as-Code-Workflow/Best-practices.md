@@ -1,6 +1,6 @@
 ---
 title: Docs-as-Code Best Practices
-sidebar_position: 1
+sidebar_position: 2
 description: Learn industry best practices for implementing and maintaining documentation using Docs-as-Code approach.
 ---
 
@@ -261,28 +261,28 @@ Clear roles prevent confusion and ensure accountability. Discuss and document ro
 
 ### Typical Docs-as-Code Workflow
 
-```
-1. Plan
-   ↓
-2. Create branch (feature/update-api-docs)
-   ↓
-3. Make changes locally
-   ↓
-4. Commit and push
-   ↓
-5. Create pull request
-   ↓
-6. Automated checks run (links, spelling, build)
-   ↓
-7. Team reviews PR
-   ↓
-8. Address feedback
-   ↓
-9. Approval and merge
-   ↓
-10. Automatic deployment to live site
-   ↓
-11. Tag release
+```mermaid
+flowchart TD
+    A["1. Plan<br/>What to update"] --> B["2. Create branch<br/>feature/update-api-docs"]
+    B --> C["3. Make changes<br/>locally"]
+    C --> D["4. Commit & push<br/>to GitHub"]
+    D --> E["5. Create<br/>pull request"]
+    E --> F["6. Automated checks<br/>links, spelling, build"]
+    F --> G{Checks<br/>pass?}
+    G -->|No| H["Fix issues<br/>& push again"]
+    H --> F
+    G -->|Yes| I["7. Team reviews PR"]
+    I --> J{Feedback?}
+    J -->|Yes| K["8. Address feedback<br/>& commit"]
+    K --> I
+    J -->|No| L["9. Approval & merge<br/>to main"]
+    L --> M["10. Auto-deploy<br/>to live site"]
+    M --> N["11. Tag release<br/>v1.0.0"]
+    N --> O["✓ Documentation<br/>Published"]
+    style A fill:#e1f5ff
+    style O fill:#c8e6c9
+    style G fill:#fff9c4
+    style J fill:#fff9c4
 ```
 
 ### How-To: Make Your First Documentation Change
