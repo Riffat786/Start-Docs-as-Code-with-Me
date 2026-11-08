@@ -137,8 +137,10 @@ Sequence diagrams show interactions between actors over time. They display the o
 
 ```mermaid
 sequenceDiagram
-    Actor A->>Actor B: Message
-    Actor B-->>Actor A: Response
+    participant A
+    participant B
+    A->>B: Message
+    B-->>A: Response
 ```
 
 ### Sequence Diagram Elements
