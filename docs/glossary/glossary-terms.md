@@ -135,6 +135,7 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | Language identifier | The value after the opening code fence that identifies the language used in the code block. |
+| Linter | A tool that checks a file against a set of rules, and reports errors and warnings. |
 | Local repository | A Git repository stored on your computer. |
 | LTS | Long-Term Support; a release intended for longer-term stability and support. |
 
@@ -240,11 +241,13 @@ sidebar_position: 2
 | Tool | An external system or connector that an agent can call, such as an API connector. |
 | Trigger | An event that starts a specific automated workflow or task. |
 | Troubleshooting | The process of identifying and resolving a problem. |
+| Type check | A check that code uses its types correctly, such as the `npm run typecheck` command in this project. |
 
 ## V
 
 | Term | Definition |
 | --- | --- |
+| Validation | Checking that content, code, or data follows the defined rules before it is used or published. |
 | Verification | The process of checking that a tool or system works as expected. |
 | Virtual environment | An isolated Python environment used to manage project-specific packages and dependencies. |
 | Visual Studio Code | A source-code editor that can also be used to create and maintain documentation. |
