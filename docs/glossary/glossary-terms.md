@@ -50,6 +50,7 @@ sidebar_position: 2
 | Configuration | Settings that control how an application or system behaves. |
 | Consistency | Using the same terminology, structure, and conventions throughout a documentation set. |
 | Container | A running, isolated environment created from a Docker image. |
+| Counter-example | An output that you do not want an AI tool to produce, used to show what to avoid. |
 | Cursor | An AI-powered code editor used to work with software projects and files. |
 
 ## D
@@ -75,6 +76,7 @@ sidebar_position: 2
 | --- | --- |
 | Editor | The area where you view and edit files. |
 | Event | Something that happens, such as a push or a file save, that can start an automated task. |
+| Example pair | An input and the output that you want for it, used to teach an AI tool a pattern. |
 | Explorer | The part of the editor that displays project files and folders. |
 | Extension | An add-on that provides additional functionality in VS Code. |
 
@@ -131,6 +133,7 @@ sidebar_position: 2
 | Markdown preview | A rendered view of a Markdown file, shown next to or in place of its source. |
 | Markdown source | The Markdown text that a writer edits. |
 | MDX | Markdown with support for JSX and React components. |
+| Mock data | Fictional data that stands in for real data during testing or demonstrations. |
 | Multi-agent workflow | A workflow that divides a task across several agents, each with one role. |
 
 ## N
@@ -177,6 +180,7 @@ sidebar_position: 2
 
 | Term | Definition |
 | --- | --- |
+| Reference output | An example of the final format and tone that an AI tool should produce. |
 | Registry | A service used to store and distribute container images. |
 | Remote | A reference to another Git repository, commonly a GitHub repository. |
 | Remote repository | A repository hosted somewhere other than your local computer, such as GitHub. |
