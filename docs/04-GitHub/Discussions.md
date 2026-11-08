@@ -1,6 +1,6 @@
 ---
 title: Using GitHub Discussions for Documentation Teams
-sidebar_position: 2
+sidebar_position: 3
 description: Learn how to use GitHub Discussions to engage with users and collaborate on documentation.
 ---
 

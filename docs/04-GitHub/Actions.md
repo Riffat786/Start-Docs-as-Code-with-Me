@@ -1,6 +1,6 @@
 ---
 title: Automating Documentation with GitHub Actions
-sidebar_position: 1
+sidebar_position: 2
 description: Learn how to use GitHub Actions to automate documentation workflows and quality checks.
 ---
 
