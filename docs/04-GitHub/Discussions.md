@@ -553,7 +553,7 @@ Keeps everything in one place instead of scattered emails.
 
 Link to discussions from your docs when relevant:
 
-"Have a question? [Ask in discussions](github.com/your-repo/discussions)"
+"Have a question? [Ask in discussions](https://github.com/your-repo/discussions)"
 
 ### Use Discussion Feedback in Documentation
 
