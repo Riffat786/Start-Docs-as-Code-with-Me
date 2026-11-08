@@ -86,6 +86,20 @@ Flowcharts show the flow of a process or workflow. They use shapes and arrows to
 
 ### Flowchart Syntax
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+flowchart TD
+    A[Rectangle] --> B{Diamond}
+    B -->|Yes| C[Process]
+    B -->|No| D[Alternative]
+    C --> E[End]
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 flowchart TD
     A[Rectangle] --> B{Diamond}
@@ -115,6 +129,24 @@ Control the diagram direction:
 
 ### Example: User Registration Process
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+flowchart TD
+    A[User Visits Site] --> B[Click Sign Up]
+    B --> C[Enter Email]
+    C --> D{Email Valid?}
+    D -->|No| E[Show Error]
+    E --> C
+    D -->|Yes| F[Send Verification]
+    F --> G[User Confirms Email]
+    G --> H[Account Created]
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 flowchart TD
     A[User Visits Site] --> B[Click Sign Up]
@@ -135,6 +167,20 @@ Sequence diagrams show interactions between actors over time. They display the o
 
 ### Sequence Diagram Syntax
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+sequenceDiagram
+    participant A
+    participant B
+    A->>B: Message
+    B-->>A: Response
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 sequenceDiagram
     participant A
@@ -153,6 +199,28 @@ sequenceDiagram
 - `alt` - Alternative flows
 
 ### Example: API Request Flow
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+sequenceDiagram
+    participant Client
+    participant Server
+    participant Database
+    
+    Client->>Server: POST /api/users
+    activate Server
+    Server->>Database: Save user data
+    activate Database
+    Database-->>Server: Confirmation
+    deactivate Database
+    Server-->>Client: 200 OK
+    deactivate Server
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 sequenceDiagram
@@ -178,6 +246,20 @@ Class diagrams show the structure of objects and their relationships. They displ
 
 ### Class Diagram Syntax
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+classDiagram
+    class Animal
+    Animal : String name
+    Animal : age
+    Animal : makeSound()
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 classDiagram
     class Animal
@@ -195,6 +277,39 @@ classDiagram
 - `-->` - Dependency
 
 ### Example: E-Commerce System
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+classDiagram
+    class Product {
+        String id
+        String name
+        Float price
+        getPrice()
+        applyDiscount()
+    }
+    
+    class Order {
+        String id
+        Date created
+        addProduct()
+        calculateTotal()
+    }
+    
+    class Customer {
+        String id
+        String email
+        createOrder()
+    }
+    
+    Order "*" -- "1" Customer
+    Order "*" -- "*" Product
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 classDiagram
@@ -231,6 +346,19 @@ State diagrams show how an entity transitions between different states. They dis
 
 ### State Diagram Syntax
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+stateDiagram-v2
+    [*] --> State1
+    State1 --> State2: Event
+    State2 --> [*]
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 stateDiagram-v2
     [*] --> State1
@@ -246,6 +374,22 @@ stateDiagram-v2
 - `state X { ... }` - Nested states
 
 ### Example: Document Workflow
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> Review: Submit for review
+    Review --> Changes: Request changes
+    Changes --> Review: Resubmit
+    Review --> Published: Approve
+    Published --> [*]
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 stateDiagram-v2
@@ -265,6 +409,18 @@ Entity-relationship (ER) diagrams show how entities relate to each other in a da
 
 ### ER Diagram Syntax
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ ITEM : contains
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
@@ -279,6 +435,21 @@ erDiagram
 - `|{` - One or many
 
 ### Example: Blog Database
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+erDiagram
+    USER ||--o{ POST : creates
+    USER ||--o{ COMMENT : writes
+    POST ||--o{ COMMENT : receives
+    POST ||--o{ CATEGORY : "belongs to"
+    COMMENT ||--o{ REPLY : "has"
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 erDiagram
@@ -297,6 +468,22 @@ Git graphs visualize branching and merging in version control workflows.
 
 ### Git Graph Syntax
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+gitGraph
+    commit id: "First commit"
+    branch develop
+    checkout develop
+    commit id: "Add feature"
+    checkout main
+    merge develop
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 gitGraph
     commit id: "First commit"
@@ -308,6 +495,25 @@ gitGraph
 ```
 
 ### Example: Feature Branch Workflow
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+gitGraph
+    commit id: "v1.0 Release"
+    branch feature/user-auth
+    checkout feature/user-auth
+    commit id: "Add login form"
+    commit id: "Add validation"
+    checkout main
+    commit id: "Update docs"
+    merge feature/user-auth
+    commit id: "v1.1 Release"
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 gitGraph
@@ -414,6 +620,22 @@ plugins:
 
 ### Installation Steps
 
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+flowchart TD
+    A[Download Installer] --> B[Run Setup]
+    B --> C{System Requirements Met?}
+    C -->|No| D[Install Requirements]
+    D --> B
+    C -->|Yes| E[Configure Settings]
+    E --> F[Complete]
+\`\`\`
+```
+
+**Result:**
+
 ```mermaid
 flowchart TD
     A[Download Installer] --> B[Run Setup]
@@ -425,6 +647,25 @@ flowchart TD
 ```
 
 ### API Request-Response Cycle
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+sequenceDiagram
+    Client->>API: Request
+    activate API
+    API->>Database: Query Data
+    activate Database
+    Database-->>API: Return Data
+    deactivate Database
+    API->>Cache: Store Result
+    API-->>Client: Response
+    deactivate API
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 sequenceDiagram
@@ -440,6 +681,23 @@ sequenceDiagram
 ```
 
 ### Bug Lifecycle
+
+**Markdown code:**
+
+```markdown
+\`\`\`mermaid
+stateDiagram-v2
+    [*] --> Reported
+    Reported --> Assigned: Triage
+    Assigned --> InProgress: Start Work
+    InProgress --> Testing: Submit PR
+    Testing --> Closed: Tests Pass
+    Testing --> InProgress: Tests Fail
+    Closed --> [*]
+\`\`\`
+```
+
+**Result:**
 
 ```mermaid
 stateDiagram-v2
