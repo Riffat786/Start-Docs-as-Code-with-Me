@@ -132,6 +132,7 @@ sidebar_position: 2
 | Markdown | A lightweight markup language commonly used for technical documentation. |
 | Markdown preview | A rendered view of a Markdown file, shown next to or in place of its source. |
 | Markdown source | The Markdown text that a writer edits. |
+| MCP | Model Context Protocol, a standard way for an AI tool to connect to an external system through a server. |
 | MDX | Markdown with support for JSX and React components. |
 | Mock data | Fictional data that stands in for real data during testing or demonstrations. |
 | Multi-agent workflow | A workflow that divides a task across several agents, each with one role. |
@@ -167,8 +168,11 @@ sidebar_position: 2
 | Permission prompt | A request from Claude Code that asks you to approve a command or file change before it runs. |
 | pip | The package installer used to install Python packages. |
 | Placeholder | Example text that the reader replaces with their own value. |
+| Plugin | A package that adds features to an AI tool, such as commands, skills, connections, or hooks. |
 | PowerShell | A Windows command-line shell used to run commands and scripts. |
 | Procedure | A set of instructions that helps a reader complete a task. |
+| Prompt | The written instruction that you give an AI tool. |
+| Prompt engineering | Writing, testing, and versioning prompts so that results are consistent and easy to check. |
 | Pull | Gets changes from a remote repository and updates the local repository. |
 | Pull Request | A request to review changes before they are merged into a shared repository. |
 | Push | Sends local commits to a remote repository. |
