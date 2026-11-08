@@ -68,6 +68,26 @@
   --site-cta-end: #2f5fae;
 }
 
+/* Light mode: tint the chrome (navbar, sidebars) so the content area stands out. */
+[data-theme='light'] {
+  --ifm-navbar-background-color: #e0efe7;
+}
+
+[data-theme='light'] .theme-doc-sidebar-container,
+[data-theme='light'] .theme-doc-toc-desktop {
+  background-color: #e6eff0;
+}
+
+/* Dark mode: same chrome tinting, a step lighter than the dark content area. */
+[data-theme='dark'] {
+  --ifm-navbar-background-color: #1f2d2a;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container,
+[data-theme='dark'] .theme-doc-toc-desktop {
+  background-color: #212b2c;
+}
+
 /* Footer background is the same blue in both modes, so its text is always light. */
 .footer {
   background: var(--site-footer-bg);
