@@ -40,7 +40,7 @@ After completing this module, you will be able to:
 
 ---
 
-## ⏱ Estimated Time
+## Estimated Time
 
 60–90 minutes
 
