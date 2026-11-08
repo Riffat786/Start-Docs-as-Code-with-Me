@@ -4,7 +4,7 @@ sidebar_label: Overview
 sidebar_position: 1
 description: Prepare your development environment for Docs-as-Code.
 ---
-![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.svg)
 
 # Module 2 · Environment Setup
 

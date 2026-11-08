@@ -3,7 +3,7 @@ title: Real World Projects
 sidebar_label: Overview
 sidebar_position: 1
 ---
-![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.svg)
 # Module 13 – Real-World Projects
 
 Bring everything together by applying your knowledge in practical projects. You'll build documentation that demonstrates your skills and can be included in your professional portfolio.

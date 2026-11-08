@@ -3,7 +3,7 @@ title: Automation
 sidebar_label: Overview
 sidebar_position: 1
 ---
-![Start Docs-as-Code with Me logo](/img/logo-horizontal.png)
+![Start Docs-as-Code with Me logo](/img/logo-horizontal.svg)
 # Module 11 – Automation
 
 Learn how automation reduces repetitive tasks and improves documentation workflows. This module introduces Python automation, GitHub Actions, CI/CD, Model Context Protocol (MCP), and AI-powered documentation pipelines.
