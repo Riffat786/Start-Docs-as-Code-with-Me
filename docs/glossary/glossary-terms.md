@@ -19,6 +19,7 @@ sidebar_position: 2
 | Accessibility | Designing content so that people with different abilities can use and understand it. |
 | AI | Artificial intelligence used to assist with tasks such as analysis, writing, and coding. |
 | AI agent | An AI model that completes a task in steps, using inputs, tools, and outputs. |
+| AI chat | A panel in an AI-enabled editor where you ask questions about files and request proposed changes. |
 | API key | A secret value used to authenticate access to an API or service. |
 | Argument | A value that a command uses, such as a file name or a script name. |
 
@@ -106,6 +107,7 @@ sidebar_position: 2
 | Image | A package containing the files and configuration needed to create a container. |
 | Important | A callout used when information requires particular attention. |
 | Inline code | A short technical value displayed within normal text. |
+| Inline edit | A change that an AI tool proposes within the open file, which you accept or reject. |
 | Input | The data or file that an agent receives. |
 | Integrated Terminal | A terminal built into VS Code. |
 
@@ -123,6 +125,7 @@ sidebar_position: 2
 | --- | --- |
 | Maintainability | How easily documentation can be updated and kept accurate over time. |
 | Markdown | A lightweight markup language commonly used for technical documentation. |
+| Markdown preview | A rendered view of a Markdown file, shown next to or in place of its source. |
 | Markdown source | The Markdown text that a writer edits. |
 | MDX | Markdown with support for JSX and React components. |
 | Multi-agent workflow | A workflow that divides a task across several agents, each with one role. |
