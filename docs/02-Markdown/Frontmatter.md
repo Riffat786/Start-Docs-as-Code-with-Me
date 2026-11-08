@@ -560,14 +560,6 @@ Markdown is a lightweight markup language.
 
 Docusaurus supports additional fields. Use the official documentation to check which fields are supported and how they work.
 
-### Open the Docusaurus documentation
-
-Visit the official Docusaurus documentation:
-
-<Link url="https://docusaurus.io/docs/api/themes/configuration" title="Docusaurus configuration documentation"/>
-
-You can also review the documentation on Markdown features and frontmatter.
-
 ### Important
 
 Do not copy frontmatter fields from another documentation tool without checking compatibility.
