@@ -9,7 +9,7 @@ const projects = [
     title: 'Start Docs-as-Code with Me',
     description:
       'Build the documentation website you are using right now. Throughout this course, you will enhance it into a professional Docs-as-Code learning platform and publish it using GitHub Pages.',
-    status: '🚧 In Progress',
+    status: '✅ Available',
     technologies: [
       'Markdown',
       'React',
@@ -43,7 +43,7 @@ const projects = [
     title: 'API Documentation Portal',
     description:
       'Build a developer portal featuring REST APIs, OpenAPI specifications, Swagger UI, authentication, and Postman collections.',
-    status: '🚧 In Progress',
+    status: '✅ Completed',
     technologies: [
       'REST API',
       'OpenAPI',
