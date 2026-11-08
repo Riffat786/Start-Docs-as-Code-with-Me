@@ -18,6 +18,7 @@ sidebar_position: 2
 | --- | --- |
 | Accessibility | Designing content so that people with different abilities can use and understand it. |
 | AI | Artificial intelligence used to assist with tasks such as analysis, writing, and coding. |
+| AI agent | An AI model that completes a task in steps, using inputs, tools, and outputs. |
 | API key | A secret value used to authenticate access to an API or service. |
 
 ## B
@@ -53,6 +54,7 @@ sidebar_position: 2
 | --- | --- |
 | Danger | A callout used to identify a serious or potentially destructive action. |
 | Dependency | Software or a package that another application or project requires. |
+| Deterministic step | A step that always produces the same result for the same input. |
 | Docker | A platform for building, running, and managing applications in containers. |
 | Docker CLI | The command-line interface used to interact with Docker. |
 | Docker Desktop | The desktop application that provides Docker tools on Windows, macOS, and Linux. |
@@ -81,6 +83,7 @@ sidebar_position: 2
 | GitHub | A platform for hosting Git repositories and collaborating on projects. |
 | GitHub Actions | GitHub's automation platform for running workflows in response to repository events. |
 | GitHub Desktop | A graphical application for working with GitHub repositories. |
+| Guardrail | A rule that limits what an agent may change or decide. |
 
 ## H
 
@@ -89,6 +92,7 @@ sidebar_position: 2
 | Heading | A piece of text used to organize the structure of a document. |
 | Horizontal rule | A visual separator created with Markdown syntax. |
 | HTTPS | A secure web protocol that can be used for Git repository connections. |
+| Human-in-the-loop | A review model in which a person approves the result before it is used. |
 
 ## I
 
@@ -97,6 +101,7 @@ sidebar_position: 2
 | Image | A package containing the files and configuration needed to create a container. |
 | Important | A callout used when information requires particular attention. |
 | Inline code | A short technical value displayed within normal text. |
+| Input | The data or file that an agent receives. |
 | Integrated Terminal | A terminal built into VS Code. |
 
 ## L
@@ -115,6 +120,7 @@ sidebar_position: 2
 | Markdown | A lightweight markup language commonly used for technical documentation. |
 | Markdown source | The Markdown text that a writer edits. |
 | MDX | Markdown with support for JSX and React components. |
+| Multi-agent workflow | A workflow that divides a task across several agents, each with one role. |
 
 ## N
 
@@ -132,6 +138,7 @@ sidebar_position: 2
 | Term | Definition |
 | --- | --- |
 | `origin` | The conventional name for the main remote repository. |
+| Output | The data or file that an agent produces for the next step. |
 
 ## P
 
@@ -162,6 +169,8 @@ sidebar_position: 2
 | Rendered content | The formatted result produced when Markdown is processed by a publishing tool. |
 | Repository | A project managed by Git. |
 | Review | The process of checking documentation for quality, accuracy, consistency, and completeness. |
+| Review artifact | A file that records the result of a review, including scores and recommendations. |
+| Role | The responsibility of an agent in a workflow. |
 | Runtime | Software that provides the environment required to execute a program. |
 
 ## S
@@ -180,6 +189,7 @@ sidebar_position: 2
 | Terminal | A text-based interface used to run commands. |
 | Terminology | The words and terms used to describe a product, feature, process, or concept. |
 | Tip | A callout used to provide useful advice or a recommended practice. |
+| Tool | An external system or connector that an agent can call, such as an API connector. |
 | Troubleshooting | The process of identifying and resolving a problem. |
 
 ## V
