@@ -64,7 +64,7 @@ These scripts are defined in the project's `package.json`.
 | Tool | Command to check the installation | Notes |
 |---|---|---|
 | Visual Studio Code | `code --version` | The command is available after you enable it in VS Code |
-| Cursor | `cursor --version` | The command may not be configured. See the Verify Installation lesson in Module 1. |
+| Cursor | `cursor --version` | The command may not be configured. See the Verify Installation lesson in Module 2. |
 | Claude Code | `claude --version` | Start Claude Code from the project folder |
 | GitHub CLI | `gh --version` | Optional. Install it from the official GitHub CLI site. |
 

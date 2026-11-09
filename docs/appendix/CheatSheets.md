@@ -90,6 +90,6 @@ Use a Constraints line in every prompt, and check the result against its source.
 
 ## Related lessons
 
-- Git commands in depth: the Git Cheat-Sheet lesson in Module 3
+- Git commands in depth: the Cheat-Sheet lesson in Module 4
 - Markdown in depth: the Markdown module
-- Commands in depth: the Commands lesson in Module 9
+- Commands in depth: the Commands lesson in Module 10

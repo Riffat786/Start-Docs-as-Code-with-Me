@@ -554,7 +554,7 @@ If you already have a Docusaurus project configured, you can verify it now.
 >
 > Docusaurus is introduced later in this learning journey. You do **not** need a Docusaurus project to complete the Environment Setup module.
 >
-> We will build and configure the Docusaurus documentation site in **Module 7 — Docusaurus**.
+> We will build and configure the Docusaurus documentation site in **Module 8 — Docusaurus**.
 >
 > For now, focus on making sure the development tools in this module are installed and working.
 

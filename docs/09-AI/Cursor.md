@@ -10,7 +10,7 @@ description: Learn how to use Cursor, an AI-enabled code editor, to write, revie
 >
 > **Time to complete:** 30–40 minutes
 >
-> **Prerequisites:** Complete the Verify Installation lesson in Module 1, and the Claude Code lesson.
+> **Prerequisites:** Complete the Verify Installation lesson in Module 2, and the Claude Code lesson.
 
 ---
 

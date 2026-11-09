@@ -32,7 +32,15 @@ Certifications show employers that you have a defined set of skills. They do not
 
 ## Certified Professional Technical Communicator (CPTC), STC
 
-The Society for Technical Communication (STC) offers the CPTC. Its requirements have changed over time, and sources do not agree on the current version. Confirm the current eligibility, exam, and renewal rules on the STC website.
+The Society for Technical Communication (STC) offers the CPTC. Its requirements have changed over time, and sources do not agree on the current version.
+
+:::warning
+
+When this page was last checked, the STC website showed a maintenance notice ("We're Currently Under Update") instead of its certification pages. The CPTC requirements could not be confirmed. Check the STC site directly before you plan an application, and ask STC for the current rules if the site is still down.
+
+:::
+
+Confirm the current eligibility, exam, and renewal rules on the STC website.
 
 **What to check:**
 
