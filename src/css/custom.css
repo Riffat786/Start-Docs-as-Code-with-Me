@@ -36,6 +36,11 @@
   --site-warn-text: #c2410c;
   --site-cta-start: #2e8555;
   --site-cta-end: #3b7cd9;
+
+  /* Heading colors for H2 to H4 in content pages. H1 keeps the theme's default color. */
+  --site-h2-color: #1f5f8b;
+  --site-h3-color: #2e7d52;
+  --site-h4-color: #6d28d9;
 }
 
 /* Dark mode uses lighter accents so text and gradients stay readable on dark surfaces. */
@@ -66,6 +71,10 @@
   --site-warn-text: #fdba74;
   --site-cta-start: #1a7f66;
   --site-cta-end: #2f5fae;
+
+  --site-h2-color: #7dd3fc;
+  --site-h3-color: #34d399;
+  --site-h4-color: #c4b5fd;
 }
 
 /* Light mode: tint the chrome (navbar, sidebars) so the content area stands out. */
@@ -145,6 +154,24 @@
 
 .http-delete {
   background-color: #dc2626;
+}
+
+/* Page title (H1). Infima sets 3rem (48px) here; 2.5rem is 40px. */
+html .markdown h1:first-child {
+  --ifm-h1-font-size: 2.5rem;
+}
+
+/* Section headings (H2 to H4) use theme tokens, so each level stands out in light and dark mode. */
+html .markdown h2 {
+  color: var(--site-h2-color);
+}
+
+html .markdown h3 {
+  color: var(--site-h3-color);
+}
+
+html .markdown h4 {
+  color: var(--site-h4-color);
 }
 
 /* Respect users who turn off motion in their OS settings. */
