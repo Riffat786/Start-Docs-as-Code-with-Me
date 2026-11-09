@@ -1,6 +1,6 @@
 ---
 title: Complete architecture
-sidebar_position: 4
+sidebar_position: 5
 description: A capstone project to combine the documentation site, the release-note workflow, the Azure DevOps connection, automation, and governance into one documented architecture, with each part marked as implemented or planned.
 ---
 

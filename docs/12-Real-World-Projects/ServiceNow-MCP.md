@@ -1,6 +1,6 @@
 ---
 title: ServiceNow MCP
-sidebar_position: 5
+sidebar_position: 6
 description: A real-world planning project to scope, govern, and document a planned read-only connection between a documentation workflow and ServiceNow records, before any connection is built.
 ---
 

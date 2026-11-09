@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps MCP
-sidebar_position: 2
+sidebar_position: 3
 description: A real-world project to document, check, and govern a read-only connection between an AI-assisted documentation workflow and Azure DevOps work items.
 ---
 

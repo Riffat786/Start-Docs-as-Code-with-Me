@@ -1,6 +1,6 @@
 ---
 title: Release notes automation
-sidebar_position: 1
+sidebar_position: 2
 description: A real-world project that turns release change records into two reviewed release-note drafts, using an AI-assisted, Docs-as-Code workflow with human approval before publication.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Docs-as-Code project
-sidebar_position: 6
+sidebar_position: 7
 description: A real-world project to plan, build, and publish a complete Docs-as-Code documentation site, from repository setup and content structure to a build-and-deploy pipeline with quality checks.
 ---
 

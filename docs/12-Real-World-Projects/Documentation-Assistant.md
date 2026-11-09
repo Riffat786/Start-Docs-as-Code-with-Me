@@ -1,6 +1,6 @@
 ---
 title: Documentation assistant
-sidebar_position: 3
+sidebar_position: 4
 description: A real-world project to design a weekly documentation assistant that finds gaps between engineering records and published documentation, drafts updates, and routes every change through human review and multilingual validation.
 ---
 
