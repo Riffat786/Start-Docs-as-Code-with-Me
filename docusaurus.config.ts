@@ -47,6 +47,10 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/Riffat786/Start-Docs-as-Code-with-Me/tree/main/',
+          // Shows "Last updated on <date> by <author>" at the bottom of each page.
+          // Dates come from Git history, so the deploy workflow must fetch full history.
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
@@ -80,7 +84,8 @@ const config: Config = {
         path: 'portfolio',
         routeBasePath: 'portfolio',
         sidebarPath: './sidebarsPortfolio.ts',
-        showLastUpdateTime: false,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
       },
     ],
   ],
