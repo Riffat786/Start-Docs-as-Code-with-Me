@@ -90,6 +90,18 @@ export default function WhyCourse(): ReactNode {
         Why Docs-as-Code and Docusaurus?
         </Link>
       </p>
+      <p>
+        Learn the publishing layer, not just one tool. See a selection of this
+        content published with{' '}
+        <a
+          href="https://riffat786.github.io/docs-as-code-starlight/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Starlight
+        </a>
+        .
+      </p>
     </div>
 
     <div className="row">
